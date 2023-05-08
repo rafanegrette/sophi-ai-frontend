@@ -1,0 +1,41 @@
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { Book } from '../../../models/Book';
+import { FormState } from './form-slice';
+
+export const formApiSlice = createApi({
+    reducerPath: 'api',
+    baseQuery: fetchBaseQuery({
+        baseUrl: 'http://localhost:8080/api/books',
+        prepareHeaders(headers) {
+            headers.set('Accept', 'multipart/form-data, application/json');
+        }
+    }),
+    endpoints(builder) {
+        return {
+            uploadPreview: builder.mutation<Book, FormState>({
+                query: (form: FormState) => {
+                    const { bookName, paragraphSeparator, file} = form;
+                    const requestBody = new FormData();
+                    requestBody.append('file', file);
+                    //requestBody.append('bookName', bookName);
+                    return {
+                        url: '/preview/',
+                        method: 'POST',
+                        body: form
+                    };
+                },
+            }),
+            saveBook: builder.mutation<void,Book>({
+                query: (book: Book) => {
+                    return {
+                        url: '/save',
+                        method: 'POST',
+                        body: book
+                    }
+                }
+            })
+        }
+    }
+});
+
+export const { useUploadPreviewMutation, useSaveBookMutation } = formApiSlice;

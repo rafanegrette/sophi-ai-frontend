@@ -1,0 +1,26 @@
+.container-frame {
+    padding: 0%;
+    position: relative;
+    width: 95%;
+    height: 100%;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10%;
+}
+
+.logoSophi {
+    height: 30;
+}
+#content {
+    position: fixed;
+    top: 10%;
+    height: 100%;
+    padding: 0px 10%;
+}

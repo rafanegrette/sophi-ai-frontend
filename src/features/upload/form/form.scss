@@ -1,0 +1,19 @@
+.form-subheader {
+    background-color: grayscale($color: #f7f7f7);
+    text-align: left;
+}
+.form-button {
+    float: left;
+}
+
+.list-paragraph-separator {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    max-width: 360px;
+    width: 100%;
+}
+
+.control-description {
+    align-self: center;
+    text-align: left;
+}
