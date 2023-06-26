@@ -16,7 +16,7 @@ export function Books() {
                     {
                         data.map((title) => (
                             <ListItem >
-                                <Link to={"../books/" + title.id}>
+                                <Link to={"../books/" + title.id} key={title.id}>
                                     <ListItemText primary={title.title} key={title.id}/>
                                 </Link>
                             </ListItem>

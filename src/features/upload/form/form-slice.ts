@@ -36,11 +36,11 @@ const formSlice = createSlice({
             state.firstPgeOffset = action.payload;
         },
         resetForm(state) {
-            state.file = initialState.file;
-            state.bookName = initialState.bookName;
-            state.paragraphSeparator = initialState.paragraphSeparator;
-            state.chapterTitleType = initialState.chapterTitleType;
-            state.firstPgeOffset = initialState.firstPgeOffset;
+            state.file = new Blob([JSON.stringify({})]);
+            state.bookName = "";
+            state.paragraphSeparator = "";
+            state.chapterTitleType = "";
+            state.firstPgeOffset = 0;
         }
     }
 });

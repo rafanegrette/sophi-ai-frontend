@@ -9,7 +9,7 @@ import { ActionButtons } from "./action-buttons/ActionButtons";
 
 export function Form() {
     return (
-        <div>
+        <div className="upload-form">
             <Grid2 container spacing={1}>
                 <Grid2 xs={12} md={12}>
                     <Typography variant="h6" component="h4">

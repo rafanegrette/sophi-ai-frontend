@@ -18,7 +18,8 @@ const statePreviewBookSlice = createSlice({
         },
         resetPreview(state) {
             state.currentChapterNo = 0;
-            state.currentPageNo = 0;
+            state.currentPageNo = 1;
+            console.log("review resetPreview")
         }
     }
 });

@@ -18,7 +18,7 @@ export const readingApiSlice = createApi({
         return {
             fetchTitles: builder.query<Title[], void>({
                 query() {
-                    return `/titles/`;
+                    return `/titles`;
                 }
             }),
             fetchBook: builder.query<Book, string>({

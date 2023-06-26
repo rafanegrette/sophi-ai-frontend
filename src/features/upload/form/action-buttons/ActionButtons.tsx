@@ -22,8 +22,8 @@ export function ActionButtons() {
             dispatch(load(book));
         });
     }
+
     const handleSave = () => {
-        
         saveBook(currentBook)
             .then(() => dispatch(resetPreview()))
             .then(() => dispatch(resetState()))

@@ -1,3 +1,6 @@
+body {
+    background-color: white;
+}
 .previewBackground {
     background-color: grayscale($color: #f7f7f7);
     width: 600px;
@@ -13,34 +16,34 @@
     width: 580px;
     height: 820px;
 }
-.bookTitle {
+.previewBookTitle {
     padding-top: 0%;
     padding-left: 20%;
     font-size: smaller
 }
 
-.currentPage {
+.previewCurrentPage {
     overflow:auto;
     word-wrap: break-word;
     max-height: 670px;
 }
 
-.paragraph {
+.previewParagraph {
     font-size: x-small;
     text-align: justify;
     padding-bottom: 2%;
     line-height: 2;
 }
 
-.borderSentence{
+.previewBorderSentence{
     display: inline;
     padding: 2px;
 }
-.sentence {
+.previewSentence {
     background-color: #dfcf82;
 }
 
-.bookPaginator {
+.previewBookPaginator {
     position: absolute;
     top: 740px;
     right: 0%;

@@ -19,7 +19,7 @@ export const formApiSlice = createApi({
                     requestBody.append('file', file);
                     //requestBody.append('bookName', bookName);
                     return {
-                        url: '/preview/',
+                        url: '/preview',
                         method: 'POST',
                         body: form
                     };

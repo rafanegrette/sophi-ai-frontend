@@ -1,3 +1,8 @@
+.upload-form {
+    height: 100vh; 
+    overflow-y: auto;  
+} 
+
 .form-subheader {
     background-color: grayscale($color: #f7f7f7);
     text-align: left;

@@ -1,0 +1,4661 @@
+{
+    "title": "Harry Potter 1 - Harry Potter and the Sorcerer's Stone",
+    "contentTable": [
+      {
+        "index": 0,
+        "title": "CHAPTER ONE"
+      },
+      {
+        "index": 1,
+        "title": "CHAPTER TWO"
+      }
+    ],
+    "chapters": [
+      {
+        "id": 0,
+        "title": "CHAPTER ONE",
+        "pages": [
+          {
+            "number": 0,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "CHAPTER ONE"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "THE BOY WHO LIVED"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "M r."
+                  },
+                  {
+                    "id": 1,
+                    "text": "and Mrs. Dursley, of number four, Privet Drive, were proud to say \nthat they were perfectly normal, thank you very much."
+                  },
+                  {
+                    "id": 2,
+                    "text": "They were the last people \nyou'd expect to be involved in anything strange or mysterious, because they just \ndidn't hold with such nonsense."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Mr. Dursley was the director of a firm called Grunnings, which made \ndrills."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He was a big, beefy man with hardly any neck, although he did have a \nvery large mustache."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Mrs. Dursley was thin and blonde and had nearly twice the \nusual amount of neck,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "which came in very useful as she spent so much of her \ntime craning over garden fences,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "spying on the neighbors."
+                  },
+                  {
+                    "id": 8,
+                    "text": "The Dursleys had a \nsmall son called Dudley and in their opinion there was no finer boy anywhere."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "The Dursleys had everything they wanted, but they also had a secret, and \ntheir greatest fear was that somebody would discover it."
+                  },
+                  {
+                    "id": 1,
+                    "text": "They didn't think they \ncould bear it if anyone found out about the Potters."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Mrs. Potter was Mrs. \nDursley's sister, but they hadn't met for several years;"
+                  },
+                  {
+                    "id": 3,
+                    "text": "in fact, Mrs. Dursley \npretended she didn't have a sister,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "because her sister and her good-for-nothing \nhusband were as unDursleyish as it was possible to be."
+                  },
+                  {
+                    "id": 5,
+                    "text": "The Dursleys shuddered \nto think what the neighbors would say if the Potters arrived in the street."
+                  },
+                  {
+                    "id": 6,
+                    "text": "The \nDursleys knew that the Potters had a small son, too, but they had never even \nseen him."
+                  },
+                  {
+                    "id": 7,
+                    "text": "This boy was another good reason for keeping the Potters away;"
+                  },
+                  {
+                    "id": 8,
+                    "text": "they \ndidn't want Dudley mixing with a child like that."
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story \nstarts,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "there was nothing about the cloudy sky outside to suggest that strange and \nmysterious things would soon be"
+                  },
+                  {
+                    "id": 2,
+                    "text": "happening all over the country."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Mr. Dursley \nhummed as he picked out his most boring tie for work,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "and Mrs. Dursley \ngossiped away happily as she wrestled a screaming Dudley into his high chair."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "None of them noticed a large, tawny owl flutter past the window."
+                  },
+                  {
+                    "id": 1,
+                    "text": "At half past eight, Mr. Dursley picked up his briefcase, pecked Mrs. \nDursley on the cheek,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "and tried to kiss Dudley good-bye but missed, because \nDudley was now having a tantrum and throwing his cereal at the walls."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“Little tyke,” chortled Mr. Dursley as he left the house."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He got into his car \nand backed out of number four's drive."
+                  },
+                  {
+                    "id": 5,
+                    "text": "It was on the corner of the street that he noticed the first sign of"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 1,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "something peculiar —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "a cat reading a map."
+                  },
+                  {
+                    "id": 2,
+                    "text": "For a second, Mr. Dursley didn't \nrealize what he had seen —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "then he jerked his head around to look again."
+                  },
+                  {
+                    "id": 4,
+                    "text": "There \nwas a tabby cat standing on the corner of Privet Drive, but there wasn't a map in \nsight."
+                  },
+                  {
+                    "id": 5,
+                    "text": "What could he have been thinking of?"
+                  },
+                  {
+                    "id": 6,
+                    "text": "It must have been a trick of the \nlight."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Mr. Dursley blinked and stared at the cat."
+                  },
+                  {
+                    "id": 8,
+                    "text": "It stared back."
+                  },
+                  {
+                    "id": 9,
+                    "text": "As Mr. Dursley \ndrove around the corner and up the road, he watched the cat in his mirror."
+                  },
+                  {
+                    "id": 10,
+                    "text": "It was \nnow reading the sign that said Privet Drive —"
+                  },
+                  {
+                    "id": 11,
+                    "text": "no, looking at the sign;"
+                  },
+                  {
+                    "id": 12,
+                    "text": "cats \ncouldn't read maps or signs."
+                  },
+                  {
+                    "id": 13,
+                    "text": "Mr. Dursley gave himself a little shake and put the \ncat out of his mind."
+                  },
+                  {
+                    "id": 14,
+                    "text": "As he drove toward town he thought of nothing except a \nlarge order of drills he was hoping to get that day."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "But on the edge of town, drills were driven out of his mind by something \nelse."
+                  },
+                  {
+                    "id": 1,
+                    "text": "As he sat in the usual morning traffic jam,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "he couldn't help noticing that \nthere seemed to be a lot of strangely dressed people about."
+                  },
+                  {
+                    "id": 3,
+                    "text": "People in cloaks."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Mr. \nDursley couldn't bear people who dressed in funny clothes —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "the getups you \nsaw on young people! He supposed this was some stupid new fashion."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He \ndrummed his fingers on the steering wheel and his eyes fell on a huddle of these \nweirdos standing quite close by."
+                  },
+                  {
+                    "id": 7,
+                    "text": "They were whispering excitedly together."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Mr. \nDursley was enraged to see that a couple of them weren't young at all;"
+                  },
+                  {
+                    "id": 9,
+                    "text": "why, that \nman had to be older than he was, and wearing an emerald-green cloak! The \nnerve of"
+                  },
+                  {
+                    "id": 10,
+                    "text": "him! But then it struck Mr. Dursley that this was probably some silly \nstunt —"
+                  },
+                  {
+                    "id": 11,
+                    "text": "these people were obviously collecting for something…yes, that would \nbe it."
+                  },
+                  {
+                    "id": 12,
+                    "text": "The traffic moved on and a few minutes later, Mr. Dursley arrived in the \nGrunnings parking lot, his mind back on drills."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mr. Dursley always sat with his back to the window in his office on the \nninth floor."
+                  },
+                  {
+                    "id": 1,
+                    "text": "If he hadn't, he might have found it harder to concentrate on drills \nthat morning."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He didn't see the owls swooping past in broad daylight, though \npeople down in the street did;"
+                  },
+                  {
+                    "id": 3,
+                    "text": "they pointed and gazed open-mouthed as owl after \nowl sped overhead."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Most of them had never seen an owl even at nighttime."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Mr. \nDursley, however, had a perfectly normal, owl-free morning."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He yelled at five \ndifferent people."
+                  },
+                  {
+                    "id": 7,
+                    "text": "He made several important telephone calls and shouted a bit \nmore."
+                  },
+                  {
+                    "id": 8,
+                    "text": "He was in a very good mood until lunchtime,"
+                  },
+                  {
+                    "id": 9,
+                    "text": "when he thought he'd stretch \nhis legs and walk across the road to buy himself a bun from the bakery."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He'd for gotten all about the people in cloaks until he passed a group of \nthem next to the baker's."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He eyed them angrily as he passed."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He didn't know \nwhy, but they made him uneasy."
+                  },
+                  {
+                    "id": 3,
+                    "text": "This bunch were whispering excitedly, too, and \nhe couldn't see a single collecting tin."
+                  },
+                  {
+                    "id": 4,
+                    "text": "It was on his way back past them,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "\nclutching a large doughnut in a bag, that he caught a few words of what they \nwere saying."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“The Potters, that's right, that's what I heard —”"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“ —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "yes, their son, Harry —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      Mr. Dursley stopped dead."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Fear flooded him."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He looked back at the \nwhisperers as if he wanted to say something to them, but thought better of it."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He dashed back across the road, hurried up to his office, snapped at his \nsecretary not to disturb him,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "seized his telephone, and had almost finished \ndialing his home number when he changed his mind."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He put the receiver back \ndown and stroked his mustache, thinking…no, he was being stupid."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Potter \nwasn't such an unusual name."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He was sure there were lots of people called Potter \nwho had a son called Harry."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Come to think of it, he wasn't even sure his nephew \nwas called Harry."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He'd never even seen the boy."
+                  },
+                  {
+                    "id": 7,
+                    "text": "It might have been Harvey."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Or \nHarold."
+                  },
+                  {
+                    "id": 9,
+                    "text": "There was no point in worrying Mrs. Dursley;"
+                  },
+                  {
+                    "id": 10,
+                    "text": "she always got so upset at \nany mention of her sister."
+                  },
+                  {
+                    "id": 11,
+                    "text": "He didn't blame her —"
+                  },
+                  {
+                    "id": 12,
+                    "text": "if he'd had a sister like that… \nbut all the same, those people in cloaks.…"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He found it a lot harder to concentrate on drills that afternoon and when \nhe left the building at five o'clock,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "he was still so worried that he walked straight \ninto someone just outside the door."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Sorry,” he grunted, as the tiny old man stumbled and almost fell."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It was \na few seconds before Mr. Dursley realized that the man was wearing a violet \ncloak."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He didn't seem at all upset at being almost knocked to the ground."
+                  },
+                  {
+                    "id": 3,
+                    "text": "On the \ncontrary, his face split into a wide smile and he said in a squeaky voice that made \npassersby stare,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Don't be sorry, my dear sir, for nothing could upset me today! \nRejoice,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "for You-Know-Who has gone at last! Even Muggles like yourself \nshould be celebrating,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "this happy, happy day!”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "And the old man hugged Mr. Dursley around the middle and walked off."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mr. Dursley stood rooted to the spot."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He had been hugged by a complete \nstranger."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He also thought he had been called a Muggle, whatever that was."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He \nwas rattled."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He hurried to his car and set off for home,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "hoping he was imagining \nthings, which he had never hoped before,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "because he didn't approve of \nimagination."
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "As he pulled into the driveway of number four, the first thing he saw —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "and it didn't improve his mood —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "was the tabby cat he'd spotted that morning."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It \nwas now sitting on his garden wall."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He was sure it was the same one;"
+                  },
+                  {
+                    "id": 5,
+                    "text": "it had the \nsame markings around its eyes."
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Shoo!” said Mr. Dursley loudly."
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "The cat didn't move."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It just gave him a stern look."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Was this normal cat \nbehavior?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Mr. Dursley wondered."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Trying to pull himself together, he let himself \ninto the house."
+                  },
+                  {
+                    "id": 5,
+                    "text": "He was still determined not to mention anything to his wife."
+                  },
+                  {
+                    "id": 6,
+                    "text": "Mrs. Dursley had had a nice, normal day."
+                  },
+                  {
+                    "id": 7,
+                    "text": "She told him over dinner all \nabout Mrs. Next Door's problems with her daughter and how Dudley had"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "learned a new word ("
+                  },
+                  {
+                    "id": 1,
+                    "text": "“Won't!”)."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Mr. Dursley tried to act normally."
+                  },
+                  {
+                    "id": 3,
+                    "text": "When Dudley \nhad been put to bed,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "he went into the living room in time to catch the last report \non the evening news:"
+                  },
+                  {
+                    "id": 5,
+                    "text": "“And finally, bird-watchers everywhere have reported that the nation's \nowls have been behaving very unusually today."
+                  },
+                  {
+                    "id": 6,
+                    "text": "Although owls normally hunt at \nnight and are hardly ever seen in daylight,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "there have been hundreds of sightings \nof these birds flying in every direction since sunrise."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Experts are unable to \nexplain why the owls have suddenly changed their sleeping pattern."
+                  },
+                  {
+                    "id": 9,
+                    "text": "” The \nnewscaster allowed himself a grin."
+                  },
+                  {
+                    "id": 10,
+                    "text": "“Most mysterious."
+                  },
+                  {
+                    "id": 11,
+                    "text": "And now, over to Jim \nMcGuffin with the weather."
+                  },
+                  {
+                    "id": 12,
+                    "text": "Going to be any more showers of owls tonight, \nJim?”"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Well, Ted,” said the weatherman, “I don't know about that, but it's not \nonly the owls that have been acting oddly today."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Viewers as far apart as Kent, \nYorkshire, and Dundee have been phoning in to tell me that instead"
+                  },
+                  {
+                    "id": 2,
+                    "text": "of the rain I \npromised yesterday, they've had a downpour of shooting stars! Perhaps people \nhave been celebrating Bonfire Night early —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "it's not until next week, folks! But \nI can promise a wet night tonight."
+                  },
+                  {
+                    "id": 4,
+                    "text": "” \n     Mr. Dursley sat frozen in his armchair."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Shooting stars all over Britain?"
+                  },
+                  {
+                    "id": 6,
+                    "text": "Owls flying by daylight?"
+                  },
+                  {
+                    "id": 7,
+                    "text": "Mysterious people in cloaks all over the place?"
+                  },
+                  {
+                    "id": 8,
+                    "text": "And a \nwhisper, a whisper about the Potters.…"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mrs. Dursley came into the living room carrying two cups of tea."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It was \nno good."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He'd have to say something to her."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He cleared his throat nervously."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Er \n—"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Petunia, dear —"
+                  },
+                  {
+                    "id": 6,
+                    "text": "you haven't heard from your sister lately, have you?”"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "As he had expected, Mrs. Dursley looked shocked and angry."
+                  },
+                  {
+                    "id": 1,
+                    "text": "After all, \nthey normally pretended she didn't have a sister."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No,” she said sharply."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“Why?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      “Funny stuff on the news,” Mr. Dursley mumbled."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“Owls…shooting \nstars…and there were a lot of funny-looking people in town today.…”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“So?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” snapped Mrs. Dursley."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“Well, I just thought…maybe…it was something to do with…you \nknow…her crowd.”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mrs. Dursley sipped her tea through pursed lips."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Mr. Dursley wondered \nwhether he dared tell her he'd heard the name “Potter."
+                  },
+                  {
+                    "id": 2,
+                    "text": "” He decided he didn't \ndare."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Instead he said, as casually as he could, “Their son —"
+                  },
+                  {
+                    "id": 4,
+                    "text": "he'd be about \nDudley's age now, wouldn't he?”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I suppose so,” said Mrs. Dursley stiffly."
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“What's his name again?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "Howard, isn't it?”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Harry."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Nasty, common name, if you ask me."
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      “Oh, yes,” said Mr. Dursley, his heart sinking horribly."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“Yes, I quite"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "agree.”"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He didn't say another word on the subject as they went upstairs to bed."
+                  },
+                  {
+                    "id": 1,
+                    "text": "While Mrs. Dursley was in the bathroom, Mr. Dursley crept to the bedroom \nwindow and peered down into the front garden."
+                  },
+                  {
+                    "id": 2,
+                    "text": "The cat was still there."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It was \nstaring down Privet Drive as though it were waiting for something."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Was he imagining things?"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Could all this have anything to do with the \nPotters?"
+                  },
+                  {
+                    "id": 6,
+                    "text": "If it did..."
+                  },
+                  {
+                    "id": 7,
+                    "text": "if it got out that they were related to a pair of —"
+                  },
+                  {
+                    "id": 8,
+                    "text": "well, he didn't \nthink he could bear it."
+                  },
+                  {
+                    "id": 9,
+                    "text": "The Dursleys got into bed."
+                  },
+                  {
+                    "id": 10,
+                    "text": "Mrs. Dursley fell asleep quickly but Mr. \nDursley lay awake, turning it all over in his mind."
+                  },
+                  {
+                    "id": 11,
+                    "text": "His last, comforting thought \nbefore he fell asleep was that even if the Potters were involved,"
+                  },
+                  {
+                    "id": 12,
+                    "text": "there was no \nreason for them to come near him and Mrs. Dursley."
+                  },
+                  {
+                    "id": 13,
+                    "text": "The Potters knew very well \nwhat he and Petunia thought about them and their kind...."
+                  },
+                  {
+                    "id": 14,
+                    "text": "He couldn't see how he \nand Petunia could get mixed up in anything that might be going on —"
+                  },
+                  {
+                    "id": 15,
+                    "text": "he \nyawned and turned over —"
+                  },
+                  {
+                    "id": 16,
+                    "text": "it couldn't affect them.…"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "How very wrong he was."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mr. Dursley might have been drifting into an uneasy sleep, but the cat on \nthe wall outside was showing no sign of sleepiness."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It was sitting as still as a \nstatue, its eyes fixed unblinkingly on the far corner of Privet Drive."
+                  },
+                  {
+                    "id": 2,
+                    "text": "It didn't so \nmuch as quiver when a car door slammed on the next street, nor when two owls \nswooped overhead."
+                  },
+                  {
+                    "id": 3,
+                    "text": "In fact, it was nearly midnight before the cat moved at all."
+                  },
+                  {
+                    "id": 4,
+                    "text": "A man appeared on the corner the cat had been watching,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "appeared so \nsuddenly and silently you'd have thought he'd just popped out of the ground."
+                  },
+                  {
+                    "id": 6,
+                    "text": "The cat's tail twitched and its eyes narrowed."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Nothing like this man had ever been seen on Privet Drive."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He was tall, \nthin, and very old, judging by the silver of his hair and beard,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "which were both \nlong enough to tuck into his belt."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He was wearing long robes, a purple cloak that \nswept the ground, and high-heeled, buckled boots."
+                  },
+                  {
+                    "id": 4,
+                    "text": "His blue eyes were light, \nbright, and sparkling behind half-moon spectacles and his nose was very long \nand crooked,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "as though it had been broken at least twice."
+                  },
+                  {
+                    "id": 6,
+                    "text": "This man's name was \nAlbus Dumbledore."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Albus Dumbledore didn't seem to realize that he had just arrived in a \nstreet where everything from his"
+                  },
+                  {
+                    "id": 8,
+                    "text": "name to his boots was unwelcome."
+                  },
+                  {
+                    "id": 9,
+                    "text": "He was \nbusy rummaging in his cloak, looking for something."
+                  },
+                  {
+                    "id": 10,
+                    "text": "But he did seem to realize \nhe was being watched,"
+                  },
+                  {
+                    "id": 11,
+                    "text": "because he looked up suddenly at the cat, which was still \nstaring at him from the other end of the street."
+                  },
+                  {
+                    "id": 12,
+                    "text": "For some reason, the sight of the \ncat seemed to amuse him."
+                  },
+                  {
+                    "id": 13,
+                    "text": "He chuckled and muttered, “I should have known.”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He found what he was looking for in his inside pocket."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It seemed to be a \nsilver cigarette lighter."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He flicked it open, held it up in the air, and clicked it."
+                  },
+                  {
+                    "id": 3,
+                    "text": "The"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "nearest street lamp went out with a little pop."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He clicked it again —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "the next \nlamp flickered into darkness."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Twelve times he clicked the Put-Outer, until the \nonly lights left on the whole street were two tiny"
+                  },
+                  {
+                    "id": 4,
+                    "text": "pinpricks in the distance, which \nwere the eyes of the cat watching him."
+                  },
+                  {
+                    "id": 5,
+                    "text": "If anyone looked out of their window \nnow,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "even beady-eyed Mrs. Dursley, they wouldn't be able to see anything that \nwas happening down on the pavement."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Dumbledore slipped the Put-Outer back \ninside his cloak and set off down the street toward number four,"
+                  },
+                  {
+                    "id": 8,
+                    "text": "where he sat \ndown on the wall next to the cat."
+                  },
+                  {
+                    "id": 9,
+                    "text": "He didn't look at it, but after a moment he \nspoke to it."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Fancy seeing you here, Professor McGonagall.”"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He turned to smile at the tabby, but it had gone."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Instead he was smiling at \na rather severe-looking woman who was wearing square glasses exactly the \nshape of"
+                  },
+                  {
+                    "id": 2,
+                    "text": "the markings the cat had had around its eyes."
+                  },
+                  {
+                    "id": 3,
+                    "text": "She, too, was wearing a \ncloak, an emerald one."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Her black hair was drawn into a tight bun."
+                  },
+                  {
+                    "id": 5,
+                    "text": "She looked \ndistinctly ruffled."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“How did you know it was me?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” she asked."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“My dear Professor, I've never seen a cat sit so stiffly."
+                  },
+                  {
+                    "id": 1,
+                    "text": "” \n      “You'd be stiff if you'd been sitting on a brick wall all day,” said \nProfessor McGonagall."
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“All day?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "When you could have been celebrating?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "I must have passed a \ndozen feasts and parties on my way here.”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall sniffed angrily."
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Oh yes, I've celebrating, all right,” she said impatiently."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“You'd think \nthey'd be a bit more careful, but no —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "even the Muggles have noticed \nsomething's going on."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It was on their news."
+                  },
+                  {
+                    "id": 4,
+                    "text": "” She jerked her head back at the \nDursleys' dark living-room window."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“I heard it."
+                  },
+                  {
+                    "id": 6,
+                    "text": "Flocks of owls…shooting \nstars…Well, they're not completely stupid."
+                  },
+                  {
+                    "id": 7,
+                    "text": "They were bound to notice \nsomething."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Shooting stars down in Kent —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "I'll bet that was Dedalus Diggle."
+                  },
+                  {
+                    "id": 10,
+                    "text": "He \nnever had much sense.”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“You can't blame them,” said Dumbledore gently."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“We've had precious \nlittle to celebrate for eleven years.”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I know that,” said Professor McGonagall irritably."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“But that's no reason \nto lose our heads."
+                  },
+                  {
+                    "id": 2,
+                    "text": "People are being downright careless, out on the streets in \nbroad daylight, not even dressed in Muggle clothes, swapping rumors."
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n      She threw a sharp,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "sideways glance at Dumbledore here, as though \nhoping he was going to tell her something,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "but he didn't, so she went on."
+                  },
+                  {
+                    "id": 6,
+                    "text": "“A fine \nthing it would be if,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "on the very day You-Know-Who seems to have disappeared \nat last,"
+                  },
+                  {
+                    "id": 8,
+                    "text": "the Muggles found out about us all."
+                  },
+                  {
+                    "id": 9,
+                    "text": "I suppose he really has gone, \nDumbledore?”"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 6,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“It certainly seems so,” said Dumbledore."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“We have much to be thankful \nfor."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Would you care for a lemon drop?”"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“A what?”"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“A lemon drop."
+                  },
+                  {
+                    "id": 1,
+                    "text": "They're a kind of Muggle sweet I'm rather fond of.”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No, thank you,” said Professor McGonagall coldly, as though she didn't \nthink this was the moment for lemon drops."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“As I say, even if You-Know-Who \nhas gone —”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“My dear Professor, surely a sensible person like yourself can call him by \nhis name?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "All this ‘You-Know-Who' nonsense —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "for eleven years I have been \ntrying to persuade people to call him by his proper name:"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Voldemort."
+                  },
+                  {
+                    "id": 4,
+                    "text": "” Professor \nMcGonagall flinched, but Dumbledore, who was unsticking two lemon drops, \nseemed not to notice."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“It all gets so confusing if we keep saying ‘You-Know- \nWho."
+                  },
+                  {
+                    "id": 6,
+                    "text": "' I have never seen any reason to be frightened of saying Voldemort's \nname."
+                  },
+                  {
+                    "id": 7,
+                    "text": "” \n      “I know you haven't, said Professor McGonagall, sounding half \nexasperated, half admiring."
+                  },
+                  {
+                    "id": 8,
+                    "text": "“But you're different."
+                  },
+                  {
+                    "id": 9,
+                    "text": "Everyone knows you're the \nonly one You-Know- oh, all right, Voldemort, was frightened of.”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“You flatter me,” said Dumbledore calmly."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“Voldemort had powers I will \nnever have.”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Only because you're too —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "well —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "noble to use them."
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n     “It's lucky it's dark."
+                  },
+                  {
+                    "id": 4,
+                    "text": "I haven't blushed so much since Madam Pomfrey \ntold me she liked my new earmuffs."
+                  },
+                  {
+                    "id": 5,
+                    "text": "” \n      Professor McGonagall shot a sharp look at Dumbledore and said “The"
+                  },
+                  {
+                    "id": 6,
+                    "text": "\nowls are nothing next to the rumors that are flying around."
+                  },
+                  {
+                    "id": 7,
+                    "text": "You know what \nthey're saying?"
+                  },
+                  {
+                    "id": 8,
+                    "text": "About why he's disappeared?"
+                  },
+                  {
+                    "id": 9,
+                    "text": "About what finally stopped him?”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "It seemed that Professor McGonagall had reached the point she was most \nanxious to discuss,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "the real reason she had been waiting on a cold, hard wall all \nday,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "for neither as a cat nor as a woman had she fixed Dumbledore with such a \npiercing stare as she did now."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It was plain that whatever “everyone” was saying, \nshe was not going to believe it until Dumbledore told her it was true."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Dumbledore, however, was choosing another lemon drop and did not answer."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“What they're saying,” she pressed on, “is that last night Voldemort \nturned up in Godric's Hollow."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He went to find the Potters."
+                  },
+                  {
+                    "id": 7,
+                    "text": "The rumor is that Lily \nand James Potter are —"
+                  },
+                  {
+                    "id": 8,
+                    "text": "are —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "that they're —"
+                  },
+                  {
+                    "id": 10,
+                    "text": "dead.”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore bowed his head."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Professor McGonagall gasped."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“Lily and James…I can't believe it…I didn't want to believe it…Oh,"
+                  },
+                  {
+                    "id": 3,
+                    "text": "\nAlbus…” \n      Dumbledore reached out and patted her on the shoulder."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“I know…I \nknow…” he said heavily."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall's voice trembled as she went on."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“That's not all."
+                  },
+                  {
+                    "id": 2,
+                    "text": "They're saying he tried to kill the Potter's son, Harry."
+                  },
+                  {
+                    "id": 3,
+                    "text": "But he couldn't."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He \ncouldn't kill that little boy."
+                  },
+                  {
+                    "id": 5,
+                    "text": "No one knows why, or how, but they're saying that \nwhen he couldn't kill Harry Potter, Voldemort's power somehow broke —"
+                  },
+                  {
+                    "id": 6,
+                    "text": "and \nthat's why he's gone.”"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore nodded glumly."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“It's —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "it's true?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” faltered Professor McGonagall."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“After all he's done… \nall the people he's killed…he couldn't kill a little boy?"
+                  },
+                  {
+                    "id": 4,
+                    "text": "It's just astounding…of \nall the things to stop him…but how in the name of heaven did Harry survive?”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“We can only guess."
+                  },
+                  {
+                    "id": 1,
+                    "text": "” said Dumbledore."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“We may never know.”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall pulled out a lace handkerchief and dabbed at her \neyes beneath her spectacles."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Dumbledore gave a great sniff as he took a golden \nwatch from his pocket and examined it."
+                  },
+                  {
+                    "id": 2,
+                    "text": "It was a very odd watch."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It had twelve \nhands but no numbers;"
+                  },
+                  {
+                    "id": 4,
+                    "text": "instead, little planets were moving around the edge."
+                  },
+                  {
+                    "id": 5,
+                    "text": "It \nmust have made sense to Dumbledore, though, because he put it back in his \npocket and said, “Hagrid's late."
+                  },
+                  {
+                    "id": 6,
+                    "text": "I suppose it was he who told you I'd be here, by \nthe way?”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yes,” said Professor McGonagall."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“And I don't suppose you're going to \ntell me why you're here, of all places?”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I've come to bring Harry to his aunt and uncle."
+                  },
+                  {
+                    "id": 1,
+                    "text": "They're the only family \nhe has left now."
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      “You don't mean – you can't mean the people who live here?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "” cried \nProfessor McGonagall, jumping to her feet and pointing at number four."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Dumbledore —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "you can't."
+                  },
+                  {
+                    "id": 6,
+                    "text": "I've been watching them all day."
+                  },
+                  {
+                    "id": 7,
+                    "text": "You couldn't find \ntwo people who are less like us."
+                  },
+                  {
+                    "id": 8,
+                    "text": "And they've got this son —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "I saw him kicking \nhis mother all the way up the street, screaming for sweets."
+                  },
+                  {
+                    "id": 10,
+                    "text": "Harry Potter come \nand live here!” \n      “It's the best place for him,” said Dumbledore firmly."
+                  },
+                  {
+                    "id": 11,
+                    "text": "“His aunt and \nuncle will be able to explain everything to him when he's older."
+                  },
+                  {
+                    "id": 12,
+                    "text": "I've written \nthem a letter.”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“A letter?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” repeated Professor McGonagall faintly, sitting back down on \nthe wall."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“Really, Dumbledore, you think you can explain all this in a letter?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "These people will never understand him! He'll be famous —"
+                  },
+                  {
+                    "id": 4,
+                    "text": "a legend —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "I \nwouldn't be surprised if today was known as Harry Potter day in the future —"
+                  },
+                  {
+                    "id": 6,
+                    "text": "there will be books written about Harry —"
+                  },
+                  {
+                    "id": 7,
+                    "text": "every child in our world will know \nhis name!” \n     “Exactly."
+                  },
+                  {
+                    "id": 8,
+                    "text": "” said Dumbledore, looking very seriously over the top of his \nhalf-moon glasses."
+                  },
+                  {
+                    "id": 9,
+                    "text": "“It would be enough to turn any boy's head."
+                  },
+                  {
+                    "id": 10,
+                    "text": "Famous before \nhe can walk and talk! Famous for something he won't even remember! Can you"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "see how much better off he'll be, growing up away from all that until he's ready \nto take it?”"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall opened her mouth, changed her mind, swallowed, \nand then said, “Yes —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "yes, you're right, of course."
+                  },
+                  {
+                    "id": 2,
+                    "text": "But how is the boy getting \nhere, Dumbledore?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "” She eyed his cloak suddenly as though she thought he might \nbe hiding Harry underneath it."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Hagrid's bringing him.”"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“You think it —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "wise —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "to trust Hagrid with something as important as \nthis?”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I would trust Hagrid with my life,” said Dumbledore."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“I'm not saying his heart isn't in the right place,” said Professor \nMcGonagall grudgingly, “but you can't pretend he's not careless."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He does tend \nto —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "what was that?"
+                  },
+                  {
+                    "id": 4,
+                    "text": "” \n      A low rumbling sound had broken the silence around them."
+                  },
+                  {
+                    "id": 5,
+                    "text": "It grew \nsteadily louder as they looked up and down the street for some sign of a \nheadlight;"
+                  },
+                  {
+                    "id": 6,
+                    "text": "it swelled to a roar as they both looked up at the sky —"
+                  },
+                  {
+                    "id": 7,
+                    "text": "and a huge \nmotorcycle fell out of the air and landed on the road in front of them."
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "If the motorcycle was huge, it was nothing to the man sitting astride it."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He was almost twice as tall as a normal man and at least five times as wide."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He \nlooked simply too big to be allowed, and so wild —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "long tangles of bushy black \nhair and beard hid most of his face,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "he had hands the size of trash can lids, and \nhis feet in their leather boots were like baby dolphins."
+                  },
+                  {
+                    "id": 5,
+                    "text": "In his vast, muscular arms \nhe was holding a bundle of blankets."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Hagrid,” said Dumbledore, sounding relieved."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“At last."
+                  },
+                  {
+                    "id": 2,
+                    "text": "And where did \nyou get that motorcycle?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n      “Borrowed it, Professor Dumbledore, sir,” said the giant, climbing \ncarefully off the motorcycle as he spoke."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Young Sirius Black lent it to me."
+                  },
+                  {
+                    "id": 5,
+                    "text": "I've \ngot him, sir.”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No problems, were there?”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No, sir —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "house was almost destroyed, but I got him out all right before \nthe Muggles started swarmin' around."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He fell asleep as we was flyin' over \nBristol.”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore and Professor McGonagall bent forward over the bundle of \nblankets."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Inside, just visible, was a baby boy, fast asleep."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Under a tuft of jet- \nblack hair over his forehead they could see a curiously shaped cut, like a bolt of \nlightning."
+                  }
+                ]
+              },
+              {
+                "id": 10,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Is that where —?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” whispered Professor McGonagall."
+                  }
+                ]
+              },
+              {
+                "id": 11,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yes,” said Dumbledore."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“He'll have that scar forever.”"
+                  }
+                ]
+              },
+              {
+                "id": 12,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Couldn't you do something about it, Dumbledore?”"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 9,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Even if I could, I wouldn't."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Scars can come in handy."
+                  },
+                  {
+                    "id": 2,
+                    "text": "I have one myself \nabove my left knee that is a perfect map of the London Underground."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Well —"
+                  },
+                  {
+                    "id": 4,
+                    "text": "give him here, Hagrid —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "we'd better get this over with."
+                  },
+                  {
+                    "id": 6,
+                    "text": "” \n      Dumbledore took Harry in his arms and turned toward the Dursleys' \nhouse."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Could I —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "could I say good-bye to him, sir?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” asked Hagrid."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He bent his \ngreat, shaggy head over Harry and gave him what must have been a very \nscratchy, whiskery kiss."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Then, suddenly, Hagrid let out a howl like a wounded \ndog."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Shhh!” hissed Professor McGonagall, “You'll wake the Muggles!”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“S-s-sorry,” sobbed Hagrid, taking out a large, spotted handkerchief and \nburying his face in it."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“But I c-c-can't stand it —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "Lily an' James dead —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "an' poor \nlittle Harry off ter live with Muggles —”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yes, yes, it's all very sad, but get a grip on yourself, Hagrid, or we'll be \nfound,” Professor McGonagall whispered,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "patting Hagrid gingerly on the arm as \nDumbledore stepped over the low garden wall and walked to the front door."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He \nlaid Harry gently on the doorstep, took a letter out of his cloak,"
+                  },
+                  {
+                    "id": 3,
+                    "text": "tucked it inside \nHarry's blankets, and then came back to the other two."
+                  },
+                  {
+                    "id": 4,
+                    "text": "For a full minute the \nthree of them stood and looked at the little bundle;"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Hagrid's shoulders shook, \nProfessor McGonagall blinked furiously, and the twinkling light that usually \nshone from Dumbledore's eyes seemed to have gone out."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Well,” said Dumbledore finally, “that's that."
+                  },
+                  {
+                    "id": 1,
+                    "text": "We've no business staying \nhere."
+                  },
+                  {
+                    "id": 2,
+                    "text": "We may as well go and join the celebrations.”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yeah,” said Hagrid in a very muffled voice, “I'll be takin' Sirius his bike \nback."
+                  },
+                  {
+                    "id": 1,
+                    "text": "G'night, Professor McGonagall —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "Professor Dumbledore, sir."
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n      Wiping his streaming eyes on his jacket sleeve,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "Hagrid swung himself \nonto the motorcycle and kicked the engine into life;"
+                  },
+                  {
+                    "id": 5,
+                    "text": "with a roar it rose into the \nair and off into the night."
+                  },
+                  {
+                    "id": 6,
+                    "text": "“I shall see you soon, I expect, Professor McGonagall,” said \nDumbledore, nodding to her."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Professor McGonagall blew her nose in reply."
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore turned and walked back down the street."
+                  },
+                  {
+                    "id": 1,
+                    "text": "On the corner he \nstopped and took out the silver Put-Outer."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He clicked it once, and twelve balls of \nlight sped back to their street lamps so that Privet"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Drive glowed suddenly orange \nand he could make out a tabby cat slinking around the corner at the other end of \nthe street."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He could just see the bundle of blankets on the step of number four."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“Good luck, Harry,” he murmured."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He turned on his heel and with a \nswish of his cloak, he was gone."
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "A breeze ruffled the neat hedges of Privet Drive,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "which lay silent and tidy \nunder the inky sky,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "the very last place you would expect astonishing things to"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 10,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "happen."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Harry Potter rolled over inside his blankets without waking up."
+                  },
+                  {
+                    "id": 2,
+                    "text": "One \nsmall hand closed on the letter beside him and he slept on, not knowing he was \nspecial,"
+                  },
+                  {
+                    "id": 3,
+                    "text": "not knowing he was famous, not knowing he would be woken in a few \nhours' time by Mrs."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Dursley's scream as she opened the front door to put out the \nmilk bottles, nor that he would spend the next"
+                  },
+                  {
+                    "id": 5,
+                    "text": "few weeks being prodded and \npinched by his cousin Dudley...."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He couldn't know that at this very moment,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "\npeople meeting in secret all over the country were holding up their glasses and \nsaying in hushed voices:"
+                  },
+                  {
+                    "id": 8,
+                    "text": "“To Harry Potter —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "the boy who lived!”"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "CHAPTER TWO(IS REALLY THE ONE)",
+        "pages": [
+          {
+            "number": 0,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "CHAPTER TWO"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "THE BOY WHO LIVED"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "M r."
+                  },
+                  {
+                    "id": 1,
+                    "text": "and Mrs. Dursley, of number four, Privet Drive, were proud to say \nthat they were perfectly normal, thank you very much."
+                  },
+                  {
+                    "id": 2,
+                    "text": "They were the last people \nyou'd expect to be involved in anything strange or mysterious, because they just \ndidn't hold with such nonsense."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Mr. Dursley was the director of a firm called Grunnings, which made \ndrills."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He was a big, beefy man with hardly any neck, although he did have a \nvery large mustache."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Mrs. Dursley was thin and blonde and had nearly twice the \nusual amount of neck,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "which came in very useful as she spent so much of her \ntime craning over garden fences,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "spying on the neighbors."
+                  },
+                  {
+                    "id": 8,
+                    "text": "The Dursleys had a \nsmall son called Dudley and in their opinion there was no finer boy anywhere."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "The Dursleys had everything they wanted, but they also had a secret, and \ntheir greatest fear was that somebody would discover it."
+                  },
+                  {
+                    "id": 1,
+                    "text": "They didn't think they \ncould bear it if anyone found out about the Potters."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Mrs. Potter was Mrs. \nDursley's sister, but they hadn't met for several years;"
+                  },
+                  {
+                    "id": 3,
+                    "text": "in fact, Mrs. Dursley \npretended she didn't have a sister,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "because her sister and her good-for-nothing \nhusband were as unDursleyish as it was possible to be."
+                  },
+                  {
+                    "id": 5,
+                    "text": "The Dursleys shuddered \nto think what the neighbors would say if the Potters arrived in the street."
+                  },
+                  {
+                    "id": 6,
+                    "text": "The \nDursleys knew that the Potters had a small son, too, but they had never even \nseen him."
+                  },
+                  {
+                    "id": 7,
+                    "text": "This boy was another good reason for keeping the Potters away;"
+                  },
+                  {
+                    "id": 8,
+                    "text": "they \ndidn't want Dudley mixing with a child like that."
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story \nstarts,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "there was nothing about the cloudy sky outside to suggest that strange and \nmysterious things would soon be"
+                  },
+                  {
+                    "id": 2,
+                    "text": "happening all over the country."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Mr. Dursley \nhummed as he picked out his most boring tie for work,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "and Mrs. Dursley \ngossiped away happily as she wrestled a screaming Dudley into his high chair."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "None of them noticed a large, tawny owl flutter past the window."
+                  },
+                  {
+                    "id": 1,
+                    "text": "At half past eight, Mr. Dursley picked up his briefcase, pecked Mrs. \nDursley on the cheek,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "and tried to kiss Dudley good-bye but missed, because \nDudley was now having a tantrum and throwing his cereal at the walls."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“Little tyke,” chortled Mr. Dursley as he left the house."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He got into his car \nand backed out of number four's drive."
+                  },
+                  {
+                    "id": 5,
+                    "text": "It was on the corner of the street that he noticed the first sign of"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 1,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "something peculiar —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "a cat reading a map."
+                  },
+                  {
+                    "id": 2,
+                    "text": "For a second, Mr. Dursley didn't \nrealize what he had seen —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "then he jerked his head around to look again."
+                  },
+                  {
+                    "id": 4,
+                    "text": "There \nwas a tabby cat standing on the corner of Privet Drive, but there wasn't a map in \nsight."
+                  },
+                  {
+                    "id": 5,
+                    "text": "What could he have been thinking of?"
+                  },
+                  {
+                    "id": 6,
+                    "text": "It must have been a trick of the \nlight."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Mr. Dursley blinked and stared at the cat."
+                  },
+                  {
+                    "id": 8,
+                    "text": "It stared back."
+                  },
+                  {
+                    "id": 9,
+                    "text": "As Mr. Dursley \ndrove around the corner and up the road, he watched the cat in his mirror."
+                  },
+                  {
+                    "id": 10,
+                    "text": "It was \nnow reading the sign that said Privet Drive —"
+                  },
+                  {
+                    "id": 11,
+                    "text": "no, looking at the sign;"
+                  },
+                  {
+                    "id": 12,
+                    "text": "cats \ncouldn't read maps or signs."
+                  },
+                  {
+                    "id": 13,
+                    "text": "Mr. Dursley gave himself a little shake and put the \ncat out of his mind."
+                  },
+                  {
+                    "id": 14,
+                    "text": "As he drove toward town he thought of nothing except a \nlarge order of drills he was hoping to get that day."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "But on the edge of town, drills were driven out of his mind by something \nelse."
+                  },
+                  {
+                    "id": 1,
+                    "text": "As he sat in the usual morning traffic jam,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "he couldn't help noticing that \nthere seemed to be a lot of strangely dressed people about."
+                  },
+                  {
+                    "id": 3,
+                    "text": "People in cloaks."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Mr. \nDursley couldn't bear people who dressed in funny clothes —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "the getups you \nsaw on young people! He supposed this was some stupid new fashion."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He \ndrummed his fingers on the steering wheel and his eyes fell on a huddle of these \nweirdos standing quite close by."
+                  },
+                  {
+                    "id": 7,
+                    "text": "They were whispering excitedly together."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Mr. \nDursley was enraged to see that a couple of them weren't young at all;"
+                  },
+                  {
+                    "id": 9,
+                    "text": "why, that \nman had to be older than he was, and wearing an emerald-green cloak! The \nnerve of"
+                  },
+                  {
+                    "id": 10,
+                    "text": "him! But then it struck Mr. Dursley that this was probably some silly \nstunt —"
+                  },
+                  {
+                    "id": 11,
+                    "text": "these people were obviously collecting for something…yes, that would \nbe it."
+                  },
+                  {
+                    "id": 12,
+                    "text": "The traffic moved on and a few minutes later, Mr. Dursley arrived in the \nGrunnings parking lot, his mind back on drills."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mr. Dursley always sat with his back to the window in his office on the \nninth floor."
+                  },
+                  {
+                    "id": 1,
+                    "text": "If he hadn't, he might have found it harder to concentrate on drills \nthat morning."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He didn't see the owls swooping past in broad daylight, though \npeople down in the street did;"
+                  },
+                  {
+                    "id": 3,
+                    "text": "they pointed and gazed open-mouthed as owl after \nowl sped overhead."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Most of them had never seen an owl even at nighttime."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Mr. \nDursley, however, had a perfectly normal, owl-free morning."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He yelled at five \ndifferent people."
+                  },
+                  {
+                    "id": 7,
+                    "text": "He made several important telephone calls and shouted a bit \nmore."
+                  },
+                  {
+                    "id": 8,
+                    "text": "He was in a very good mood until lunchtime,"
+                  },
+                  {
+                    "id": 9,
+                    "text": "when he thought he'd stretch \nhis legs and walk across the road to buy himself a bun from the bakery."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He'd for gotten all about the people in cloaks until he passed a group of \nthem next to the baker's."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He eyed them angrily as he passed."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He didn't know \nwhy, but they made him uneasy."
+                  },
+                  {
+                    "id": 3,
+                    "text": "This bunch were whispering excitedly, too, and \nhe couldn't see a single collecting tin."
+                  },
+                  {
+                    "id": 4,
+                    "text": "It was on his way back past them,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "\nclutching a large doughnut in a bag, that he caught a few words of what they \nwere saying."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“The Potters, that's right, that's what I heard —”"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“ —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "yes, their son, Harry —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      Mr. Dursley stopped dead."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Fear flooded him."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He looked back at the \nwhisperers as if he wanted to say something to them, but thought better of it."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He dashed back across the road, hurried up to his office, snapped at his \nsecretary not to disturb him,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "seized his telephone, and had almost finished \ndialing his home number when he changed his mind."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He put the receiver back \ndown and stroked his mustache, thinking…no, he was being stupid."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Potter \nwasn't such an unusual name."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He was sure there were lots of people called Potter \nwho had a son called Harry."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Come to think of it, he wasn't even sure his nephew \nwas called Harry."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He'd never even seen the boy."
+                  },
+                  {
+                    "id": 7,
+                    "text": "It might have been Harvey."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Or \nHarold."
+                  },
+                  {
+                    "id": 9,
+                    "text": "There was no point in worrying Mrs. Dursley;"
+                  },
+                  {
+                    "id": 10,
+                    "text": "she always got so upset at \nany mention of her sister."
+                  },
+                  {
+                    "id": 11,
+                    "text": "He didn't blame her —"
+                  },
+                  {
+                    "id": 12,
+                    "text": "if he'd had a sister like that… \nbut all the same, those people in cloaks.…"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He found it a lot harder to concentrate on drills that afternoon and when \nhe left the building at five o'clock,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "he was still so worried that he walked straight \ninto someone just outside the door."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Sorry,” he grunted, as the tiny old man stumbled and almost fell."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It was \na few seconds before Mr. Dursley realized that the man was wearing a violet \ncloak."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He didn't seem at all upset at being almost knocked to the ground."
+                  },
+                  {
+                    "id": 3,
+                    "text": "On the \ncontrary, his face split into a wide smile and he said in a squeaky voice that made \npassersby stare,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Don't be sorry, my dear sir, for nothing could upset me today! \nRejoice,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "for You-Know-Who has gone at last! Even Muggles like yourself \nshould be celebrating,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "this happy, happy day!”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "And the old man hugged Mr. Dursley around the middle and walked off."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mr. Dursley stood rooted to the spot."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He had been hugged by a complete \nstranger."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He also thought he had been called a Muggle, whatever that was."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He \nwas rattled."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He hurried to his car and set off for home,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "hoping he was imagining \nthings, which he had never hoped before,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "because he didn't approve of \nimagination."
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "As he pulled into the driveway of number four, the first thing he saw —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "and it didn't improve his mood —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "was the tabby cat he'd spotted that morning."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It \nwas now sitting on his garden wall."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He was sure it was the same one;"
+                  },
+                  {
+                    "id": 5,
+                    "text": "it had the \nsame markings around its eyes."
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Shoo!” said Mr. Dursley loudly."
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "The cat didn't move."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It just gave him a stern look."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Was this normal cat \nbehavior?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Mr. Dursley wondered."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Trying to pull himself together, he let himself \ninto the house."
+                  },
+                  {
+                    "id": 5,
+                    "text": "He was still determined not to mention anything to his wife."
+                  },
+                  {
+                    "id": 6,
+                    "text": "Mrs. Dursley had had a nice, normal day."
+                  },
+                  {
+                    "id": 7,
+                    "text": "She told him over dinner all \nabout Mrs. Next Door's problems with her daughter and how Dudley had"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "learned a new word ("
+                  },
+                  {
+                    "id": 1,
+                    "text": "“Won't!”)."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Mr. Dursley tried to act normally."
+                  },
+                  {
+                    "id": 3,
+                    "text": "When Dudley \nhad been put to bed,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "he went into the living room in time to catch the last report \non the evening news:"
+                  },
+                  {
+                    "id": 5,
+                    "text": "“And finally, bird-watchers everywhere have reported that the nation's \nowls have been behaving very unusually today."
+                  },
+                  {
+                    "id": 6,
+                    "text": "Although owls normally hunt at \nnight and are hardly ever seen in daylight,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "there have been hundreds of sightings \nof these birds flying in every direction since sunrise."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Experts are unable to \nexplain why the owls have suddenly changed their sleeping pattern."
+                  },
+                  {
+                    "id": 9,
+                    "text": "” The \nnewscaster allowed himself a grin."
+                  },
+                  {
+                    "id": 10,
+                    "text": "“Most mysterious."
+                  },
+                  {
+                    "id": 11,
+                    "text": "And now, over to Jim \nMcGuffin with the weather."
+                  },
+                  {
+                    "id": 12,
+                    "text": "Going to be any more showers of owls tonight, \nJim?”"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Well, Ted,” said the weatherman, “I don't know about that, but it's not \nonly the owls that have been acting oddly today."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Viewers as far apart as Kent, \nYorkshire, and Dundee have been phoning in to tell me that instead"
+                  },
+                  {
+                    "id": 2,
+                    "text": "of the rain I \npromised yesterday, they've had a downpour of shooting stars! Perhaps people \nhave been celebrating Bonfire Night early —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "it's not until next week, folks! But \nI can promise a wet night tonight."
+                  },
+                  {
+                    "id": 4,
+                    "text": "” \n     Mr. Dursley sat frozen in his armchair."
+                  },
+                  {
+                    "id": 5,
+                    "text": "Shooting stars all over Britain?"
+                  },
+                  {
+                    "id": 6,
+                    "text": "Owls flying by daylight?"
+                  },
+                  {
+                    "id": 7,
+                    "text": "Mysterious people in cloaks all over the place?"
+                  },
+                  {
+                    "id": 8,
+                    "text": "And a \nwhisper, a whisper about the Potters.…"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mrs. Dursley came into the living room carrying two cups of tea."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It was \nno good."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He'd have to say something to her."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He cleared his throat nervously."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Er \n—"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Petunia, dear —"
+                  },
+                  {
+                    "id": 6,
+                    "text": "you haven't heard from your sister lately, have you?”"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "As he had expected, Mrs. Dursley looked shocked and angry."
+                  },
+                  {
+                    "id": 1,
+                    "text": "After all, \nthey normally pretended she didn't have a sister."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No,” she said sharply."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“Why?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      “Funny stuff on the news,” Mr. Dursley mumbled."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“Owls…shooting \nstars…and there were a lot of funny-looking people in town today.…”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“So?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” snapped Mrs. Dursley."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“Well, I just thought…maybe…it was something to do with…you \nknow…her crowd.”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mrs. Dursley sipped her tea through pursed lips."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Mr. Dursley wondered \nwhether he dared tell her he'd heard the name “Potter."
+                  },
+                  {
+                    "id": 2,
+                    "text": "” He decided he didn't \ndare."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Instead he said, as casually as he could, “Their son —"
+                  },
+                  {
+                    "id": 4,
+                    "text": "he'd be about \nDudley's age now, wouldn't he?”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I suppose so,” said Mrs. Dursley stiffly."
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“What's his name again?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "Howard, isn't it?”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Harry."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Nasty, common name, if you ask me."
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      “Oh, yes,” said Mr. Dursley, his heart sinking horribly."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“Yes, I quite"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "agree.”"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He didn't say another word on the subject as they went upstairs to bed."
+                  },
+                  {
+                    "id": 1,
+                    "text": "While Mrs. Dursley was in the bathroom, Mr. Dursley crept to the bedroom \nwindow and peered down into the front garden."
+                  },
+                  {
+                    "id": 2,
+                    "text": "The cat was still there."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It was \nstaring down Privet Drive as though it were waiting for something."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Was he imagining things?"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Could all this have anything to do with the \nPotters?"
+                  },
+                  {
+                    "id": 6,
+                    "text": "If it did..."
+                  },
+                  {
+                    "id": 7,
+                    "text": "if it got out that they were related to a pair of —"
+                  },
+                  {
+                    "id": 8,
+                    "text": "well, he didn't \nthink he could bear it."
+                  },
+                  {
+                    "id": 9,
+                    "text": "The Dursleys got into bed."
+                  },
+                  {
+                    "id": 10,
+                    "text": "Mrs. Dursley fell asleep quickly but Mr. \nDursley lay awake, turning it all over in his mind."
+                  },
+                  {
+                    "id": 11,
+                    "text": "His last, comforting thought \nbefore he fell asleep was that even if the Potters were involved,"
+                  },
+                  {
+                    "id": 12,
+                    "text": "there was no \nreason for them to come near him and Mrs. Dursley."
+                  },
+                  {
+                    "id": 13,
+                    "text": "The Potters knew very well \nwhat he and Petunia thought about them and their kind...."
+                  },
+                  {
+                    "id": 14,
+                    "text": "He couldn't see how he \nand Petunia could get mixed up in anything that might be going on —"
+                  },
+                  {
+                    "id": 15,
+                    "text": "he \nyawned and turned over —"
+                  },
+                  {
+                    "id": 16,
+                    "text": "it couldn't affect them.…"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "How very wrong he was."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Mr. Dursley might have been drifting into an uneasy sleep, but the cat on \nthe wall outside was showing no sign of sleepiness."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It was sitting as still as a \nstatue, its eyes fixed unblinkingly on the far corner of Privet Drive."
+                  },
+                  {
+                    "id": 2,
+                    "text": "It didn't so \nmuch as quiver when a car door slammed on the next street, nor when two owls \nswooped overhead."
+                  },
+                  {
+                    "id": 3,
+                    "text": "In fact, it was nearly midnight before the cat moved at all."
+                  },
+                  {
+                    "id": 4,
+                    "text": "A man appeared on the corner the cat had been watching,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "appeared so \nsuddenly and silently you'd have thought he'd just popped out of the ground."
+                  },
+                  {
+                    "id": 6,
+                    "text": "The cat's tail twitched and its eyes narrowed."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Nothing like this man had ever been seen on Privet Drive."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He was tall, \nthin, and very old, judging by the silver of his hair and beard,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "which were both \nlong enough to tuck into his belt."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He was wearing long robes, a purple cloak that \nswept the ground, and high-heeled, buckled boots."
+                  },
+                  {
+                    "id": 4,
+                    "text": "His blue eyes were light, \nbright, and sparkling behind half-moon spectacles and his nose was very long \nand crooked,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "as though it had been broken at least twice."
+                  },
+                  {
+                    "id": 6,
+                    "text": "This man's name was \nAlbus Dumbledore."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Albus Dumbledore didn't seem to realize that he had just arrived in a \nstreet where everything from his"
+                  },
+                  {
+                    "id": 8,
+                    "text": "name to his boots was unwelcome."
+                  },
+                  {
+                    "id": 9,
+                    "text": "He was \nbusy rummaging in his cloak, looking for something."
+                  },
+                  {
+                    "id": 10,
+                    "text": "But he did seem to realize \nhe was being watched,"
+                  },
+                  {
+                    "id": 11,
+                    "text": "because he looked up suddenly at the cat, which was still \nstaring at him from the other end of the street."
+                  },
+                  {
+                    "id": 12,
+                    "text": "For some reason, the sight of the \ncat seemed to amuse him."
+                  },
+                  {
+                    "id": 13,
+                    "text": "He chuckled and muttered, “I should have known.”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He found what he was looking for in his inside pocket."
+                  },
+                  {
+                    "id": 1,
+                    "text": "It seemed to be a \nsilver cigarette lighter."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He flicked it open, held it up in the air, and clicked it."
+                  },
+                  {
+                    "id": 3,
+                    "text": "The"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "nearest street lamp went out with a little pop."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He clicked it again —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "the next \nlamp flickered into darkness."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Twelve times he clicked the Put-Outer, until the \nonly lights left on the whole street were two tiny"
+                  },
+                  {
+                    "id": 4,
+                    "text": "pinpricks in the distance, which \nwere the eyes of the cat watching him."
+                  },
+                  {
+                    "id": 5,
+                    "text": "If anyone looked out of their window \nnow,"
+                  },
+                  {
+                    "id": 6,
+                    "text": "even beady-eyed Mrs. Dursley, they wouldn't be able to see anything that \nwas happening down on the pavement."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Dumbledore slipped the Put-Outer back \ninside his cloak and set off down the street toward number four,"
+                  },
+                  {
+                    "id": 8,
+                    "text": "where he sat \ndown on the wall next to the cat."
+                  },
+                  {
+                    "id": 9,
+                    "text": "He didn't look at it, but after a moment he \nspoke to it."
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Fancy seeing you here, Professor McGonagall.”"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "He turned to smile at the tabby, but it had gone."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Instead he was smiling at \na rather severe-looking woman who was wearing square glasses exactly the \nshape of"
+                  },
+                  {
+                    "id": 2,
+                    "text": "the markings the cat had had around its eyes."
+                  },
+                  {
+                    "id": 3,
+                    "text": "She, too, was wearing a \ncloak, an emerald one."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Her black hair was drawn into a tight bun."
+                  },
+                  {
+                    "id": 5,
+                    "text": "She looked \ndistinctly ruffled."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“How did you know it was me?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” she asked."
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“My dear Professor, I've never seen a cat sit so stiffly."
+                  },
+                  {
+                    "id": 1,
+                    "text": "” \n      “You'd be stiff if you'd been sitting on a brick wall all day,” said \nProfessor McGonagall."
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“All day?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "When you could have been celebrating?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "I must have passed a \ndozen feasts and parties on my way here.”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall sniffed angrily."
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Oh yes, I've celebrating, all right,” she said impatiently."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“You'd think \nthey'd be a bit more careful, but no —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "even the Muggles have noticed \nsomething's going on."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It was on their news."
+                  },
+                  {
+                    "id": 4,
+                    "text": "” She jerked her head back at the \nDursleys' dark living-room window."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“I heard it."
+                  },
+                  {
+                    "id": 6,
+                    "text": "Flocks of owls…shooting \nstars…Well, they're not completely stupid."
+                  },
+                  {
+                    "id": 7,
+                    "text": "They were bound to notice \nsomething."
+                  },
+                  {
+                    "id": 8,
+                    "text": "Shooting stars down in Kent —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "I'll bet that was Dedalus Diggle."
+                  },
+                  {
+                    "id": 10,
+                    "text": "He \nnever had much sense.”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“You can't blame them,” said Dumbledore gently."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“We've had precious \nlittle to celebrate for eleven years.”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I know that,” said Professor McGonagall irritably."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“But that's no reason \nto lose our heads."
+                  },
+                  {
+                    "id": 2,
+                    "text": "People are being downright careless, out on the streets in \nbroad daylight, not even dressed in Muggle clothes, swapping rumors."
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n      She threw a sharp,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "sideways glance at Dumbledore here, as though \nhoping he was going to tell her something,"
+                  },
+                  {
+                    "id": 5,
+                    "text": "but he didn't, so she went on."
+                  },
+                  {
+                    "id": 6,
+                    "text": "“A fine \nthing it would be if,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "on the very day You-Know-Who seems to have disappeared \nat last,"
+                  },
+                  {
+                    "id": 8,
+                    "text": "the Muggles found out about us all."
+                  },
+                  {
+                    "id": 9,
+                    "text": "I suppose he really has gone, \nDumbledore?”"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 6,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“It certainly seems so,” said Dumbledore."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“We have much to be thankful \nfor."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Would you care for a lemon drop?”"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“A what?”"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“A lemon drop."
+                  },
+                  {
+                    "id": 1,
+                    "text": "They're a kind of Muggle sweet I'm rather fond of.”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No, thank you,” said Professor McGonagall coldly, as though she didn't \nthink this was the moment for lemon drops."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“As I say, even if You-Know-Who \nhas gone —”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“My dear Professor, surely a sensible person like yourself can call him by \nhis name?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "All this ‘You-Know-Who' nonsense —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "for eleven years I have been \ntrying to persuade people to call him by his proper name:"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Voldemort."
+                  },
+                  {
+                    "id": 4,
+                    "text": "” Professor \nMcGonagall flinched, but Dumbledore, who was unsticking two lemon drops, \nseemed not to notice."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“It all gets so confusing if we keep saying ‘You-Know- \nWho."
+                  },
+                  {
+                    "id": 6,
+                    "text": "' I have never seen any reason to be frightened of saying Voldemort's \nname."
+                  },
+                  {
+                    "id": 7,
+                    "text": "” \n      “I know you haven't, said Professor McGonagall, sounding half \nexasperated, half admiring."
+                  },
+                  {
+                    "id": 8,
+                    "text": "“But you're different."
+                  },
+                  {
+                    "id": 9,
+                    "text": "Everyone knows you're the \nonly one You-Know- oh, all right, Voldemort, was frightened of.”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“You flatter me,” said Dumbledore calmly."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“Voldemort had powers I will \nnever have.”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Only because you're too —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "well —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "noble to use them."
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n     “It's lucky it's dark."
+                  },
+                  {
+                    "id": 4,
+                    "text": "I haven't blushed so much since Madam Pomfrey \ntold me she liked my new earmuffs."
+                  },
+                  {
+                    "id": 5,
+                    "text": "” \n      Professor McGonagall shot a sharp look at Dumbledore and said “The"
+                  },
+                  {
+                    "id": 6,
+                    "text": "\nowls are nothing next to the rumors that are flying around."
+                  },
+                  {
+                    "id": 7,
+                    "text": "You know what \nthey're saying?"
+                  },
+                  {
+                    "id": 8,
+                    "text": "About why he's disappeared?"
+                  },
+                  {
+                    "id": 9,
+                    "text": "About what finally stopped him?”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "It seemed that Professor McGonagall had reached the point she was most \nanxious to discuss,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "the real reason she had been waiting on a cold, hard wall all \nday,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "for neither as a cat nor as a woman had she fixed Dumbledore with such a \npiercing stare as she did now."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It was plain that whatever “everyone” was saying, \nshe was not going to believe it until Dumbledore told her it was true."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Dumbledore, however, was choosing another lemon drop and did not answer."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“What they're saying,” she pressed on, “is that last night Voldemort \nturned up in Godric's Hollow."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He went to find the Potters."
+                  },
+                  {
+                    "id": 7,
+                    "text": "The rumor is that Lily \nand James Potter are —"
+                  },
+                  {
+                    "id": 8,
+                    "text": "are —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "that they're —"
+                  },
+                  {
+                    "id": 10,
+                    "text": "dead.”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore bowed his head."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Professor McGonagall gasped."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“Lily and James…I can't believe it…I didn't want to believe it…Oh,"
+                  },
+                  {
+                    "id": 3,
+                    "text": "\nAlbus…” \n      Dumbledore reached out and patted her on the shoulder."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“I know…I \nknow…” he said heavily."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall's voice trembled as she went on."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“That's not all."
+                  },
+                  {
+                    "id": 2,
+                    "text": "They're saying he tried to kill the Potter's son, Harry."
+                  },
+                  {
+                    "id": 3,
+                    "text": "But he couldn't."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He \ncouldn't kill that little boy."
+                  },
+                  {
+                    "id": 5,
+                    "text": "No one knows why, or how, but they're saying that \nwhen he couldn't kill Harry Potter, Voldemort's power somehow broke —"
+                  },
+                  {
+                    "id": 6,
+                    "text": "and \nthat's why he's gone.”"
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore nodded glumly."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“It's —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "it's true?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” faltered Professor McGonagall."
+                  },
+                  {
+                    "id": 3,
+                    "text": "“After all he's done… \nall the people he's killed…he couldn't kill a little boy?"
+                  },
+                  {
+                    "id": 4,
+                    "text": "It's just astounding…of \nall the things to stop him…but how in the name of heaven did Harry survive?”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“We can only guess."
+                  },
+                  {
+                    "id": 1,
+                    "text": "” said Dumbledore."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“We may never know.”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall pulled out a lace handkerchief and dabbed at her \neyes beneath her spectacles."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Dumbledore gave a great sniff as he took a golden \nwatch from his pocket and examined it."
+                  },
+                  {
+                    "id": 2,
+                    "text": "It was a very odd watch."
+                  },
+                  {
+                    "id": 3,
+                    "text": "It had twelve \nhands but no numbers;"
+                  },
+                  {
+                    "id": 4,
+                    "text": "instead, little planets were moving around the edge."
+                  },
+                  {
+                    "id": 5,
+                    "text": "It \nmust have made sense to Dumbledore, though, because he put it back in his \npocket and said, “Hagrid's late."
+                  },
+                  {
+                    "id": 6,
+                    "text": "I suppose it was he who told you I'd be here, by \nthe way?”"
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yes,” said Professor McGonagall."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“And I don't suppose you're going to \ntell me why you're here, of all places?”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I've come to bring Harry to his aunt and uncle."
+                  },
+                  {
+                    "id": 1,
+                    "text": "They're the only family \nhe has left now."
+                  },
+                  {
+                    "id": 2,
+                    "text": "” \n      “You don't mean – you can't mean the people who live here?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "” cried \nProfessor McGonagall, jumping to her feet and pointing at number four."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Dumbledore —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "you can't."
+                  },
+                  {
+                    "id": 6,
+                    "text": "I've been watching them all day."
+                  },
+                  {
+                    "id": 7,
+                    "text": "You couldn't find \ntwo people who are less like us."
+                  },
+                  {
+                    "id": 8,
+                    "text": "And they've got this son —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "I saw him kicking \nhis mother all the way up the street, screaming for sweets."
+                  },
+                  {
+                    "id": 10,
+                    "text": "Harry Potter come \nand live here!” \n      “It's the best place for him,” said Dumbledore firmly."
+                  },
+                  {
+                    "id": 11,
+                    "text": "“His aunt and \nuncle will be able to explain everything to him when he's older."
+                  },
+                  {
+                    "id": 12,
+                    "text": "I've written \nthem a letter.”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“A letter?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” repeated Professor McGonagall faintly, sitting back down on \nthe wall."
+                  },
+                  {
+                    "id": 2,
+                    "text": "“Really, Dumbledore, you think you can explain all this in a letter?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "These people will never understand him! He'll be famous —"
+                  },
+                  {
+                    "id": 4,
+                    "text": "a legend —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "I \nwouldn't be surprised if today was known as Harry Potter day in the future —"
+                  },
+                  {
+                    "id": 6,
+                    "text": "there will be books written about Harry —"
+                  },
+                  {
+                    "id": 7,
+                    "text": "every child in our world will know \nhis name!” \n     “Exactly."
+                  },
+                  {
+                    "id": 8,
+                    "text": "” said Dumbledore, looking very seriously over the top of his \nhalf-moon glasses."
+                  },
+                  {
+                    "id": 9,
+                    "text": "“It would be enough to turn any boy's head."
+                  },
+                  {
+                    "id": 10,
+                    "text": "Famous before \nhe can walk and talk! Famous for something he won't even remember! Can you"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 8,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "see how much better off he'll be, growing up away from all that until he's ready \nto take it?”"
+                  }
+                ]
+              },
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Professor McGonagall opened her mouth, changed her mind, swallowed, \nand then said, “Yes —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "yes, you're right, of course."
+                  },
+                  {
+                    "id": 2,
+                    "text": "But how is the boy getting \nhere, Dumbledore?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "” She eyed his cloak suddenly as though she thought he might \nbe hiding Harry underneath it."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Hagrid's bringing him.”"
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“You think it —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "wise —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "to trust Hagrid with something as important as \nthis?”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“I would trust Hagrid with my life,” said Dumbledore."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“I'm not saying his heart isn't in the right place,” said Professor \nMcGonagall grudgingly, “but you can't pretend he's not careless."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He does tend \nto —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "what was that?"
+                  },
+                  {
+                    "id": 4,
+                    "text": "” \n      A low rumbling sound had broken the silence around them."
+                  },
+                  {
+                    "id": 5,
+                    "text": "It grew \nsteadily louder as they looked up and down the street for some sign of a \nheadlight;"
+                  },
+                  {
+                    "id": 6,
+                    "text": "it swelled to a roar as they both looked up at the sky —"
+                  },
+                  {
+                    "id": 7,
+                    "text": "and a huge \nmotorcycle fell out of the air and landed on the road in front of them."
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "If the motorcycle was huge, it was nothing to the man sitting astride it."
+                  },
+                  {
+                    "id": 1,
+                    "text": "He was almost twice as tall as a normal man and at least five times as wide."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He \nlooked simply too big to be allowed, and so wild —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "long tangles of bushy black \nhair and beard hid most of his face,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "he had hands the size of trash can lids, and \nhis feet in their leather boots were like baby dolphins."
+                  },
+                  {
+                    "id": 5,
+                    "text": "In his vast, muscular arms \nhe was holding a bundle of blankets."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Hagrid,” said Dumbledore, sounding relieved."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“At last."
+                  },
+                  {
+                    "id": 2,
+                    "text": "And where did \nyou get that motorcycle?"
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n      “Borrowed it, Professor Dumbledore, sir,” said the giant, climbing \ncarefully off the motorcycle as he spoke."
+                  },
+                  {
+                    "id": 4,
+                    "text": "“Young Sirius Black lent it to me."
+                  },
+                  {
+                    "id": 5,
+                    "text": "I've \ngot him, sir.”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No problems, were there?”"
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“No, sir —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "house was almost destroyed, but I got him out all right before \nthe Muggles started swarmin' around."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He fell asleep as we was flyin' over \nBristol.”"
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore and Professor McGonagall bent forward over the bundle of \nblankets."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Inside, just visible, was a baby boy, fast asleep."
+                  },
+                  {
+                    "id": 2,
+                    "text": "Under a tuft of jet- \nblack hair over his forehead they could see a curiously shaped cut, like a bolt of \nlightning."
+                  }
+                ]
+              },
+              {
+                "id": 10,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Is that where —?"
+                  },
+                  {
+                    "id": 1,
+                    "text": "” whispered Professor McGonagall."
+                  }
+                ]
+              },
+              {
+                "id": 11,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yes,” said Dumbledore."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“He'll have that scar forever.”"
+                  }
+                ]
+              },
+              {
+                "id": 12,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Couldn't you do something about it, Dumbledore?”"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 9,
+            "paragraphs": [
+              {
+                "id": 1,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Even if I could, I wouldn't."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Scars can come in handy."
+                  },
+                  {
+                    "id": 2,
+                    "text": "I have one myself \nabove my left knee that is a perfect map of the London Underground."
+                  },
+                  {
+                    "id": 3,
+                    "text": "Well —"
+                  },
+                  {
+                    "id": 4,
+                    "text": "give him here, Hagrid —"
+                  },
+                  {
+                    "id": 5,
+                    "text": "we'd better get this over with."
+                  },
+                  {
+                    "id": 6,
+                    "text": "” \n      Dumbledore took Harry in his arms and turned toward the Dursleys' \nhouse."
+                  }
+                ]
+              },
+              {
+                "id": 2,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Could I —"
+                  },
+                  {
+                    "id": 1,
+                    "text": "could I say good-bye to him, sir?"
+                  },
+                  {
+                    "id": 2,
+                    "text": "” asked Hagrid."
+                  },
+                  {
+                    "id": 3,
+                    "text": "He bent his \ngreat, shaggy head over Harry and gave him what must have been a very \nscratchy, whiskery kiss."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Then, suddenly, Hagrid let out a howl like a wounded \ndog."
+                  }
+                ]
+              },
+              {
+                "id": 3,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Shhh!” hissed Professor McGonagall, “You'll wake the Muggles!”"
+                  }
+                ]
+              },
+              {
+                "id": 4,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“S-s-sorry,” sobbed Hagrid, taking out a large, spotted handkerchief and \nburying his face in it."
+                  },
+                  {
+                    "id": 1,
+                    "text": "“But I c-c-can't stand it —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "Lily an' James dead —"
+                  },
+                  {
+                    "id": 3,
+                    "text": "an' poor \nlittle Harry off ter live with Muggles —”"
+                  }
+                ]
+              },
+              {
+                "id": 5,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yes, yes, it's all very sad, but get a grip on yourself, Hagrid, or we'll be \nfound,” Professor McGonagall whispered,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "patting Hagrid gingerly on the arm as \nDumbledore stepped over the low garden wall and walked to the front door."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He \nlaid Harry gently on the doorstep, took a letter out of his cloak,"
+                  },
+                  {
+                    "id": 3,
+                    "text": "tucked it inside \nHarry's blankets, and then came back to the other two."
+                  },
+                  {
+                    "id": 4,
+                    "text": "For a full minute the \nthree of them stood and looked at the little bundle;"
+                  },
+                  {
+                    "id": 5,
+                    "text": "Hagrid's shoulders shook, \nProfessor McGonagall blinked furiously, and the twinkling light that usually \nshone from Dumbledore's eyes seemed to have gone out."
+                  }
+                ]
+              },
+              {
+                "id": 6,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Well,” said Dumbledore finally, “that's that."
+                  },
+                  {
+                    "id": 1,
+                    "text": "We've no business staying \nhere."
+                  },
+                  {
+                    "id": 2,
+                    "text": "We may as well go and join the celebrations.”"
+                  }
+                ]
+              },
+              {
+                "id": 7,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "“Yeah,” said Hagrid in a very muffled voice, “I'll be takin' Sirius his bike \nback."
+                  },
+                  {
+                    "id": 1,
+                    "text": "G'night, Professor McGonagall —"
+                  },
+                  {
+                    "id": 2,
+                    "text": "Professor Dumbledore, sir."
+                  },
+                  {
+                    "id": 3,
+                    "text": "” \n      Wiping his streaming eyes on his jacket sleeve,"
+                  },
+                  {
+                    "id": 4,
+                    "text": "Hagrid swung himself \nonto the motorcycle and kicked the engine into life;"
+                  },
+                  {
+                    "id": 5,
+                    "text": "with a roar it rose into the \nair and off into the night."
+                  },
+                  {
+                    "id": 6,
+                    "text": "“I shall see you soon, I expect, Professor McGonagall,” said \nDumbledore, nodding to her."
+                  },
+                  {
+                    "id": 7,
+                    "text": "Professor McGonagall blew her nose in reply."
+                  }
+                ]
+              },
+              {
+                "id": 8,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "Dumbledore turned and walked back down the street."
+                  },
+                  {
+                    "id": 1,
+                    "text": "On the corner he \nstopped and took out the silver Put-Outer."
+                  },
+                  {
+                    "id": 2,
+                    "text": "He clicked it once, and twelve balls of \nlight sped back to their street lamps so that Privet"
+                  },
+                  {
+                    "id": 3,
+                    "text": "Drive glowed suddenly orange \nand he could make out a tabby cat slinking around the corner at the other end of \nthe street."
+                  },
+                  {
+                    "id": 4,
+                    "text": "He could just see the bundle of blankets on the step of number four."
+                  },
+                  {
+                    "id": 5,
+                    "text": "“Good luck, Harry,” he murmured."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He turned on his heel and with a \nswish of his cloak, he was gone."
+                  }
+                ]
+              },
+              {
+                "id": 9,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "A breeze ruffled the neat hedges of Privet Drive,"
+                  },
+                  {
+                    "id": 1,
+                    "text": "which lay silent and tidy \nunder the inky sky,"
+                  },
+                  {
+                    "id": 2,
+                    "text": "the very last place you would expect astonishing things to"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "number": 10,
+            "paragraphs": [
+              {
+                "id": 0,
+                "sentences": [
+                  {
+                    "id": 0,
+                    "text": "happen."
+                  },
+                  {
+                    "id": 1,
+                    "text": "Harry Potter rolled over inside his blankets without waking up."
+                  },
+                  {
+                    "id": 2,
+                    "text": "One \nsmall hand closed on the letter beside him and he slept on, not knowing he was \nspecial,"
+                  },
+                  {
+                    "id": 3,
+                    "text": "not knowing he was famous, not knowing he would be woken in a few \nhours' time by Mrs."
+                  },
+                  {
+                    "id": 4,
+                    "text": "Dursley's scream as she opened the front door to put out the \nmilk bottles, nor that he would spend the next"
+                  },
+                  {
+                    "id": 5,
+                    "text": "few weeks being prodded and \npinched by his cousin Dudley...."
+                  },
+                  {
+                    "id": 6,
+                    "text": "He couldn't know that at this very moment,"
+                  },
+                  {
+                    "id": 7,
+                    "text": "\npeople meeting in secret all over the country were holding up their glasses and \nsaying in hushed voices:"
+                  },
+                  {
+                    "id": 8,
+                    "text": "“To Harry Potter —"
+                  },
+                  {
+                    "id": 9,
+                    "text": "the boy who lived!”"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

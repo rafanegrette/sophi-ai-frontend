@@ -93,7 +93,7 @@ export function Preview () {
                         <div className="previewBook">
                             <Grid2 container spacing={2}>
                                 <Grid2 xs={12}>
-                                    <div className="bookTitle">
+                                    <div className="previewBookTitle">
                                         {currentBook.title}
                                     </div>
                                     
@@ -128,16 +128,16 @@ export function Preview () {
                                         }
                                     </List>
                                 </Grid2>
-                                <Grid2 xs={10} className="currentPage">
+                                <Grid2 xs={10} className="previewCurrentPage">
                                     
                                     <Grid2 xs={12}>
                                         { 
                                             currentBook.chapters[statePreviewBook.currentChapterNo].pages[statePreviewBook.currentPageNo - 1].paragraphs.map((paragraph) => (
-                                                <div className="paragraph" key={paragraph.id}>
+                                                <div className="previewParagraph" key={paragraph.id}>
                                                     {
                                                         paragraph.sentences.map((sentence) => (
-                                                            <div className="borderSentence" key={sentence.id+"1"}>
-                                                                <span className="sentence" key={sentence.id}>
+                                                            <div className="previewBorderSentence" key={sentence.id+"1"}>
+                                                                <span className="previewSentence" key={sentence.id}>
                                                                     {sentence.text}&nbsp;
                                                                 </span>
                                                             </div>
@@ -152,7 +152,7 @@ export function Preview () {
                                 </Grid2>
                                 <Grid2 xs={2}>
                                 </Grid2>
-                                <Grid2 xs={10} className="bookPaginator">
+                                <Grid2 xs={10} className="previewBookPaginator">
 
                                        
                                     <IconButton
