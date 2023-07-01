@@ -7,7 +7,8 @@ import { apiSlice} from '../features/dogs/dogs-api-slice';
 import { formApiSlice } from "../features/upload/form/form-api-slice";
 import statePreviewBookReducer from "../features/previewBook/state-preview-book-slice";
 import { readingApiSlice } from "../features/reading/reading-api-slice";
- 
+import { signedUrlsApiSlice } from "../features/reading/signedUrls/signed-urls-api-slice";
+
 export const store = configureStore({
     reducer: { 
         counter: counterReducer,
@@ -17,13 +18,16 @@ export const store = configureStore({
         stateBook: stateBookReducer,
         [apiSlice.reducerPath]: apiSlice.reducer,
         [formApiSlice.reducerPath] : formApiSlice.reducer,
-        [readingApiSlice.reducerPath] : readingApiSlice.reducer
+        [readingApiSlice.reducerPath] : readingApiSlice.reducer,
+        [signedUrlsApiSlice.reducerPath ] : signedUrlsApiSlice.reducer
     },
     middleware:  (getDefaultMiddleware) => {
         return getDefaultMiddleware({
             serializableCheck: false
         }).concat(apiSlice.middleware)
-        .concat(formApiSlice.middleware);
+        .concat(formApiSlice.middleware)
+        .concat(readingApiSlice.middleware)
+        .concat(signedUrlsApiSlice.middleware);
     }
 });
 

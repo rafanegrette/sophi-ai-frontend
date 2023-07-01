@@ -6,8 +6,10 @@ import { useState, useEffect } from 'react';
 import { Book } from "../../models/Book";
 import { useParams  } from 'react-router-dom';
 import { useFetchBookQuery } from '../reading/reading-api-slice';
+import { useFetchSentenceAudioMapQuery, SentenceAudioUrl } from './signedUrls/signed-urls-api-slice';
 import VolumeUpTwoToneIcon from '@mui/icons-material/VolumeUpTwoTone';
 import KeyboardVoiceTwoToneIcon from '@mui/icons-material/KeyboardVoiceTwoTone';
+import StopCircleIcon from '@mui/icons-material/StopCircle';
 
 import bookDummyData from './harry-1.json';
 import './Reading.scss';
@@ -24,13 +26,21 @@ export function Reading() {
 
     const dispatch = useAppDispatch();
     const { bookId = "-"} = useParams();
+    const [ currentAudioUrl, setCurrentAudioUrl ] = useState("");
     const [ skip, setSkip] = useState(true);
     const [ textSelected, setTextSelected] = useState("");
     const [ popOverAnchorEl, setPopOverAnchorEl] = useState<HTMLSpanElement | null>(null);
-    const { data = initialState, isFetching} = useFetchBookQuery(bookId, {skip});
-    const book: Book =  data;
+    const { data = initialState, isFetching: isFetchingBook, 
+                isUninitialized: isUninitializedBook } = useFetchBookQuery(bookId, {skip});
     const stateBook = useAppSelector((state) => state.stateBook);
+    const { data: audioUrls = new Map(), isFetching: isFetchingAudioUrls } = 
+        useFetchSentenceAudioMapQuery(data.id + "/" + data.chapters[0].id + "/" + stateBook.currentPageNo + "/", { skip: isFetchingBook || isUninitializedBook});
 
+    const [ recordedChunks, setRecordedChunks ] = useState<any[]>([]);
+    const [ mediaRecorder, setMediaRecorder ] = useState<any>(null);
+    const [ recording, setRecording ] = useState<Boolean>(false);
+    const book: Book =  data;
+    
     const handleSelectChapterClick = (
         event: React.MouseEvent<HTMLDivElement, MouseEvent>,
         index: number
@@ -56,10 +66,13 @@ export function Reading() {
         setTextSelected(event.currentTarget.innerText);
     }*/
 
-    const handleClickSentence = (event: React.MouseEvent<HTMLSpanElement>, text: string) => {
-        console.log(text);
+    const handleClickSentence = (event: React.MouseEvent<HTMLSpanElement>, idSentence: string) => {
+        console.log(idSentence);
         setPopOverAnchorEl(event.currentTarget);
-        setTextSelected(text);
+        setTextSelected(idSentence);
+        const signedUrl = audioUrls.get(idSentence)?.audioUrl || "not url";
+        setCurrentAudioUrl(signedUrl);
+        console.log(signedUrl);
     }
 
     const popOverHandleClose = () => {
@@ -69,10 +82,69 @@ export function Reading() {
     const popOverIsOpen = Boolean(popOverAnchorEl);
 
     const playSelectedSentence = (pathSentence: string) => {
-        /*let audio = new Audio();
-        audio.src = "https://sophi-books.s3.amazonaws.com/Harry-1/1/2/1/0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230626T210213Z&X-Amz-SignedHeaders=host&X-Amz-Expires=14400&X-Amz-Credential=AKIA3MMJWPEOEZZ22OX4%2F20230626%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e551bc9628e2312f6e7c70727d17815c0d21829ae11a9789e3890875859303ef";
+        let audio = new Audio();
+        audio.src = currentAudioUrl;
         audio.load();
-        audio.play();*/
+        audio.play();
+    }
+
+    const startStopMicrophone = () => {
+        setRecording(!recording);
+        if (!recording) {
+            startMicrophone();
+        } else {
+            stopMicrophone();
+        }
+    }
+
+    const startMicrophone = () => {
+        let mediaConstraints = {
+            video: false,
+            audio: true
+        };
+
+        navigator.mediaDevices
+                .getUserMedia(mediaConstraints)
+                .then(successCallback)
+                .catch(errorCallback);
+    }
+
+    const stopMicrophone = () => { 
+        if(recording) {
+            mediaRecorder.stop();
+        }
+    }
+
+    const successCallback = (stream : any) => {
+        var options = {
+            mimeType: 'audio/webm',
+            numberOfAudioChannels: 2,
+            sampleRate: 44100
+        };
+        setRecordedChunks([]);
+        const mediaRecorderInstance = new MediaRecorder(stream, options);
+        mediaRecorderInstance.addEventListener('dataavailable', addData);
+        mediaRecorderInstance.addEventListener('stop', stopStream);
+        mediaRecorderInstance.start();
+        setMediaRecorder(mediaRecorderInstance);
+    }
+
+    const stopStream = (e : any) => {
+        console.log("stopStream");
+        const blob = new Blob(recordedChunks, { type: "audio/ogg; codecs=opus" });
+        const userAudioUrl = URL.createObjectURL(blob);
+        setCurrentAudioUrl(userAudioUrl);
+        console.log(userAudioUrl);
+        console.log(blob);
+    }
+
+    const addData = (e: any) => {
+        if(e.data.size > 0) 
+            recordedChunks.push(e.data);
+    };
+
+    const errorCallback = (error : any) => {
+        console.log("Big Audio Error");
     }
 
     return (
@@ -115,7 +187,7 @@ export function Reading() {
                                                             <div className="borderSentence">
                                                                 <span key={sentence.id} 
                                                                     className={ sentence.text.trim().replace(/\n/g, '') === textSelected.trim().replace(/\n/g, '') ? "selected-sentence" : "sentence"}
-                                                                    onClick={(event: React.MouseEvent<HTMLSpanElement>) => handleClickSentence(event, stateBook.currentChapterNo + '/' + stateBook.currentPageNo + '/')}>
+                                                                    onClick={(event: React.MouseEvent<HTMLSpanElement>) => handleClickSentence(event, '/' + paragraph.id + '/' + sentence.id)}>
                                                                     {sentence.text}&nbsp;
                                                                 </span>
                                                             </div>
@@ -148,8 +220,12 @@ export function Reading() {
                                                     </a>
                                                 </div>
                                                 <div className="reading-control-panel-mic">
-                                                    <a href="" className="">
-                                                        <KeyboardVoiceTwoToneIcon/>
+                                                    <a className="reading-control-panel-mic-link" onClick={() => startStopMicrophone()}>
+                                                        {recording ? (
+                                                            <StopCircleIcon/>
+                                                        ) : (
+                                                            <KeyboardVoiceTwoToneIcon/>
+                                                        ) }
                                                     </a>
                                                     {textSelected}
                                                 </div>

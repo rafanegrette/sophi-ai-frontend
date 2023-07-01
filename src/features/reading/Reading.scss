@@ -99,7 +99,14 @@ body {
     grid-template-rows: auto auto;
 
     .reading-control-panel-mic {
-        max-width: 25em
+        max-width: 25em;
+        
+        .reading-control-panel-mic-link {
+            cursor: pointer;
+            &:hover {
+                color: blue;
+            }
+        }
     }
 
     .reading-control-panel-speaker-link {

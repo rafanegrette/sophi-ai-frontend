@@ -6,6 +6,7 @@ import { SelectParagraph } from "./select-paragraph/SelectParagraph";
 import { SentenceSeparator } from "./sentence-separator/SentenceSeparator";
 import { FileName } from "./file-name/FileName";
 import { ActionButtons } from "./action-buttons/ActionButtons";
+import { SpecificCheckers } from "./specific-checkers/SpecificCheckers";
 
 export function Form() {
     return (
@@ -21,6 +22,8 @@ export function Form() {
                 <FileName/>
                 <SelectParagraph/>
                 <SentenceSeparator/>
+
+                <SpecificCheckers/>
                 <ActionButtons/>
             </Grid2>
             

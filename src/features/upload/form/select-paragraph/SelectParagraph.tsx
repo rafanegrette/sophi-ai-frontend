@@ -3,6 +3,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { SyntheticEvent, useState } from "react";
 import { useAppDispatch } from "../../../../app/hooks";
 import { setParagraphSeparator } from "../form-slice";
+
 export function SelectParagraph () {
     const dispatch = useAppDispatch();
     const [selectedIndex, setSelectedIndex] = useState("ONE");
@@ -14,9 +15,9 @@ export function SelectParagraph () {
     
     return (
         <Grid2 container xs={12}>
-        <Grid2 xs={12} sm={2} md={4} className="control-description">
-            <p>Select Paragraph Separator</p>
-        </Grid2>
+            <Grid2 xs={12} sm={2} md={4} className="control-description">
+                <p>Select Paragraph Separator</p>
+            </Grid2>
         <Grid2 xs={12} sm={8}>
             <div className="list-paragraph-separator">
                 <List>

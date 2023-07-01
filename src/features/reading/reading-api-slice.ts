@@ -7,7 +7,7 @@ interface Title {
 }
 
 export const readingApiSlice = createApi({
-    reducerPath: 'api',
+    reducerPath: 'apiBooks',
     baseQuery: fetchBaseQuery({
         baseUrl: 'http://localhost:8080/api/books',
         prepareHeaders(headers) {

@@ -3,7 +3,7 @@ import { Book } from '../../../models/Book';
 import { FormState } from './form-slice';
 
 export const formApiSlice = createApi({
-    reducerPath: 'api',
+    reducerPath: 'apiUploadForm',
     baseQuery: fetchBaseQuery({
         baseUrl: 'http://localhost:8080/api/books',
         prepareHeaders(headers) {

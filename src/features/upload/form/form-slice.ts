@@ -6,14 +6,16 @@ export interface FormState {
     paragraphSeparator: String;
     chapterTitleType: String;
     firstPgeOffset: number;
+    fixTitleHP1: boolean;
 }
 
 const initialState : FormState = {
     file: new Blob([JSON.stringify({})]),
     bookName: "",
-    paragraphSeparator: "",
+    paragraphSeparator: "ONE",
     chapterTitleType: "",
-    firstPgeOffset: 0
+    firstPgeOffset: 0,
+    fixTitleHP1: false
 }
 
 const formSlice = createSlice({
@@ -35,6 +37,9 @@ const formSlice = createSlice({
         setFirstPageOffset(state, action) {
             state.firstPgeOffset = action.payload;
         },
+        setFixTitleHP1(state, action) {
+            state.fixTitleHP1 = action.payload;
+        },
         resetForm(state) {
             state.file = new Blob([JSON.stringify({})]);
             state.bookName = "";
@@ -45,5 +50,11 @@ const formSlice = createSlice({
     }
 });
 
-export const {attach, setName, setParagraphSeparator, setChapterTitleType, setFirstPageOffset, resetForm} = formSlice.actions;
+export const {attach, 
+    setName, 
+    setParagraphSeparator, 
+    setChapterTitleType, 
+    setFirstPageOffset, 
+    resetForm,
+    setFixTitleHP1} = formSlice.actions;
 export default formSlice.reducer;
