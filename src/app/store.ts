@@ -8,6 +8,7 @@ import { formApiSlice } from "../features/upload/form/form-api-slice";
 import statePreviewBookReducer from "../features/previewBook/state-preview-book-slice";
 import { readingApiSlice } from "../features/reading/reading-api-slice";
 import { signedUrlsApiSlice } from "../features/reading/signedUrls/signed-urls-api-slice";
+import { voiceToTextApiSlice } from "../features/reading/wavtovec/voice-to-text-api-slice";
 
 export const store = configureStore({
     reducer: { 
@@ -19,7 +20,8 @@ export const store = configureStore({
         [apiSlice.reducerPath]: apiSlice.reducer,
         [formApiSlice.reducerPath] : formApiSlice.reducer,
         [readingApiSlice.reducerPath] : readingApiSlice.reducer,
-        [signedUrlsApiSlice.reducerPath ] : signedUrlsApiSlice.reducer
+        [signedUrlsApiSlice.reducerPath ] : signedUrlsApiSlice.reducer,
+        [voiceToTextApiSlice.reducerPath] : voiceToTextApiSlice.reducer
     },
     middleware:  (getDefaultMiddleware) => {
         return getDefaultMiddleware({
@@ -27,7 +29,8 @@ export const store = configureStore({
         }).concat(apiSlice.middleware)
         .concat(formApiSlice.middleware)
         .concat(readingApiSlice.middleware)
-        .concat(signedUrlsApiSlice.middleware);
+        .concat(signedUrlsApiSlice.middleware)
+        .concat(voiceToTextApiSlice.middleware);
     }
 });
 

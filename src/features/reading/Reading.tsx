@@ -7,6 +7,7 @@ import { Book } from "../../models/Book";
 import { useParams  } from 'react-router-dom';
 import { useFetchBookQuery } from '../reading/reading-api-slice';
 import { useFetchSentenceAudioMapQuery, SentenceAudioUrl } from './signedUrls/signed-urls-api-slice';
+import { useTranscriptedMutation } from './wavtovec/voice-to-text-api-slice';
 import VolumeUpTwoToneIcon from '@mui/icons-material/VolumeUpTwoTone';
 import KeyboardVoiceTwoToneIcon from '@mui/icons-material/KeyboardVoiceTwoTone';
 import StopCircleIcon from '@mui/icons-material/StopCircle';
@@ -27,8 +28,10 @@ export function Reading() {
     const dispatch = useAppDispatch();
     const { bookId = "-"} = useParams();
     const [ currentAudioUrl, setCurrentAudioUrl ] = useState("");
+    const [ voiceBlob, setVoiceBlog ] = useState<Blob | null>(null);
     const [ skip, setSkip] = useState(true);
     const [ textSelected, setTextSelected] = useState("");
+    const [ transcriptedText, setTranscriptedText] = useState("");
     const [ popOverAnchorEl, setPopOverAnchorEl] = useState<HTMLSpanElement | null>(null);
     const { data = initialState, isFetching: isFetchingBook, 
                 isUninitialized: isUninitializedBook } = useFetchBookQuery(bookId, {skip});
@@ -36,9 +39,13 @@ export function Reading() {
     const { data: audioUrls = new Map(), isFetching: isFetchingAudioUrls } = 
         useFetchSentenceAudioMapQuery(data.id + "/" + data.chapters[0].id + "/" + stateBook.currentPageNo + "/", { skip: isFetchingBook || isUninitializedBook});
 
+    const [ transcript ] = useTranscriptedMutation();
+
     const [ recordedChunks, setRecordedChunks ] = useState<any[]>([]);
     const [ mediaRecorder, setMediaRecorder ] = useState<any>(null);
     const [ recording, setRecording ] = useState<Boolean>(false);
+    const [ stream, setStream ] = useState<MediaStream | null>(null);
+
     const book: Book =  data;
     
     const handleSelectChapterClick = (
@@ -110,17 +117,22 @@ export function Reading() {
     }
 
     const stopMicrophone = () => { 
-        if(recording) {
+        if (recording) {
             mediaRecorder.stop();
+        }
+
+        if (stream) {
+            stream.getTracks().forEach(track => track.stop());
         }
     }
 
     const successCallback = (stream : any) => {
         var options = {
             mimeType: 'audio/webm',
-            numberOfAudioChannels: 2,
-            sampleRate: 44100
+            numberOfAudioChannels: 1,
+            sampleRate: 16000
         };
+        setStream(stream);
         setRecordedChunks([]);
         const mediaRecorderInstance = new MediaRecorder(stream, options);
         mediaRecorderInstance.addEventListener('dataavailable', addData);
@@ -131,9 +143,12 @@ export function Reading() {
 
     const stopStream = (e : any) => {
         console.log("stopStream");
-        const blob = new Blob(recordedChunks, { type: "audio/ogg; codecs=opus" });
+        const blob = new Blob(recordedChunks, { type: "audio/webm; codecs=opus" });
         const userAudioUrl = URL.createObjectURL(blob);
         setCurrentAudioUrl(userAudioUrl);
+        transcript(blob)
+            .unwrap()
+            .then(resultText => setTranscriptedText(resultText));
         console.log(userAudioUrl);
         console.log(blob);
     }
@@ -217,7 +232,7 @@ export function Reading() {
                                                 <div className="reading-control-panel-speaker">
                                                     <a className="reading-control-panel-speaker-link" onClick={() => playSelectedSentence("hello")}>
                                                         <VolumeUpTwoToneIcon/>
-                                                    </a>
+                                                    </a>useTranscriptedMutation
                                                 </div>
                                                 <div className="reading-control-panel-mic">
                                                     <a className="reading-control-panel-mic-link" onClick={() => startStopMicrophone()}>
