@@ -91,7 +91,8 @@ body {
 }
 
 .selected-sentence {
-    color: #777;
+    color: #444;
+    background-color: #9999;
 }
 
 .reading-control-panel {
@@ -100,7 +101,9 @@ body {
 
     .reading-control-panel-mic {
         max-width: 25em;
-        
+        display: flex;
+        flex-direction: row;
+
         .reading-control-panel-mic-link {
             cursor: pointer;
             &:hover {
@@ -115,4 +118,5 @@ body {
             color: blue;
         }
     }
+
 }

@@ -1,16 +1,19 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
+interface Transcript {
+    text : string;
+}
 export const voiceToTextApiSlice = createApi({
     reducerPath: 'apiVoiceToText',
     baseQuery: fetchBaseQuery({
         baseUrl: 'http://localhost:8080/api/',
         prepareHeaders(headers) {
-            headers.set('Accept', 'text/plain');
+            headers.set('Accept', 'application/json');
         }
     }),
     endpoints(builder) {
         return {
-            transcripted: builder.mutation<string, Blob>({
+            transcripted: builder.mutation<Transcript, Blob>({
                 query: (voiceBlob : Blob) => {
                     const request = new FormData();
                     request.append('file', voiceBlob);

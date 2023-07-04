@@ -28,9 +28,10 @@ export function Reading() {
     const dispatch = useAppDispatch();
     const { bookId = "-"} = useParams();
     const [ currentAudioUrl, setCurrentAudioUrl ] = useState("");
+    const [ userMicAudioUrl, setUserMicAudioUrl ] = useState("");
     const [ voiceBlob, setVoiceBlog ] = useState<Blob | null>(null);
     const [ skip, setSkip] = useState(true);
-    const [ textSelected, setTextSelected] = useState("");
+    const [ textSelected, setTextSelected] = useState<string | null>("");
     const [ transcriptedText, setTranscriptedText] = useState("");
     const [ popOverAnchorEl, setPopOverAnchorEl] = useState<HTMLSpanElement | null>(null);
     const { data = initialState, isFetching: isFetchingBook, 
@@ -68,15 +69,10 @@ export function Reading() {
         }
     }, [bookId]);
 
-    /*const handleClickSentence = (event: React.MouseEvent<HTMLSpanElement>) => {
-        setPopOverAnchorEl(event.currentTarget);
-        setTextSelected(event.currentTarget.innerText);
-    }*/
-
     const handleClickSentence = (event: React.MouseEvent<HTMLSpanElement>, idSentence: string) => {
         console.log(idSentence);
         setPopOverAnchorEl(event.currentTarget);
-        setTextSelected(idSentence);
+        setTextSelected(event.currentTarget.textContent);
         const signedUrl = audioUrls.get(idSentence)?.audioUrl || "not url";
         setCurrentAudioUrl(signedUrl);
         console.log(signedUrl);
@@ -91,6 +87,13 @@ export function Reading() {
     const playSelectedSentence = (pathSentence: string) => {
         let audio = new Audio();
         audio.src = currentAudioUrl;
+        audio.load();
+        audio.play();
+    }
+
+    const playSelf = () => {
+        let audio = new Audio();
+        audio.src = userMicAudioUrl;
         audio.load();
         audio.play();
     }
@@ -145,10 +148,10 @@ export function Reading() {
         console.log("stopStream");
         const blob = new Blob(recordedChunks, { type: "audio/webm; codecs=opus" });
         const userAudioUrl = URL.createObjectURL(blob);
-        setCurrentAudioUrl(userAudioUrl);
+        setUserMicAudioUrl(userAudioUrl);
         transcript(blob)
             .unwrap()
-            .then(resultText => setTranscriptedText(resultText));
+            .then(resultText => setTranscriptedText(resultText.text));
         console.log(userAudioUrl);
         console.log(blob);
     }
@@ -171,7 +174,7 @@ export function Reading() {
                             <Grid2 container spacing={2}>
                                 <Grid2 xs={12}>
                                     <div className="bookTitle">
-                                        {book.title} {textSelected}
+                                        {book.title}
                                     </div>
                                 </Grid2>
                                 <Grid2 xs={2}>
@@ -201,7 +204,7 @@ export function Reading() {
                                                         paragraph.sentences.map((sentence) => (
                                                             <div className="borderSentence">
                                                                 <span key={sentence.id} 
-                                                                    className={ sentence.text.trim().replace(/\n/g, '') === textSelected.trim().replace(/\n/g, '') ? "selected-sentence" : "sentence"}
+                                                                    className={ textSelected !== null && sentence.text.trim().replace(/\n/g, '') === textSelected.trim().replace(/\n/g, '') ? "selected-sentence" : "sentence"}
                                                                     onClick={(event: React.MouseEvent<HTMLSpanElement>) => handleClickSentence(event, '/' + paragraph.id + '/' + sentence.id)}>
                                                                     {sentence.text}&nbsp;
                                                                 </span>
@@ -232,7 +235,7 @@ export function Reading() {
                                                 <div className="reading-control-panel-speaker">
                                                     <a className="reading-control-panel-speaker-link" onClick={() => playSelectedSentence("hello")}>
                                                         <VolumeUpTwoToneIcon/>
-                                                    </a>useTranscriptedMutation
+                                                    </a>
                                                 </div>
                                                 <div className="reading-control-panel-mic">
                                                     <a className="reading-control-panel-mic-link" onClick={() => startStopMicrophone()}>
@@ -242,7 +245,18 @@ export function Reading() {
                                                             <KeyboardVoiceTwoToneIcon/>
                                                         ) }
                                                     </a>
-                                                    {textSelected}
+                                                    {transcriptedText ?  
+                                                        (
+                                                            <div>
+                                                                <a className="reading-control-panel-speaker-link" onClick={() => playSelf()}>
+                                                                    <VolumeUpTwoToneIcon/>
+                                                                </a>
+                                                                {transcriptedText}
+                                                            </div>
+                                                        )
+                                                        :
+                                                        (<div></div>)
+                                                    }
                                                 </div>
                                             </div>
                                         </Popover>
