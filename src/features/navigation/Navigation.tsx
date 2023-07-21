@@ -49,7 +49,9 @@ export function Navigation() {
                     <Link to="upload">
                         <MenuItem>Upload Content</MenuItem>
                     </Link>
-                    <MenuItem>Admin Content</MenuItem>
+                    <Link to={"contentadmin"}>
+                        <MenuItem>Admin Content</MenuItem>
+                    </Link>
                 </Menu>
             </div>
             <div id="content">

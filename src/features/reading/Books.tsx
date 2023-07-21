@@ -5,7 +5,7 @@ import { useFetchTitlesQuery } from "./reading-api-slice";
 
 export function Books() {
 
-    const { data = [], isFetching } = useFetchTitlesQuery();
+    const { data = [], isFetching } = useFetchTitlesQuery(true);
 
     return (
         <div className="titles-framework">
@@ -15,7 +15,7 @@ export function Books() {
                 <List>
                     {
                         data.map((title) => (
-                            <ListItem >
+                            <ListItem key={title.id}>
                                 <Link to={"../books/" + title.id} key={title.id}>
                                     <ListItemText primary={title.title} key={title.id}/>
                                 </Link>

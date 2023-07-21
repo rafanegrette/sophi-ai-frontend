@@ -15,6 +15,7 @@ import { Home } from "./features/home/Home";
 import { Reading } from "./features/reading/Reading";
 import { Upload } from "./features/upload/Upload";
 import { Books } from "./features/reading/Books";
+import { Contents } from "./features/contentAdmin/Contents";
 
 const navegator = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const navegator = createBrowserRouter([
       {
         path: "books/:bookId",
         element: <Reading/>
+      },
+      {
+        path: "contentadmin",
+        element: <Contents/>
       }
     ]
   }

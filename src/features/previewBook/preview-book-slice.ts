@@ -4,6 +4,7 @@ import { ContentIndex } from '../../models/ContentIndex';
 import { PreviewBookState } from '../../models/PreviewBookState';
 
 const initialState: Book = {
+    id: 'dfsdf',
     title: '',
     contentTable: [
         {
@@ -13,6 +14,7 @@ const initialState: Book = {
     ],
     chapters: [
         {
+            id: 1,
             title: 'Chapter holder',
             pages: [
                 {

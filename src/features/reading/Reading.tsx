@@ -29,7 +29,6 @@ export function Reading() {
     const { bookId = "-"} = useParams();
     const [ currentAudioUrl, setCurrentAudioUrl ] = useState("");
     const [ userMicAudioUrl, setUserMicAudioUrl ] = useState("");
-    const [ voiceBlob, setVoiceBlog ] = useState<Blob | null>(null);
     const [ skip, setSkip] = useState(true);
     const [ textSelected, setTextSelected] = useState<string | null>("");
     const [ transcriptedText, setTranscriptedText] = useState("");
@@ -266,7 +265,10 @@ export function Reading() {
                                 </Grid2>
                                 <Grid2 xs={10} className="bookPaginator">
                                     <div >
-                                        <Pagination count={book.chapters[stateBook.currentChapterNo].pages.length} page={stateBook.currentPageNo} onChange={handlePageChange}/>
+                                        <Pagination count={book.chapters[stateBook.currentChapterNo].pages.length} 
+                                                    siblingCount={book.chapters[stateBook.currentChapterNo].pages.length}
+                                                    page={stateBook.currentPageNo} 
+                                                    onChange={handlePageChange}/>
                                     </div>
                                 </Grid2>
                             </Grid2>
