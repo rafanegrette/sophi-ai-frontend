@@ -14,9 +14,9 @@ export const formApiSlice = createApi({
         return {
             uploadPreview: builder.mutation<Book, FormState>({
                 query: (form: FormState) => {
-                    const { bookName, paragraphSeparator, file} = form;
-                    const requestBody = new FormData();
-                    requestBody.append('file', file);
+                    //const { bookName, paragraphSeparator, file} = form;
+                    //const requestBody = new FormData();
+                    //requestBody.append('file', file);
                     //requestBody.append('bookName', bookName);
                     return {
                         url: '/preview',
