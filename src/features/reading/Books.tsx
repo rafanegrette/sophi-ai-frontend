@@ -1,4 +1,5 @@
-import { Box, List, ListItem, ListItemText } from "@mui/material";
+import { Avatar, Box, List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
+import BookIcon from '@mui/icons-material/Book';
 import { Link } from 'react-router-dom';
 import { useFetchTitlesQuery } from "./reading-api-slice";
 
@@ -16,8 +17,16 @@ export function Books() {
                     {
                         data.map((title) => (
                             <ListItem key={title.id}>
+                                <ListItemAvatar>
+                                    <Avatar>
+                                        <BookIcon/>
+                                    </Avatar>
+                                </ListItemAvatar>
                                 <Link to={"../books/" + title.id} key={title.id}>
-                                    <ListItemText primary={title.title} key={title.id}/>
+                                    <ListItemText 
+                                        primary={title.title} 
+                                        key={title.id}
+                                        secondary={title.label}/>
                                 </Link>
                             </ListItem>
                         ))

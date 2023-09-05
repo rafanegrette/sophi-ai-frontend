@@ -35,7 +35,8 @@ export function Preview () {
         event: React.MouseEvent<HTMLDivElement, MouseEvent>,
         index: number
     ) => {
-        if (index < currentBook.chapters.length -1) {
+        if (index < currentBook.chapters.length) {
+            console.log('Chapter index: ' + index);
             dispatch(setChapterNo(index));
             dispatch(setPageNo(1));
         }

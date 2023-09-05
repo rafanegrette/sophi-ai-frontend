@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export interface FormState {
     file: Blob;
-    bookName: String;
+    bookLabel: String;
     paragraphSeparator: String;
     chapterTitleType: String;
     firstPgeOffset: number;
@@ -11,7 +11,7 @@ export interface FormState {
 
 const initialState : FormState = {
     file: new Blob([JSON.stringify({})]),
-    bookName: "",
+    bookLabel: "",
     paragraphSeparator: "ONE",
     chapterTitleType: "",
     firstPgeOffset: 0,
@@ -25,8 +25,8 @@ const formSlice = createSlice({
         attach(state, action) {
             state.file = action.payload;
         },
-        setName(state, action) {
-            state.bookName = action.payload;
+        setLabel(state, action) {
+            state.bookLabel = action.payload;
         },
         setParagraphSeparator(state, action) {
             state.paragraphSeparator = action.payload;
@@ -42,7 +42,7 @@ const formSlice = createSlice({
         },
         resetForm(state) {
             state.file = new Blob([JSON.stringify({})]);
-            state.bookName = "";
+            state.bookLabel = "";
             state.paragraphSeparator = "";
             state.chapterTitleType = "";
             state.firstPgeOffset = 0;
@@ -51,7 +51,7 @@ const formSlice = createSlice({
 });
 
 export const {attach, 
-    setName, 
+    setLabel, 
     setParagraphSeparator, 
     setChapterTitleType, 
     setFirstPageOffset, 

@@ -4,7 +4,7 @@ import  "./form.scss";
 import { SelectFile } from "./select-file/SelectFile";
 import { SelectParagraph } from "./select-paragraph/SelectParagraph";
 import { SentenceSeparator } from "./sentence-separator/SentenceSeparator";
-import { FileName } from "./file-name/FileName";
+import { BookLabel } from "./book-label/BookLabel";
 import { ActionButtons } from "./action-buttons/ActionButtons";
 import { SpecificCheckers } from "./specific-checkers/SpecificCheckers";
 
@@ -19,7 +19,7 @@ export function Form() {
                 </Grid2>
 
                 <SelectFile/>
-                <FileName/>
+                <BookLabel/>
                 <SelectParagraph/>
                 <SentenceSeparator/>
 

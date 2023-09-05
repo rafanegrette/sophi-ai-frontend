@@ -6,6 +6,7 @@ import { PreviewBookState } from '../../models/PreviewBookState';
 const initialState: Book = {
     id: 'dfsdf',
     title: '',
+    label: '',
     contentTable: [
         {
             index: 0,
@@ -47,12 +48,14 @@ const previewBookSlice = createSlice({
     reducers: {
         load(state, action: PayloadAction<Book>) {
             state.title = action.payload.title;
+            state.label = action.payload.label;
             state.chapters = action.payload.chapters;
             state.contentTable = action.payload.contentTable;
         },
         resetState(state) {
             console.log("debug state preview");
             state.title = initialState.title;
+            state.label = initialState.label;
             state.chapters = initialState.chapters;
             state.contentTable = initialState.contentTable;
         },

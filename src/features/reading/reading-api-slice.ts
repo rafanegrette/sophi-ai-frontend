@@ -4,6 +4,7 @@ import { Book } from '../../models/Book';
 interface Title {
     id : string;
     title : string;
+    label: string;
 }
 
 export const readingApiSlice = createApi({

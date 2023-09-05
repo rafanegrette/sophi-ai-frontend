@@ -4,6 +4,7 @@ import { ContentIndex } from './ContentIndex';
 export interface Book {
     id: String;
     title: String;
+    label: String;
     contentTable: ContentIndex[];
     chapters: Chapter[];
 }

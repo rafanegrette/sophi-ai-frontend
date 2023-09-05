@@ -32,12 +32,13 @@ export function Reading() {
     const [ skip, setSkip] = useState(true);
     const [ textSelected, setTextSelected] = useState<string | null>("");
     const [ transcriptedText, setTranscriptedText] = useState("");
+    const [ transcriptedTextSophi, setTranscriptedTextSophi ] = useState<String>("");
     const [ popOverAnchorEl, setPopOverAnchorEl] = useState<HTMLSpanElement | null>(null);
     const { data = initialState, isFetching: isFetchingBook, 
                 isUninitialized: isUninitializedBook } = useFetchBookQuery(bookId, {skip});
     const stateBook = useAppSelector((state) => state.stateBook);
     const { data: audioUrls = new Map(), isFetching: isFetchingAudioUrls } = 
-        useFetchSentenceAudioMapQuery(data.id + "/" + data.chapters[0].id + "/" + stateBook.currentPageNo + "/", { skip: isFetchingBook || isUninitializedBook});
+        useFetchSentenceAudioMapQuery(data.id + "/" + data.chapters[stateBook.currentChapterNo].id + "/" + stateBook.currentPageNo + "/", { skip: isFetchingBook || isUninitializedBook});
 
     const [ transcript ] = useTranscriptedMutation();
 
@@ -88,6 +89,16 @@ export function Reading() {
         audio.src = currentAudioUrl;
         audio.load();
         audio.play();
+/*
+        fetch(currentAudioUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                transcript(blob)
+                            .unwrap()
+                            .then(text => setTranscriptedTextSophi(text.text))
+                })
+            .catch(err => console.error("error trying to play sophi audio. {}", err));
+        */
     }
 
     const playSelf = () => {
@@ -235,6 +246,7 @@ export function Reading() {
                                                     <a className="reading-control-panel-speaker-link" onClick={() => playSelectedSentence("hello")}>
                                                         <VolumeUpTwoToneIcon/>
                                                     </a>
+                                                    { transcriptedTextSophi }
                                                 </div>
                                                 <div className="reading-control-panel-mic">
                                                     <a className="reading-control-panel-mic-link" onClick={() => startStopMicrophone()}>

@@ -41,7 +41,7 @@ export function Contents() {
                             <ListItemText 
                                 primary={book.title} 
                                 key = {book.id}
-                                secondary={book.id}/>
+                                secondary={`${book.label}, id:{${book.id}}`}/>
                         </ListItem>
                     ))
                 }
