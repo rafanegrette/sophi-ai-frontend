@@ -16,6 +16,7 @@ import { Reading } from "./features/reading/Reading";
 import { Upload } from "./features/upload/Upload";
 import { Books } from "./features/reading/Books";
 import { Contents } from "./features/contentAdmin/Contents";
+import { Chat } from "./features/chatgpt/Chat";
 
 const navegator = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const navegator = createBrowserRouter([
       {
         path: "contentadmin",
         element: <Contents/>
+      },
+      {
+        path: "chatgpt",
+        element: <Chat/>
       }
     ]
   }

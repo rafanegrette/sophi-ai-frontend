@@ -3,6 +3,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { setLabel } from "../form-slice";
 import { useAppDispatch } from "../../../../app/hooks";
 import React from "react";
+
 export function BookLabel() {
     const dispatch = useAppDispatch();
     const handleAddLabel = (e: React.ChangeEvent<HTMLInputElement>) => dispatch(setLabel(e.target.value));

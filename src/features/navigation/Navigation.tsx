@@ -36,6 +36,9 @@ export function Navigation() {
                         <Link to={"books"}>
                             <Tab label="Practice Reading"/> 
                         </Link>
+                        <Link to={"chatgpt"}>
+                            <Tab label="Chat GPT"/>
+                        </Link>
                         <Tab label="Content Management" onClick={handleClick}/>
                     </div>
                 </Tabs>
