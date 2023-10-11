@@ -8,7 +8,7 @@ export interface SentenceAudioUrl {
 export const signedUrlsApiSlice = createApi({
     reducerPath: 'apiSignedAudioUls',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8080/api/signed-urls/',
+        baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api/signed-urls/`,
         prepareHeaders(headers) {
             headers.set('Accept', 'application/json');
         }

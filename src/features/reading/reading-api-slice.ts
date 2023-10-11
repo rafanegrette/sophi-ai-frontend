@@ -10,7 +10,7 @@ interface Title {
 export const readingApiSlice = createApi({
     reducerPath: 'apiBooks',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8080/api/books',
+        baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api/books`,
         prepareHeaders(headers) {
             headers.set('Accept', 'application/json');
         }

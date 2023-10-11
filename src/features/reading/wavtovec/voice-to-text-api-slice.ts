@@ -6,7 +6,7 @@ interface Transcript {
 export const voiceToTextApiSlice = createApi({
     reducerPath: 'apiVoiceToText',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8080/api/',
+        baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api/`,
         prepareHeaders(headers) {
             headers.set('Accept', 'application/json');
         }

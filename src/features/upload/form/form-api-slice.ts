@@ -2,10 +2,11 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Book } from '../../../models/Book';
 import { FormState } from './form-slice';
 
+
 export const formApiSlice = createApi({
     reducerPath: 'apiUploadForm',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8080/api/books',
+        baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api/books`,
         prepareHeaders(headers) {
             headers.set('Accept', 'multipart/form-data, application/json');
         }
