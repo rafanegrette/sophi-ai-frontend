@@ -1,11 +1,8 @@
 version: 0.2
 phases:
   install:
-    commands:
-      #install Node 12
-      - echo installing node
-      - curl -sL https://deb.nodesource.com/setup_16.x | bash -
-      - apt-get install -y nodejs
+    runtime-versions:
+      nodejs: 16
   pre_build:
     commands:
       #install dependencies
@@ -14,13 +11,14 @@ phases:
   build:
     commands:
       #build
-      - echo building
+      - echo building started on 'date'
       - npm run build
   post_build:
     commands:
+      - aws s3 cp --recursive --acl public-read ./dist s3://${BUCKET_NAME}/
+      - aws s3 cp --acl public-read --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./dist/index.html s3://${BUCKET_NAME}/
       - aws cloudfront create-invalidation --distribution-id "${DISTRIBUTION_ID}" --paths /index.html /* /assets/*
 artifacts:
   files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist
+    - "dist/*"
+    - "dist/**/*"
