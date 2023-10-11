@@ -1,8 +1,5 @@
 version: 0.2
 phases:
-  install:
-    runtime-versions:
-      nodejs: 18
   pre_build:
     commands:
       #install dependencies
@@ -15,10 +12,9 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp --recursive --acl public-read ./dist s3://${BUCKET_NAME}/
-      - aws s3 cp --acl public-read --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./dist/index.html s3://${BUCKET_NAME}/
-      - aws cloudfront create-invalidation --distribution-id "${DISTRIBUTION_ID}" --paths /index.html /* /assets/*
+      - aws cloudfront create-invalidation --distribution-id "${DISTRIBUTION_ID}" --paths /*
 artifacts:
   files:
-    - "dist/*"
-    - "dist/**/*"
+    - "**/*"
+  discard-paths: no
+  base-directory: dist
