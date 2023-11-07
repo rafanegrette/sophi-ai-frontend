@@ -18,41 +18,55 @@ import { Books } from "./features/reading/Books";
 import { Contents } from "./features/contentAdmin/Contents";
 import { Chat } from "./features/chatgpt/Chat";
 
+const privateMenus = [
+  {
+    index: true,
+    element: <Home/>
+  },
+  {
+    path: "home",
+    element: <Home/>
+  },
+  {
+    path: "books",
+    element: <Books />,
+  },
+  {
+    path: "upload",
+    element: <Upload />,
+  },
+  {
+    path: "books/:bookId",
+    element: <Reading />,
+  },
+  {
+    path: "contentadmin",
+    element: <Contents />,
+  },
+  {
+    path: "chatgpt",
+    element: <Chat />,
+  },
+];
+
+const publicMenus = [
+  {
+    index: true,
+    element: <Home/>
+  },
+  {
+    path: "home",
+    element: <Home/>
+  }
+  
+];
+
 const navegator = createBrowserRouter([
   {
     path: "/",
     element:<Navigation />,
     errorElement: <ErrorPage/>,
-    children: [
-      {
-        index: true,
-        element: <Home/>
-      },
-      {
-        path: "home",
-        element: <Home/>
-      },
-      {
-        path: "books",
-        element: <Books/>
-      },
-      {
-        path: "upload",
-        element: <Upload/>
-      },
-      {
-        path: "books/:bookId",
-        element: <Reading/>
-      },
-      {
-        path: "contentadmin",
-        element: <Contents/>
-      },
-      {
-        path: "chatgpt",
-        element: <Chat/>
-      }
-    ]
+    children: false ? publicMenus : privateMenus
   }
 ]);
 

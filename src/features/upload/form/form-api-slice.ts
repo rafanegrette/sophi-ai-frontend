@@ -9,6 +9,14 @@ export const formApiSlice = createApi({
         baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api/books`,
         prepareHeaders(headers) {
             headers.set('Accept', 'multipart/form-data, application/json');
+        },
+        credentials: 'include',
+        fetchFn: async(url, args) => {
+            const response = await fetch(url, {...args, redirect: "manual"});
+            if(response.type === "opaqueredirect") {
+                document.location = response.url;
+            }
+            return response;
         }
     }),
     endpoints(builder) {

@@ -13,6 +13,15 @@ export const readingApiSlice = createApi({
         baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api/books`,
         prepareHeaders(headers) {
             headers.set('Accept', 'application/json');
+        },
+        redirect: 'follow',
+        credentials: 'include',
+        fetchFn: async(url, args) => {
+            const response = await fetch(url, {...args, redirect: "manual"});
+            if(response.type === "opaqueredirect") {
+                document.location = response.url;
+            }
+            return response;
         }
     }),
     endpoints(builder) {
@@ -26,7 +35,7 @@ export const readingApiSlice = createApi({
                 query(bookId) {
                     return `/${bookId}`;
                 }
-            })
+            })            
         }
     }
 });

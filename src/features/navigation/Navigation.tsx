@@ -5,7 +5,10 @@ import Fade from '@mui/material/Fade';
 
 import sophiAiLogo from '../../assets/sophi-ai-logo.svg';
 import  "./Navigation.scss";
+import { useFetchUserQuery } from '../user/user-api-slice';
+
 export function Navigation() {
+    const { data: user, isFetching} = useFetchUserQuery();
     const [value, setValue] = useState(0);
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -27,20 +30,16 @@ export function Navigation() {
         <div className="container-frame">
             <div className="menu">
                 <Tabs value={value} onChange={handleChangeTab}>
-                        <img src={sophiAiLogo} className="logoSophi"></img>
-                    <div className="right hide-on-med-and-down">
-                        <Link to={"home"}>
-                            <Tab label="Home"/> 
-                        </Link>
-                        <Tab label="Practice Listening"/>
-                        <Link to={"books"}>
-                            <Tab label="Practice Reading"/> 
-                        </Link>
-                        <Link to={"chatgpt"}>
-                            <Tab label="Chat GPT"/>
-                        </Link>
-                        <Tab label="Content Management" onClick={handleClick}/>
-                    </div>
+                    <img src={sophiAiLogo} className="logoSophi"></img>
+                        <Tab label="Home" component={Link} to="/home"/> 
+                        { !!user && 
+                            <div >
+                                <Tab label="Practice Listening" />
+                                <Tab label="Practice Reading" component={Link} to={"books"}/> 
+                                <Tab label="Chat GPT" component={Link} to={"chatgpt"}/>
+                                <Tab label="Content Management" onClick={handleClick}/>
+                            </div>
+                        }
                 </Tabs>
                 <Menu
                     id="contentManagementMenu"
@@ -56,6 +55,17 @@ export function Navigation() {
                         <MenuItem>Admin Content</MenuItem>
                     </Link>
                 </Menu>
+                <Tabs value="false">
+                    <div className="right hide-on-med-and-down">
+                        <Link hidden = {!!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/login`}>
+                            <Tab label="Log-in"/>
+                        </Link>                        
+                        <Link hidden= {!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/logout`}>
+                            Welcome {user?.name}
+                            <Tab label="log-out"/> 
+                        </Link>
+                    </div>
+                </Tabs>
             </div>
             <div id="content">
                 <Outlet/>

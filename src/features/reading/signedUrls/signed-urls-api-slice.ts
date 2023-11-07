@@ -11,6 +11,14 @@ export const signedUrlsApiSlice = createApi({
         baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api/signed-urls/`,
         prepareHeaders(headers) {
             headers.set('Accept', 'application/json');
+        },
+        credentials: 'include',
+        fetchFn: async(url, args) => {
+            const response = await fetch(url, {...args, redirect: "manual"});
+            if(response.type === "opaqueredirect") {
+                document.location = response.url;
+            }
+            return response;
         }
     }),
     endpoints(builder) {
