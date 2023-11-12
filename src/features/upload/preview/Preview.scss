@@ -16,11 +16,18 @@ body {
     width: 580px;
     height: 820px;
 }
+
+.previewContentTable {
+    overflow:auto;
+    max-height: 730px;
+}
+
 .previewBookTitle {
     padding-top: 0%;
     padding-left: 20%;
     font-size: smaller
 }
+
 
 .previewCurrentPage {
     overflow:auto;

@@ -6,11 +6,10 @@ import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 import { useAppSelector, useAppDispatch } from '../../../app/hooks';
 import { setChapterNo, setPageNo } from '../../previewBook/state-preview-book-slice';
-import { deleteChapter, deletePage } from '../../previewBook/preview-book-slice';
+import { deleteChapter, deletePage, deleteParagraph } from '../../previewBook/preview-book-slice';
 
 
 import "./Preview.scss";
-import { current } from "@reduxjs/toolkit";
 import { PreviewBookState } from "../../../models/PreviewBookState";
 
 const style = {
@@ -27,7 +26,7 @@ export function Preview () {
 
     const currentBook = useAppSelector((state) => state.previewBook);
     const statePreviewBook = useAppSelector((state) => state.statePreviewBook);
-    
+
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
         dispatch(setPageNo(value));
     };
@@ -43,6 +42,7 @@ export function Preview () {
     };
 
     const handleDeleteChapter = (index: number) => {
+        dispatch(setPageNo(1));
         dispatch(setChapterNo(0));
         dispatch(deleteChapter(index));
     };
@@ -50,7 +50,8 @@ export function Preview () {
     const handleDeletePage = () => {
         const statePreviewCopy : PreviewBookState = {
             currentChapterNo: statePreviewBook.currentChapterNo,
-            currentPageNo: statePreviewBook.currentPageNo
+            currentPageNo: statePreviewBook.currentPageNo,
+            currentParagraphNo: 0
         };
         
         if (statePreviewBook.currentPageNo === currentBook.chapters[statePreviewBook.currentChapterNo].pages.length) {
@@ -58,6 +59,16 @@ export function Preview () {
         }
         dispatch(deletePage(statePreviewCopy));
         
+    }
+
+    const handleDeleteParagraph = (index: number) => {
+        const statePreviewCopy : PreviewBookState = {
+            currentChapterNo: statePreviewBook.currentChapterNo,
+            currentPageNo: statePreviewBook.currentPageNo,
+            currentParagraphNo: index
+        };
+        console.log("Paragraph Index: " + index);
+        dispatch(deleteParagraph(statePreviewCopy));
     }
 /*
     useEffect(() =>{
@@ -99,7 +110,7 @@ export function Preview () {
                                     </div>
                                     
                                 </Grid2>
-                                <Grid2 xs={2}>
+                                <Grid2 xs={2} className="previewContentTable">
                                     <List sx={style} component="nav" aria-label="book indexes">
                                         { 
                                             currentBook.contentTable.map((indexContent) => (
@@ -132,7 +143,10 @@ export function Preview () {
                                 <Grid2 xs={10} className="previewCurrentPage">
                                     
                                     <Grid2 xs={12}>
-                                        { 
+                                        
+                                        {
+                                            currentBook.chapters[statePreviewBook.currentChapterNo].pages.length > 0 &&
+                                            !!currentBook.chapters[statePreviewBook.currentChapterNo].pages[statePreviewBook.currentPageNo - 1] &&
                                             currentBook.chapters[statePreviewBook.currentChapterNo].pages[statePreviewBook.currentPageNo - 1].paragraphs.map((paragraph) => (
                                                 <div className="previewParagraph" key={paragraph.id}>
                                                     {
@@ -144,6 +158,16 @@ export function Preview () {
                                                             </div>
                                                         ))
                                                     }
+                                                    <IconButton
+                                                        sx={{ display: editSelected === false ? 'none' : 'ok'}}
+                                                        onClick={() => handleDeleteParagraph(paragraph.id)}
+                                                        >
+                                                        <RemoveCircleIcon 
+                                                            
+                                                            color="error"
+                                                            sx={{fontSize:10}}
+                                                            key={paragraph.id}/>
+                                                    </IconButton>
                                                 </div>
                                             ))
                                         }

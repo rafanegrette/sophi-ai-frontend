@@ -1,4 +1,5 @@
 export interface PreviewBookState {
     currentPageNo: number,
-    currentChapterNo: number
+    currentChapterNo: number,
+    currentParagraphNo: number
 }

@@ -12,6 +12,7 @@ export const formApiSlice = createApi({
         },
         credentials: 'include',
         fetchFn: async(url, args) => {
+            console.log(args);
             const response = await fetch(url, {...args, redirect: "manual"});
             if(response.type === "opaqueredirect") {
                 document.location = response.url;

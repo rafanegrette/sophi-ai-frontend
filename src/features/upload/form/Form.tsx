@@ -7,6 +7,7 @@ import { SentenceSeparator } from "./sentence-separator/SentenceSeparator";
 import { BookLabel } from "./book-label/BookLabel";
 import { ActionButtons } from "./action-buttons/ActionButtons";
 import { SpecificCheckers } from "./specific-checkers/SpecificCheckers";
+import { ThresholdParagraph } from "./threshold-paragraph/ThresholdParagraph";
 
 export function Form() {
     return (
@@ -20,8 +21,9 @@ export function Form() {
 
                 <SelectFile/>
                 <BookLabel/>
+                
                 <SelectParagraph/>
-                <SentenceSeparator/>
+                <ThresholdParagraph/>
 
                 <SpecificCheckers/>
                 <ActionButtons/>

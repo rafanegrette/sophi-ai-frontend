@@ -7,6 +7,8 @@ export interface FormState {
     chapterTitleType: String;
     firstPgeOffset: number;
     fixTitleHP1: boolean;
+    paragraphThreshold: number;
+    extraFormat: boolean;
 }
 
 const initialState : FormState = {
@@ -15,7 +17,9 @@ const initialState : FormState = {
     paragraphSeparator: "ONE",
     chapterTitleType: "",
     firstPgeOffset: 0,
-    fixTitleHP1: false
+    fixTitleHP1: false,
+    paragraphThreshold: 240,
+    extraFormat: false
 }
 
 const formSlice = createSlice({
@@ -40,6 +44,12 @@ const formSlice = createSlice({
         setFixTitleHP1(state, action) {
             state.fixTitleHP1 = action.payload;
         },
+        setParagraphThreshold(state, action) {
+            state.paragraphThreshold = action.payload;
+        },
+        setAddExtraFormat(state, action) {
+            state.extraFormat = action.payload;
+        },
         resetForm(state) {
             state.file = new Blob([JSON.stringify({})]);
             state.bookLabel = "";
@@ -56,5 +66,7 @@ export const {attach,
     setChapterTitleType, 
     setFirstPageOffset, 
     resetForm,
-    setFixTitleHP1} = formSlice.actions;
+    setFixTitleHP1,
+    setParagraphThreshold,
+    setAddExtraFormat} = formSlice.actions;
 export default formSlice.reducer;

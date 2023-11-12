@@ -76,9 +76,17 @@ const previewBookSlice = createSlice({
         deletePage(state, action: PayloadAction<PreviewBookState>) {
             const bookState = action.payload;
             state.chapters[bookState.currentChapterNo].pages.splice(bookState.currentPageNo - 1, 1);
+        },
+        deleteParagraph(state, action: PayloadAction<PreviewBookState>) {
+            const bookState = action.payload;
+            state.chapters[bookState.currentChapterNo].pages[bookState.currentPageNo - 1].paragraphs.splice(bookState.currentParagraphNo - 1, 1);
+            state.chapters[bookState.currentChapterNo].pages[bookState.currentPageNo - 1].paragraphs
+                .filter(para => para.id >= bookState.currentParagraphNo)
+                .forEach(para => para.id = para.id - 1);
+            console.log(state.chapters[bookState.currentChapterNo].pages[bookState.currentPageNo - 1].paragraphs);
         }
     }
 });
 
-export const { load, resetState, deleteChapter, deletePage } = previewBookSlice.actions;
+export const { load, resetState, deleteChapter, deletePage, deleteParagraph } = previewBookSlice.actions;
 export default previewBookSlice.reducer;
