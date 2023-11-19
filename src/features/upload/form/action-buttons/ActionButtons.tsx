@@ -73,7 +73,7 @@ export function ActionButtons() {
             </Grid2>
             <Grid2 xs={12} md={12} >
                 <Button
-                    disabled = {currentBook.title === ''}
+                    disabled = {currentBook.title === '' && !isLoading}
                     size="large"
                     variant="contained" 
                     component="label"
@@ -81,7 +81,7 @@ export function ActionButtons() {
                     Save
                 </Button>
                 <Button
-                    disabled = {previewDisabled}
+                    disabled = {previewDisabled && !isLoading}
                     size="large"
                     variant="contained" 
                     component="label"
