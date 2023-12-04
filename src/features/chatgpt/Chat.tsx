@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import SendIcon from '@mui/icons-material/Send';
 import { fetchEventSource } from '@microsoft/fetch-event-source';
 import './Chat.scss';
+
 export function Chat() {
 
     const [ userInputText, setUserInputText ] = useState("");

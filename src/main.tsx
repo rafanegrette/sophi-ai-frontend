@@ -17,6 +17,7 @@ import { Upload } from "./features/upload/Upload";
 import { Books } from "./features/reading/Books";
 import { Contents } from "./features/contentAdmin/Contents";
 import { Chat } from "./features/chatgpt/Chat";
+import ChatFrame from "./features/chatgpt/ChatFrame";
 
 const privateMenus = [
   {
@@ -45,7 +46,7 @@ const privateMenus = [
   },
   {
     path: "chatgpt",
-    element: <Chat />,
+    element: <ChatFrame />,
   },
 ];
 
