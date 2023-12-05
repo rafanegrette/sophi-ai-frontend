@@ -18,9 +18,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import { Chat } from './Chat';
-import Assistants from './Assistants';
-import { Assistant } from './assistant-api-slice';
+import { Chat } from './chat/Chat';
+import Assistants from './assistants/Assistants';
+import { Assistant } from './assistants/assistant-api-slice';
 
 const drawerWidth = 240;
 
@@ -29,6 +29,7 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
 }>(({ theme, open }) => ({
   flexGrow: 1,
   padding: theme.spacing(3),
+  display: 'flex',
   transition: theme.transitions.create('margin', {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -79,21 +80,21 @@ export default function ChatFrame() {
   
   return (
     <Box sx={{ display: 'flex' }}>
+
       <CssBaseline />
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: 'none' }) }}
+      <Toolbar>
+        <IconButton
+          color="inherit"
+          aria-label="open drawer"
+          onClick={handleDrawerOpen}
+          edge="start"
+          sx={{ mr: 2, ...(open && { display: 'none' }) }}
           >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            
-          </Typography>
-        </Toolbar>
+          <ChevronRightIcon />
+        </IconButton>
+
+      </Toolbar>
+
       <Drawer
         sx={{
           width: drawerWidth,
@@ -108,15 +109,13 @@ export default function ChatFrame() {
         open={open}
       >
         <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
+          
         </DrawerHeader>
         <Divider />
           <Assistants onSelectAssistant={handleSelectAssistant}/>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          {['Chat history', 'Comming Next..', 'Chat History...'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -129,7 +128,18 @@ export default function ChatFrame() {
         </List>
       </Drawer>
       <Main open={open}>
-        <DrawerHeader />
+        <Toolbar
+          sx={{display: open? 'flex' : 'none'}}
+          >
+          <IconButton 
+            
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerClose}>
+            <ChevronLeftIcon />
+          </IconButton>
+        </Toolbar>
         <Chat assistantDescription={currentAssistant.description}/>
 
       </Main>

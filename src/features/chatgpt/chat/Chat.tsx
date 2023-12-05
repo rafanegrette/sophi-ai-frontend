@@ -1,21 +1,31 @@
-import { useAppDispatch } from '../../app/hooks';
+import { useAppDispatch } from '../../../app/hooks';
 import { useEffect, useState } from 'react';
 import { useChatSendQuery } from './chat-api-slice';
-import { Message } from './messages/message';
+import { Message } from '../messages/message';
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import SendIcon from '@mui/icons-material/Send';
 import { fetchEventSource } from '@microsoft/fetch-event-source';
 import './Chat.scss';
-import { Assistant } from './assistant-api-slice';
+import { Assistant } from '../assistants/assistant-api-slice';
 
 interface Props {
     assistantDescription: string
 }
 export function Chat(props: Props) {
 
+    const messagesDefault : Message[] = [
+        {
+            role: 'user',
+            content: 'Hello, how can I help you?'
+        },
+        {
+            role: 'assistant',
+            content: 'I am a helpful AI Assistant.'
+        }
+    ];
     const [ userInputText, setUserInputText ] = useState("");
-    const [ messages, setMessages] = useState<Message[]>([]);
+    const [ messages, setMessages] = useState<Message[]>(messagesDefault);
     const [ gptText, setGptText ] = useState("");
 
     const handleSend = () => {
@@ -57,16 +67,20 @@ export function Chat(props: Props) {
         <div className="chat-full-page">
             <div className="chat-header">proxy to chat gpt</div>
             <div className="chat-content">
-                {
-                    messages.map((message, index) => (
-                        <div className="chat-messages">
-                            <div id={index + ''} className={message.role == "user"? "user-question" : "gpt-response"}>
-                                {message.content}
-                            </div>
-                        </div>
-                    ))
-                }
-
+                <div className="chat-messages">
+                    {
+                        messages.map((message, index) => (
+                            
+                                <div id={index + ''} className={message.role == "user"? "user-question" : "gpt-response"}>
+                                    <b>{message.role == "user"? "You" : "Assistant"}</b>
+                                    <br/>
+                                    {message.content}
+                                </div>
+                            
+                        ))
+                        
+                    }
+                </div>
                 <div className="chat-input">
                     <TextField
                         id="user-input-chat"

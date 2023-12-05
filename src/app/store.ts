@@ -10,8 +10,8 @@ import { readingApiSlice } from "../features/reading/reading-api-slice";
 import { signedUrlsApiSlice } from "../features/reading/signedUrls/signed-urls-api-slice";
 import { voiceToTextApiSlice } from "../features/reading/wavtovec/voice-to-text-api-slice";
 import { deleteBookApiSlice } from "../features/contentAdmin/delete/delete-book-api-slice";
-import { chatApiSlice } from "../features/chatgpt/chat-api-slice";
-import { assistantApiSlice } from "../features/chatgpt/assistant-api-slice";
+import { chatApiSlice } from "../features/chatgpt/chat/chat-api-slice";
+import { assistantApiSlice } from "../features/chatgpt/assistants/assistant-api-slice";
 import { userApiSlice } from "../features/user/user-api-slice";
 
 export const store = configureStore({
