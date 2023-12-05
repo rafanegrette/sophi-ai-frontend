@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -20,6 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { Chat } from './Chat';
 import Assistants from './Assistants';
+import { Assistant } from './assistant-api-slice';
 
 const drawerWidth = 240;
 
@@ -53,16 +54,29 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 export default function ChatFrame() {
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
 
+  const defaultAssistant: Assistant = {
+    id: 'jk',
+    title: "You are a helpful Assistant",
+    description: "You are a helpful AI Assistant"
+  };
+
+
+  const [open, setOpen] = useState(false);
+  const [ currentAssistant, setCurrentAssistant ] = useState<Assistant>(defaultAssistant);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
 
+  
   const handleDrawerClose = () => {
     setOpen(false);
   };
 
+  const handleSelectAssistant = (assistant: Assistant) => {
+    setCurrentAssistant(assistant);
+  }
+  
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -99,7 +113,7 @@ export default function ChatFrame() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-          <Assistants/>
+          <Assistants onSelectAssistant={handleSelectAssistant}/>
         <Divider />
         <List>
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
@@ -116,7 +130,7 @@ export default function ChatFrame() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Chat/>
+        <Chat assistantDescription={currentAssistant.description}/>
 
       </Main>
     </Box>

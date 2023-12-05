@@ -1,37 +1,47 @@
 import { useAppDispatch } from '../../app/hooks';
 import { useEffect, useState } from 'react';
-import { useChatSendQuery, Message } from './chat-api-slice';
+import { useChatSendQuery } from './chat-api-slice';
+import { Message } from './messages/message';
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import SendIcon from '@mui/icons-material/Send';
 import { fetchEventSource } from '@microsoft/fetch-event-source';
 import './Chat.scss';
+import { Assistant } from './assistant-api-slice';
 
-export function Chat() {
+interface Props {
+    assistantDescription: string
+}
+export function Chat(props: Props) {
 
     const [ userInputText, setUserInputText ] = useState("");
-    const [ userTextQuestion, setUserTextQuestion ] = useState("");
-    const [gptText, setGptText ] = useState("");
-    const [ messageToSend, setMessageToSend ] = useState<Message>({role:'user', content: ''});
+    const [ messages, setMessages] = useState<Message[]>([]);
+    const [ gptText, setGptText ] = useState("");
 
     const handleSend = () => {
-        const message : Message = {'role': 'user',
+        const userMessage : Message = {'role': 'user',
                         'content': userInputText};
-        setMessageToSend(message);
-        setUserTextQuestion(userInputText);
-        let lastText : String = '';
+        const systemMessage: Message = {'role': 'system',
+                        'content': props.assistantDescription};
+        let lastGptText : String = '';
+        
         //setSkipSend(false);
-        console.log(message);
         fetchEventSource('http://localhost:8080/api/v1/sophi/talk', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify([message]),
+            body: JSON.stringify([systemMessage, ...messages, userMessage]),
             onmessage(response) {
                 console.log(response.data);
-                setGptText(lastText + ' ' + response.data);
-                lastText = (lastText + ' ' + response.data);
+                setGptText(lastGptText + ' ' + response.data);
+                lastGptText = (lastGptText + ' ' + response.data);
+            },
+            onclose() {
+                setMessages(messages => [...messages, userMessage, 
+                                        {'role': 'assistant',
+                                        'content': lastGptText}])
+                console.log("IT CLoses");
             },
             onerror(err) {
                 throw err;
@@ -47,14 +57,15 @@ export function Chat() {
         <div className="chat-full-page">
             <div className="chat-header">proxy to chat gpt</div>
             <div className="chat-content">
-                <div className="chat-messages">
-                    <div className="user-question">
-                        {userTextQuestion}
-                    </div>
-                    <div className="gpt-response">
-                        <h3>{gptText}</h3>
-                    </div>
-                </div>
+                {
+                    messages.map((message, index) => (
+                        <div className="chat-messages">
+                            <div id={index + ''} className={message.role == "user"? "user-question" : "gpt-response"}>
+                                {message.content}
+                            </div>
+                        </div>
+                    ))
+                }
 
                 <div className="chat-input">
                     <TextField

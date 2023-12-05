@@ -11,6 +11,7 @@ import { signedUrlsApiSlice } from "../features/reading/signedUrls/signed-urls-a
 import { voiceToTextApiSlice } from "../features/reading/wavtovec/voice-to-text-api-slice";
 import { deleteBookApiSlice } from "../features/contentAdmin/delete/delete-book-api-slice";
 import { chatApiSlice } from "../features/chatgpt/chat-api-slice";
+import { assistantApiSlice } from "../features/chatgpt/assistant-api-slice";
 import { userApiSlice } from "../features/user/user-api-slice";
 
 export const store = configureStore({
@@ -27,6 +28,7 @@ export const store = configureStore({
         [voiceToTextApiSlice.reducerPath] : voiceToTextApiSlice.reducer,
         [deleteBookApiSlice.reducerPath] : deleteBookApiSlice.reducer,
         [chatApiSlice.reducerPath] : chatApiSlice.reducer,
+        [assistantApiSlice.reducerPath] : assistantApiSlice.reducer,
         [userApiSlice.reducerPath] : userApiSlice.reducer
     },
     middleware:  (getDefaultMiddleware) => {
@@ -39,7 +41,8 @@ export const store = configureStore({
         .concat(voiceToTextApiSlice.middleware)
         .concat(deleteBookApiSlice.middleware)
         .concat(chatApiSlice.middleware)
-        .concat(userApiSlice.middleware);
+        .concat(userApiSlice.middleware)
+        .concat(assistantApiSlice.middleware);
     }
 });
 
