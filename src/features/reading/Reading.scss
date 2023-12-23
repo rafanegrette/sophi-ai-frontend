@@ -37,6 +37,7 @@ body {
         margin-left: 2em;
     }
 
+
     @media screen and (max-width: 800px) {
         font-size: 14px;
         padding: 5px;
@@ -55,6 +56,15 @@ body {
             margin-left: 1em;
         }
     }
+}
+
+del {
+    color: red;
+}
+
+mark {
+    color: darkgreen;
+    background-color: #dafbe1;
 }
 
 .borderSentence{
@@ -97,10 +107,11 @@ body {
 
 .reading-control-panel {
     display: grid;
+    width: 550px;
     grid-template-rows: auto auto;
 
     .reading-control-panel-mic {
-        max-width: 25em;
+        //max-width: 25em;
         display: flex;
         flex-direction: row;
 

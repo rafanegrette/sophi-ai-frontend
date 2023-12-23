@@ -1,8 +1,13 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 interface Transcript {
-    text : string;
+    result : string;
 }
+interface TranscriptRequest {
+    audioFile: Blob,
+    originalText: string
+}
+
 export const voiceToTextApiSlice = createApi({
     reducerPath: 'apiVoiceToText',
     baseQuery: fetchBaseQuery({
@@ -21,14 +26,15 @@ export const voiceToTextApiSlice = createApi({
     }),
     endpoints(builder) {
         return {
-            transcripted: builder.mutation<Transcript, Blob>({
-                query: (voiceBlob : Blob) => {
-                    const request = new FormData();
-                    request.append('file', voiceBlob);
+            transcripted: builder.mutation<Transcript, TranscriptRequest>({
+                query: (transcriptRequest : TranscriptRequest) => {
+                    const formRequest = new FormData();
+                    formRequest.append('file', transcriptRequest.audioFile);
+                    formRequest.append('sentence', transcriptRequest.originalText);
                     return {
                         url: '/transcript',
                         method: 'POST',
-                        body: request
+                        body: formRequest
                     };
                 }
             })

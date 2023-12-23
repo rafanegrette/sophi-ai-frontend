@@ -29,18 +29,17 @@ export function Navigation() {
     return (
         <div className="container-frame">
             <div className="menu">
-                <Tabs value={value} onChange={handleChangeTab}>
-                    <img src={sophiAiLogo} className="logoSophi"></img>
-                        <Tab label="Home" component={Link} to="/home"/> 
-                        { !!user && 
-                            <div >
-                                <Tab label="Practice Listening" />
-                                <Tab label="Practice Reading" component={Link} to={"books"}/> 
-                                <Tab label="Chat GPT" component={Link} to={"chatgpt"}/>
-                                <Tab label="Content Management" onClick={handleClick}/>
-                            </div>
-                        }
-                </Tabs>
+                <img src={sophiAiLogo} className="logoSophi"></img>
+                { !!user && 
+                    <Tabs value={value} onChange={handleChangeTab}>
+                        
+                        <Tab label="Home" component={Link} to="/home"/>                         
+                        <Tab label="Practice Listening" />
+                        <Tab label="Practice Reading" component={Link} to={"books"}/> 
+                        <Tab label="Chat GPT" component={Link} to={"chatgpt"}/>
+                        <Tab label="Content Management" onClick={handleClick}/>
+                    </Tabs>
+                }
                 <Menu
                     id="contentManagementMenu"
                     anchorEl={anchorEl}
