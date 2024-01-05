@@ -14,7 +14,7 @@ import { ErrorPage } from "./ErrorPage";
 import { Home } from "./features/home/Home";
 import { Reading } from "./features/reading/Reading";
 import { Upload } from "./features/upload/Upload";
-import { Books } from "./features/reading/Books";
+import { BookList } from "./features/reading/BookList";
 import { Contents } from "./features/contentAdmin/Contents";
 import { Chat } from "./features/chatgpt/chat/Chat";
 import ChatFrame from "./features/chatgpt/ChatFrame";
@@ -30,7 +30,7 @@ const privateMenus = [
   },
   {
     path: "books",
-    element: <Books />,
+    element: <BookList />,
   },
   {
     path: "upload",
