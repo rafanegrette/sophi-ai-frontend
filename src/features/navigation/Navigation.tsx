@@ -3,7 +3,7 @@ import { Outlet, Link } from 'react-router-dom';
 import { AppBar, Menu, MenuItem, Tab, Tabs } from "@mui/material";
 import Fade from '@mui/material/Fade';
 
-import sophiAiLogo from '../../assets/sophi-ai.svg';
+import sophiAiLogo from '../../assets/sophi-ai-logo.svg';
 import  "./Navigation.scss";
 import { useFetchUserQuery } from '../user/user-api-slice';
 

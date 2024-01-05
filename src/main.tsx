@@ -1,11 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter,
   RouterProvider,
   createBrowserRouter
 } from "react-router-dom";
-import App from "./App";
 import { Provider } from "react-redux";
 import { store } from './app/store';
 import "./index.css";
@@ -16,7 +14,6 @@ import { Reading } from "./features/reading/Reading";
 import { Upload } from "./features/upload/Upload";
 import { BookList } from "./features/reading/BookList";
 import { Contents } from "./features/contentAdmin/Contents";
-import { Chat } from "./features/chatgpt/chat/Chat";
 import ChatFrame from "./features/chatgpt/ChatFrame";
 
 const privateMenus = [

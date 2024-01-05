@@ -1,7 +1,7 @@
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import { setChapterNo, setPageNo } from './state-book-slice';
 import { LinearProgress, List, ListItemButton, ListItemText, Pagination } from "@mui/material";
-import Popover, {PopoverProps} from '@mui/material/Popover';
+import Popover from '@mui/material/Popover';
 
 import Grid from "@mui/material/Grid";
 import { useState, useEffect } from 'react';
@@ -37,9 +37,9 @@ export function Reading() {
     const [ textSelected, setTextSelected] = useState<HTMLSpanElement | null>(null);
     const [ transcriptedText, setTranscriptedText] = useState("");
     const [ transcriptedTextSophi, setTranscriptedTextSophi ] = useState<String>("");
-    //const [ popOverAnchorEl, setPopOverAnchorEl] = useState<HTMLSpanElement | null>(null);
+    const [ popOverAnchorEl, setPopOverAnchorEl] = useState<HTMLSpanElement | null>(null);
     const [ clickY, setClickY] = useState(0);
-    const [ anchorEl, setAnchorEl ] = useState<PopoverProps['anchorEl']>(null);
+    //const [ anchorEl, setAnchorEl ] = useState<PopoverProps['anchorEl']>(null);
     const [ popOverIsOpen, setPopOverIsOpen] = useState(false);
     const { data = initialState, isFetching: isFetchingBook, 
                 isUninitialized: isUninitializedBook } = useFetchBookQuery(bookId, {skip});
@@ -77,29 +77,24 @@ export function Reading() {
     }, [bookId]);
 
     const handleClickSentence = (event: React.MouseEvent<HTMLSpanElement>, idSentence: string) => {
-        const selection = event.currentTarget;
+        
         setClickY(event.clientY);
 
-        //setPopOverAnchorEl(event.currentTarget);
+        setPopOverAnchorEl(event.currentTarget);
         setTextSelected(event.currentTarget);
         const signedUrl = audioUrls.get(idSentence)?.audioUrl || "not url";
         setCurrentAudioUrl(signedUrl);
 
-        const getBoundingClientRect = () => {
-            return selection.getBoundingClientRect();
-        }
         setPopOverIsOpen(true);
-        setAnchorEl({getBoundingClientRect, nodeType: 1});
         
     }
 
-    const idPopOver = Boolean(popOverIsOpen) ? 'virtual-element-popover' : undefined;
+    const idPopOver = Boolean(popOverIsOpen) ? 'id-element-popover' : undefined;
 
     const popOverHandleClose = () => {
         setPopOverIsOpen(false);
+        setPopOverAnchorEl(null);
     }
-
-    //const popOverIsOpen = Boolean(popOverAnchorEl);
 
     const playSelectedSentence = (pathSentence: string) => {
         let audio = new Audio();
@@ -246,7 +241,7 @@ export function Reading() {
                                         <Popover
                                             id={idPopOver}
                                             open={popOverIsOpen}
-                                            anchorEl={anchorEl}
+                                            anchorEl={popOverAnchorEl}
                                             disableScrollLock={true}
                                             onClose={popOverHandleClose}
                                             anchorOrigin={clickY > window.innerHeight / 2 ? 
