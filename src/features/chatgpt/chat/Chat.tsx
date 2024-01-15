@@ -81,42 +81,42 @@ export function Chat(props: Props) {
             <div className="chat-header">proxy to chat gpt</div>
             <div className="chat-content">
 {/*                 <div className="chat-messages">
-                    {
-                        messages.map((message, index) => (
-                            
-                                <div id={index + ''} className={message.role == "user"? "user-question" : "gpt-response"}>
-                                    <b>{message.role == "user"? "You" : "Assistant"}</b>
-                                    <br/>
-                                    <Markdown 
-                                        remarkPlugins={[remarkGfm]}
-                                        children={message.content}
-                                        components={{
-                                            code(props) {
-                                              const {children, className, node, ...rest} = props
-                                              const match = /language-(\w+)/.exec(className || '')
-                                              return match ? (
-                                                <SyntaxHighlighter
-                                                  {...rest}
-                                                  PreTag="div"
-                                                  children={String(children).replace(/\n$/, '')}
-                                                  language={match[1]}
-                                                  style={dark}
-                                                />
-                                              ) : (
-                                                <code {...rest} className={className}>
-                                                  {children}
-                                                </code>
-                                              )
-                                            }
-                                          }}>
-
-                                    </Markdown>                                    
-                                </div>
-                        ))
+                {
+                    messages.map((message, index) => (
                         
+                            <div id={index + ''} className={message.role == "user"? "user-question" : "gpt-response"}>
+                                <b>{message.role == "user"? "You" : "Assistant"}</b>
+                                <br/>
+                                <Markdown 
+                                    remarkPlugins={[remarkGfm]}
+                                    children={message.content}
+                                    components={{
+                                        code(props) {
+                                            const {children, className, node, ...rest} = props
+                                            const match = /language-(\w+)/.exec(className || '')
+                                            return match ? (
+                                            <SyntaxHighlighter
+                                                {...rest}
+                                                PreTag="div"
+                                                children={String(children).replace(/\n$/, '')}
+                                                language={match[1]}
+                                                style={dark}
+                                            />
+                                            ) : (
+                                            <code {...rest} className={className}>
+                                                {children}
+                                            </code>
+                                            )
+                                        }
+                                        }}>
+
+                                </Markdown>                                    
+                            </div>
+                        ))
+                    
                     }
-                </div>
- */}                <div className="chat-input">
+                </div> */}
+                <div className="chat-input">
                     <TextField
                         id="user-input-chat"
                         label="Write your message"

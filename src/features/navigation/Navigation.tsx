@@ -1,6 +1,6 @@
 import { useState, MouseEvent, SyntheticEvent } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { AppBar, Menu, MenuItem, Tab, Tabs } from "@mui/material";
+import { AppBar, Button, Menu, MenuItem, Tab, Tabs } from "@mui/material";
 import Fade from '@mui/material/Fade';
 
 import sophiAiLogo from '../../assets/sophi-ai-logo.svg';
@@ -24,6 +24,20 @@ export function Navigation() {
 
     const handleChangeTab = (event: SyntheticEvent, newValue: number) => {
         setValue(newValue);
+    }
+
+    const handleLogout = async () => {
+        try{
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_HOST}/api/logout` , {
+                method: 'POST',
+                redirect: 'follow'
+            });
+
+            const data = await response.json();
+            console.log(data);
+        } catch(error) {
+            console.error('Errors: : ', error);
+        }
     }
 
     return (
@@ -59,10 +73,10 @@ export function Navigation() {
                         <Link hidden = {!!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/login`}>
                             <Tab label="Log-in"/>
                         </Link>                        
-                        <Link hidden= {!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/logout`}>
-                            Welcome {user?.name}
-                            <Tab label="log-out"/> 
-                        </Link>
+                        Welcome {user?.name}
+                        <Link hidden = {!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/logout`}>
+                            <Tab label="Log-out"/>
+                        </Link> 
                     </div>
                 </Tabs>
             </div>

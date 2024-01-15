@@ -2,7 +2,6 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Book } from '../../../models/Book';
 import { FormState } from './form-slice';
 
-
 export const formApiSlice = createApi({
     reducerPath: 'apiUploadForm',
     baseQuery: fetchBaseQuery({

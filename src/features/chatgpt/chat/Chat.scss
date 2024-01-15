@@ -43,13 +43,21 @@ h3 {
 }
 
 .user-question {
-    align-self: flex-end;
+    align-self: flex;
     margin-right: 2rem;
     font-size: 1.2rem;
+    white-space: normal;
+    width: 100%;
+
+    pre {
+        code {
+            font-size: small;
+        }
+    }
 }
 
 .gpt-response {
-    align-self: flex-start;
+    align-self: flex;
     margin-left: 2rem;
     font-size: 1.2rem;
     white-space: normal;
