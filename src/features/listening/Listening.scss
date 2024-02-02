@@ -1,0 +1,33 @@
+.ebook {
+    display: flex;
+    min-height: 100vh;
+   }
+
+.currentchapter {
+    flex-grow: 1;
+    padding: 15px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;   
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 15px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+   }
+   
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article {
+    flex-grow: 1; /* Expand to fill available space */
+    width: 100%; /* Use the full width */
+    max-width: 800px; /* Maximum width of the content */
+    margin: auto; /* Center content horizontally */
+    padding: 15px; /* Adjust as needed */
+    overflow-y: auto; /* Scrollable content */
+}

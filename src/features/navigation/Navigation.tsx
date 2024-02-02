@@ -26,15 +26,18 @@ export function Navigation() {
         setValue(newValue);
     }
 
-    const handleLogout = async () => {
+    const handleSignUp = async () => {
         try{
-            const response = await fetch(`${import.meta.env.VITE_BACKEND_HOST}/api/logout` , {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_HOST}/api/user` , {
                 method: 'POST',
-                redirect: 'follow'
+                redirect: 'manual',
+                credentials: 'include'
             });
 
-            const data = await response.json();
-            console.log(data);
+            if(response.type === "opaqueredirect") {
+                document.location = response.url;
+            }
+            //console.log(data);
         } catch(error) {
             console.error('Errors: : ', error);
         }
@@ -48,7 +51,7 @@ export function Navigation() {
                     <Tabs value={value} onChange={handleChangeTab}>
                         
                         <Tab label="Home" component={Link} to="/home"/>                         
-                        <Tab label="Practice Listening" />
+                        <Tab label="Practice Listening" component={Link} to="/listening"/>
                         <Tab label="Practice Reading" component={Link} to={"books"}/> 
                         <Tab label="Chat GPT" component={Link} to={"chatgpt"}/>
                         <Tab label="Content Management" onClick={handleClick}/>
@@ -70,11 +73,12 @@ export function Navigation() {
                 </Menu>
                 <Tabs value="false">
                     <div className="right hide-on-med-and-down">
+                        {/*<Tab  hidden = {false} onClick={handleSignUp} label="Sign-up"/>*/}
                         <Link hidden = {!!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/login`}>
                             <Tab label="Log-in"/>
-                        </Link>                        
-                        Welcome {user?.name}
+                        </Link>
                         <Link hidden = {!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/logout`}>
+                            Welcome {user?.name}
                             <Tab label="Log-out"/>
                         </Link> 
                     </div>

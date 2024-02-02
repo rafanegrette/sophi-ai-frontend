@@ -1,0 +1,25 @@
+.listening-icon-speaker{
+    cursor: pointer;
+    color: black;
+    &:hover {
+        color: blue;
+    }
+}
+
+
+.result-text {
+    display: block;
+    margin-bottom: 2px;
+    border: 1px solid #ccc; // Subtle border
+    background-color: #f2f2f2; // Subtle background color
+    padding: 0px; // Adjust padding as needed
+}
+
+.write-section {
+    display: block;
+    align-items: center;
+
+    #user-text-input-id{
+        display: flex;
+    }
+}

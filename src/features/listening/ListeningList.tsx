@@ -1,20 +1,20 @@
 import { Avatar, Box, List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import BookIcon from '@mui/icons-material/Book';
 import { Link } from 'react-router-dom';
-//import { useFetchTitlesQuery } from "./reading-api-slice";
+import { useFetchTitlesQuery } from "../reading/reading-api-slice";
 
-import "./BookList.scss"
+import "./ListeningList.scss"
 
-export function BookList() {
+export function ListeningList() {
 
-    //const { data = [], isFetching } = useFetchTitlesQuery(true);
+    const { data = [], isFetching } = useFetchTitlesQuery(true);
 
     return (
         <div className="titles-framework">
             <p>Here you will clic in the speaker icon listening, and writting what you hear in the input.  </p>
             <h3>List of books</h3>
             <br/>
-{/*             <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}>
+             <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}>
                 <List>
                     {
                         data.map((title) => (
@@ -24,7 +24,7 @@ export function BookList() {
                                         <BookIcon/>
                                     </Avatar>
                                 </ListItemAvatar>
-                                <Link to={"../books/" + title.id} key={title.id}>
+                                <Link to={"../listening/" + title.id} key={title.id}>
                                     <ListItemText 
                                         primary={title.title} 
                                         key={title.id}
@@ -34,7 +34,7 @@ export function BookList() {
                         ))
                     }
                 </List>
-            </Box> */}
+            </Box> 
 
         </div>
     );

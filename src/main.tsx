@@ -13,8 +13,10 @@ import { Home } from "./features/home/Home";
 import { Reading } from "./features/reading/Reading";
 import { Upload } from "./features/upload/Upload";
 import { BookList } from "./features/reading/BookList";
+import { ListeningList } from "./features/listening/ListeningList";
 import { Contents } from "./features/contentAdmin/Contents";
 import ChatFrame from "./features/chatgpt/ChatFrame";
+import { Listening } from "./features/listening/Listening";
 
 const privateMenus = [
   {
@@ -28,6 +30,14 @@ const privateMenus = [
   {
     path: "books",
     element: <BookList />,
+  },
+  {
+    path: "listening",
+    element: <ListeningList />,
+  },
+  {
+    path: "listening/:bookId",
+    element: <Listening />,
   },
   {
     path: "upload",

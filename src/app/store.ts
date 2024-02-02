@@ -13,6 +13,7 @@ import { deleteBookApiSlice } from "../features/contentAdmin/delete/delete-book-
 import { chatApiSlice } from "../features/chatgpt/chat/chat-api-slice";
 import { assistantApiSlice } from "../features/chatgpt/assistants/assistant-api-slice";
 import { userApiSlice } from "../features/user/user-api-slice";
+import { listeningApiSlice } from "../features/listening/listening-api-slice";
 
 export const store = configureStore({
     reducer: { 
@@ -29,7 +30,8 @@ export const store = configureStore({
         [deleteBookApiSlice.reducerPath] : deleteBookApiSlice.reducer,
         [chatApiSlice.reducerPath] : chatApiSlice.reducer,
         [assistantApiSlice.reducerPath] : assistantApiSlice.reducer,
-        [userApiSlice.reducerPath] : userApiSlice.reducer
+        [userApiSlice.reducerPath] : userApiSlice.reducer,
+        [listeningApiSlice.reducerPath] : listeningApiSlice.reducer
     },
     middleware:  (getDefaultMiddleware) => {
         return getDefaultMiddleware({
@@ -42,7 +44,8 @@ export const store = configureStore({
         .concat(deleteBookApiSlice.middleware)
         .concat(chatApiSlice.middleware)
         .concat(userApiSlice.middleware)
-        .concat(assistantApiSlice.middleware);
+        .concat(assistantApiSlice.middleware)
+        .concat(listeningApiSlice.middleware);
     }
 });
 
