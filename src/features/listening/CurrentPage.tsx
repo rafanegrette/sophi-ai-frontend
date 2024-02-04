@@ -65,42 +65,46 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
 
     return (
             <div>
-            {
-                page.number <= bookWriteState.pageNo ?
-                page.paragraphs.map((paragraph) => (
-                    <Typography paragraph>
-                    <CurrentParagraph paragraph={paragraph} pageNo={page.number} bookWriteState={bookWriteState}/>
-                    </Typography>
-                ))
-                :
-                <div></div>
-            }
-
-            <div className="result-text">
-                <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-                    {resultText.result}
-                </Markdown>
                 {
-                    resultText.accepted ? 
-                    <CheckCircleTwoToneIcon/>
+                    page.number <= bookWriteState.pageNo ?
+                    page.paragraphs.map((paragraph) => (
+                        <Typography paragraph>
+                        <CurrentParagraph paragraph={paragraph} pageNo={page.number} bookWriteState={bookWriteState}/>
+                        </Typography>
+                    ))
                     :
                     <div></div>
                 }
-                </div>
 
+                {
+                    resultText.result == '' ? 
+                        <div></div>
+                        :
+                        <div className="result-text">
+                            <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+                                {resultText.result}
+                            </Markdown>
+                            {
+                                resultText.accepted ? 
+                                <CheckCircleTwoToneIcon/>
+                                :
+                                <div></div>
+                        }
+                        </div>
+                }
                 <div className="write-section">
-                <a className="listening-icon-speaker" onClick={handlePlaySentence}>
-                    <VolumeUpTwoToneIcon />
-                </a>
-                <TextField
-                    id="user-text-input-id"
-                    label="Write what you heard"
-                    variant="standard"
-                    value={inputUser}
-                    fullWidth
-                    onKeyDown={handlePressEnter}
-                    onChange={handleEnterText}
-                />
+                    <a className="listening-icon-speaker" onClick={handlePlaySentence}>
+                        <VolumeUpTwoToneIcon />
+                    </a>
+                    <TextField
+                        id="user-text-input-id"
+                        label="Write what you heard"
+                        variant="standard"
+                        value={inputUser}
+                        fullWidth
+                        onKeyDown={handlePressEnter}
+                        onChange={handleEnterText}
+                    />
                 </div>
             </div>
 
