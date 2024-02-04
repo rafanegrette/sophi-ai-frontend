@@ -9,16 +9,16 @@ interface ChapterProps {
     bookWriteState: BookWriteState;
 }
 export function CurrentChapter({chapter, bookWriteState}: ChapterProps) {
-    const [ currentPage, setCurrentPage ] = useState(0);
+    const [ currentPage, setCurrentPage ] = useState(1);
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
-        setCurrentPage(value - 1);
+        setCurrentPage(value);
     }
     return (
         <div className="chapter-container">
             <div className="page-content">
                 {
                     chapter.id.valueOf() <= bookWriteState.chapterId ? 
-                    <CurrentPage page={chapter.pages[currentPage]} bookWriteState={bookWriteState}/> :
+                    <CurrentPage page={chapter.pages[currentPage - 1]} bookWriteState={bookWriteState}/> :
                     <div></div>
                 }
                 
