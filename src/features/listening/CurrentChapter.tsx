@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Pagination } from "@mui/material";
 import { Chapter } from "../../models/Chapter";
 import { CurrentPage } from "./CurrentPage";
@@ -13,6 +13,14 @@ export function CurrentChapter({chapter, bookWriteState}: ChapterProps) {
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
         setCurrentPage(value);
     }
+
+    useEffect(() => {
+        console.log("bookwritestate: " + bookWriteState.pageNo);
+        if (bookWriteState.pageNo == 0)
+            setCurrentPage(bookWriteState.pageNo + 1 );
+        else 
+            setCurrentPage(bookWriteState.pageNo);
+    },[bookWriteState])
     return (
         <div className="chapter-container">
             <div className="page-content">
