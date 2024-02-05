@@ -8,11 +8,15 @@
 
 
 .result-text {
-    display: block;
-    margin-bottom: 2px;
+    display: inline-flex;
+    margin-bottom: 0px;
     border: 1px solid #ccc; // Subtle border
     background-color: #f2f2f2; // Subtle background color
     padding: 0px; // Adjust padding as needed
+    align-items: end;
+    .okresult {
+        color: green;
+    }
 }
 
 .write-section {

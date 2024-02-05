@@ -86,7 +86,7 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
                             </Markdown>
                             {
                                 resultText.accepted ? 
-                                <CheckCircleTwoToneIcon/>
+                                <CheckCircleTwoToneIcon className='okresult'/>
                                 :
                                 <div></div>
                         }
