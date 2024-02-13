@@ -104,7 +104,7 @@ export function Listening() {
     const { bookId = "-"} = useParams();
     const [ skip, setSkip] = useState(true);
     const { data: currentBook = initialBook, isFetching: isFetchingBook, 
-        isUninitialized: isUninitializedBook } = useFetchBookQuery(bookId, {skip});
+        isUninitialized: isUninitializedBook, isSuccess: isSuccessFetchingBook } = useFetchBookQuery(bookId, {skip});
     const { data: currentBookState = initialBookState } = useFetchBookStateQuery(bookId, {skip});
     
     useEffect(() => {
@@ -158,7 +158,13 @@ export function Listening() {
         </Drawer>
         <Main open={open}>
           <DrawerHeader />
-          <CurrentChapter chapter={currentBook.chapters[currentChapter]} bookWriteState={currentBookState}/>
+          {
+            isSuccessFetchingBook ?
+            <CurrentChapter chapter={currentBook.chapters[currentChapter]} bookWriteState={currentBookState}/>
+            :
+            <div></div>
+          }
+          
         </Main>
       </Box>
       </div>
