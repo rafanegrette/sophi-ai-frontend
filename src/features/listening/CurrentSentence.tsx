@@ -16,8 +16,8 @@ export function CurrentSentence( {sentence, paragraphId, pageNo, bookWriteState}
 
     return (
       <div className="sentences">
-        {sentence.id < bookWriteState.sentenceId || paragraphId < bookWriteState.paragraphId || pageNo < bookWriteState.pageNo ? 
-            sentence.text 
+          {sentence.id < bookWriteState.sentenceId || paragraphId < bookWriteState.paragraphId || pageNo < bookWriteState.pageNo ? 
+            " " + sentence.text 
             : 
             <div></div>
           }
