@@ -41,6 +41,7 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
 
     const handlePressEnter = (event: KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
+            event.preventDefault();
             increaseState({
                 'bookId': bookWriteState.bookId,
                 'userText': inputUser,
@@ -102,6 +103,7 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
                         variant="standard"
                         value={inputUser}
                         fullWidth
+                        multiline
                         onKeyDown={handlePressEnter}
                         onChange={handleEnterText}
                     />
