@@ -29,8 +29,6 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
                 useFetchSentenceAudioMapQuery(bookWriteState.bookId + "/" + bookWriteState.chapterId + "/" + bookWriteState.pageNo 
                 + "/" + bookWriteState.paragraphId + "/" + bookWriteState.sentenceId);
 
-    const { data: currentBookState, refetch } = useFetchBookStateQuery(bookWriteState.bookId, {skip: skipFetchBookState});
-
     const handlePlaySentence = () => {
         let audio = new Audio();
         audio.src = audioUrls.get('/' + bookWriteState.paragraphId + '/' + bookWriteState.sentenceId)?.audioUrl || "not url";
@@ -52,7 +50,6 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
                     setResultText(result);
                     setSkipFetchBookState(false);
                     if (result.accepted) {
-                        refetch();
                         setInputUser("");
                     }
                 })

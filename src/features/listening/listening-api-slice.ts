@@ -29,12 +29,14 @@ export const listeningApiSlice = createApi({
             return response;
         }
     }),
+    tagTypes: ['GetBookState'],
     endpoints(builder) {
         return {
             fetchBookState: builder.query<BookWriteState, string>({
                 query(bookId) {
                     return `/${bookId}`;
-                }
+                },
+                providesTags: ['GetBookState']
             }),
             increaseState: builder.mutation<ListeningSentenceResponse ,ListeningSentenceRequest>({
                 query: (listeningSentence: ListeningSentenceRequest) => {
@@ -43,7 +45,8 @@ export const listeningApiSlice = createApi({
                         method: 'POST',
                         body: listeningSentence
                     }
-                }
+                },
+                invalidatesTags: ['GetBookState']
             })
         }
     }
