@@ -7,6 +7,7 @@ import { ContentIndex } from "../../models/ContentIndex";
 interface ContentIndexesProps {
     chapterIndexes: ContentIndex[];
     onChapterChange: (childIndex: number) => void;
+    currentChapterIndex: number;
 }
 
 const drawerWidth = 240;
@@ -20,14 +21,14 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     justifyContent: 'flex-end',
   }));
 
-export function ChapterIndexes ({chapterIndexes, onChapterChange}: ContentIndexesProps) {
+export function ChapterIndexes ({chapterIndexes, onChapterChange, currentChapterIndex}: ContentIndexesProps) {
     
     return (
         <nav className="sidebar">
                 <List>
                 {chapterIndexes.map((indexContent, index) => (
                     <ListItem key={index} disablePadding>
-                        <ListItemButton
+                        <ListItemButton selected={index === currentChapterIndex}
                             onClick={() => onChapterChange(index)}
                             >
                             <ListItemText primary={indexContent.title} />

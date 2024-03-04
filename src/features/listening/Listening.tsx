@@ -113,6 +113,13 @@ export function Listening() {
           }
     }, [bookId]);
 
+    useEffect(()=> {
+      var currentChapterId = currentBook.chapters.findIndex(c => c.id === currentBookState.chapterId)
+      if (currentChapterId >= 0) {
+        setCurrentChapter(currentChapterId);
+      }      
+    }, [isSuccessFetchingBook])
+
     return (
         <div className="ebook">
 
@@ -154,7 +161,9 @@ export function Listening() {
             </IconButton>
           </DrawerHeader>
           <Divider />
-          <ChapterIndexes chapterIndexes={currentBook.contentTable} onChapterChange={handleChapterChange}/>
+          <ChapterIndexes chapterIndexes={currentBook.contentTable} 
+                          currentChapterIndex={currentChapter} 
+                          onChapterChange={handleChapterChange}/>
         </Drawer>
         <Main open={open}>
           <DrawerHeader />
