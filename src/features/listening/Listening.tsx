@@ -4,6 +4,7 @@ import { useFetchBookQuery } from "../reading/reading-api-slice";
 import { Book } from "../../models/Book";
 import bookDummyData from '../reading/harry-1.json';
 import { ChapterIndexes } from './ChapterIndexes';
+import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
 
 import "./Listening.scss";
 import { styled, useTheme } from '@mui/material/styles';
@@ -81,7 +82,8 @@ const initialBookState: BookWriteState = {
   "chapterId": 0,
   "pageNo": 0,
   "paragraphId": 0,
-  "sentenceId": 0
+  "sentenceId": 0,
+  "finished": false
 };
 
 export function Listening() {
@@ -165,15 +167,22 @@ export function Listening() {
                           currentChapterIndex={currentChapter} 
                           onChapterChange={handleChapterChange}/>
         </Drawer>
-        <Main open={open}>
+        <Main open={open}>        
+          
           <DrawerHeader />
           {
+            currentBookState.finished ?
+            <div className="book-finished"><CheckCircleTwoToneIcon className='okresult'/>Finished</div>
+            :
+            <div></div>
+          }
+          {
+            
             isSuccessFetchingBook ?
             <CurrentChapter chapter={currentBook.chapters[currentChapter]} bookWriteState={currentBookState}/>
             :
             <div></div>
           }
-          
         </Main>
       </Box>
       </div>

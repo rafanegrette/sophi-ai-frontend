@@ -4,4 +4,5 @@ export interface BookWriteState {
     pageNo: number;
     paragraphId: number;
     sentenceId: number;
+    finished: boolean;
 }

@@ -17,6 +17,12 @@
     flex-direction: column;
    }
    
+.book-finished {
+    color: green;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+}
 
 header {
     text-align: center;

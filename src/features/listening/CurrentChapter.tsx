@@ -3,6 +3,7 @@ import { Pagination } from "@mui/material";
 import { Chapter } from "../../models/Chapter";
 import { CurrentPage } from "./CurrentPage";
 import { BookWriteState } from "../../models/BookWriteState";
+import "./CurrentChapter.scss";
 
 interface ChapterProps {
     chapter: Chapter;
@@ -23,15 +24,14 @@ export function CurrentChapter({chapter, bookWriteState}: ChapterProps) {
     },[bookWriteState])
     return (
         <div className="chapter-container">
+
             <div className="page-content">
                 {
                     chapter.id.valueOf() <= bookWriteState.chapterId ? 
                     <CurrentPage page={chapter.pages[currentPage - 1]} bookWriteState={bookWriteState}/> :
                     <div></div>
                 }
-                
             </div>
-            
             <div className="page-pagination">
                 <Pagination count={chapter.pages.length} 
                             siblingCount={chapter.pages.length}

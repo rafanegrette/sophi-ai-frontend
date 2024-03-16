@@ -1,13 +1,10 @@
-import { useAppDispatch } from '../../../app/hooks';
 import { useEffect, useState } from 'react';
-import { useChatSendQuery } from './chat-api-slice';
 import { Message } from '../messages/message';
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import SendIcon from '@mui/icons-material/Send';
 import { fetchEventSource } from '@microsoft/fetch-event-source';
 import './Chat.scss';
-import { Assistant } from '../assistants/assistant-api-slice';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
@@ -80,7 +77,7 @@ export function Chat(props: Props) {
         <div className="chat-full-page">
             <div className="chat-header">proxy to chat gpt</div>
             <div className="chat-content">
-{/*                 <div className="chat-messages">
+                 <div className="chat-messages">
                 {
                     messages.map((message, index) => (
                         
@@ -115,7 +112,7 @@ export function Chat(props: Props) {
                         ))
                     
                     }
-                </div> */}
+                </div>
                 <div className="chat-input">
                     <TextField
                         id="user-input-chat"

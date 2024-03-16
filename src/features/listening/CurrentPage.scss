@@ -27,3 +27,17 @@
         display: flex;
     }
 }
+
+.book-finished-ok {
+    color: green;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+}
+
+.book-finished-ok::after {
+    content: "\2714"; /* Unicode character for a checkmark */
+    color: green;
+    position: absolute;
+    right: -20px; /* Adjust as needed */
+}

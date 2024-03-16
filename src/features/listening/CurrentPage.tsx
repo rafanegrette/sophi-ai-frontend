@@ -75,6 +75,12 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
                 }
 
                 {
+                    true ?
+                    <div className="book-finished-ok"></div>
+                    :
+                    <div>buuu</div>
+                }
+                {
                     resultText.result == '' ? 
                         <div></div>
                         :
@@ -90,6 +96,7 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
                         }
                         </div>
                 }
+
                 <div className="write-section">
                     <a className="listening-icon-speaker" onClick={handlePlaySentence}>
                         <VolumeUpTwoToneIcon />
@@ -99,6 +106,7 @@ export function CurrentPage({page, bookWriteState} : PageProps) {
                         label="Write what you heard"
                         variant="standard"
                         value={inputUser}
+                        disabled={bookWriteState.finished}
                         fullWidth
                         multiline
                         onKeyDown={handlePressEnter}
