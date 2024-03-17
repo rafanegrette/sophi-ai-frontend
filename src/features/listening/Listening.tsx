@@ -5,8 +5,9 @@ import { Book } from "../../models/Book";
 import bookDummyData from '../reading/harry-1.json';
 import { ChapterIndexes } from './ChapterIndexes';
 import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
-import "./Listening.scss";
+
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
@@ -23,6 +24,8 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { CurrentChapter } from './CurrentChapter';
 import { BookWriteState } from '../../models/BookWriteState';
 import { useFetchBookStateQuery } from './listening-api-slice';
+
+import "./Listening.scss";
 
 const drawerWidth = 240;
 
@@ -130,18 +133,34 @@ export function Listening() {
         <CssBaseline />
         <AppBar position="fixed" open={open}>
           <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              sx={{ mr: 2, ...(open && { display: 'none' }) }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" noWrap component="div">
-              {currentBook.title}
-            </Typography>
+            <div className='title-container'>
+              <div className='title-left-contents'>
+                <IconButton
+                  color="inherit"
+                  aria-label="open drawer"
+                  onClick={handleDrawerOpen}
+                  edge="start"
+                  sx={{ mr: 2, ...(open && { display: 'none' }) }}
+                >
+                  <MenuIcon />
+                </IconButton>
+              </div>
+              <div className='title-left-contents'>
+                <Typography variant="h6" noWrap component="div">
+                  {currentBook.title}
+                </Typography>
+              </div>
+
+              <div className='exit-buttom'>
+                <IconButton 
+                  size="large"
+                  aria-label="return to listening list"
+                  aria-contorls="menu-return"
+                  color="inherit">
+                  <ExitToAppIcon/>
+                </IconButton>
+              </div>
+            </div>
           </Toolbar>
         </AppBar>
         <Drawer
