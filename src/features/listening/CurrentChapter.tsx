@@ -10,32 +10,38 @@ interface ChapterProps {
     bookWriteState: BookWriteState;
 }
 export function CurrentChapter({chapter, bookWriteState}: ChapterProps) {
-    const [ currentPage, setCurrentPage ] = useState(1);
+    const [ currentPageNo, setCurrentPageNo ] = useState(1);
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
-        setCurrentPage(value);
+        setCurrentPageNo(value);
     }
 
     useEffect(() => {
         console.log("bookwritestate: " + bookWriteState.pageNo);
         if (bookWriteState.pageNo == 0)
-            setCurrentPage(bookWriteState.pageNo + 1 );
+            setCurrentPageNo(bookWriteState.pageNo + 1 );
         else 
-            setCurrentPage(bookWriteState.pageNo);
+            setCurrentPageNo(bookWriteState.pageNo);
     },[bookWriteState])
+
     return (
         <div className="chapter-container">
 
             <div className="page-content">
                 {
                     chapter.id.valueOf() <= bookWriteState.chapterId ? 
-                    <CurrentPage page={chapter.pages[currentPage - 1]} bookWriteState={bookWriteState}/> :
+                    <CurrentPage 
+                        page={currentPageNo >= chapter.pages.length ? 
+                                            chapter.pages[chapter.pages.length - 1]
+                                            : chapter.pages[currentPageNo - 1]
+                                            } 
+                        bookWriteState={bookWriteState}/> :
                     <div></div>
                 }
             </div>
             <div className="page-pagination">
                 <Pagination count={chapter.pages.length} 
                             siblingCount={chapter.pages.length}
-                            page={currentPage} 
+                            page={currentPageNo} 
                             onChange={handlePageChange}/>
             </div>
 
