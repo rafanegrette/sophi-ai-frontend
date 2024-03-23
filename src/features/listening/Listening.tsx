@@ -6,7 +6,7 @@ import bookDummyData from '../reading/harry-1.json';
 import { ChapterIndexes } from './ChapterIndexes';
 import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-
+import { useNavigate } from 'react-router-dom';
 
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -91,6 +91,7 @@ const initialBookState: BookWriteState = {
 
 export function Listening() {
     const theme = useTheme();
+    const navigateTo = useNavigate();
     const [open, setOpen] = useState(false);
     const [currentChapter, setCurrentChapter] = useState(0);
     
@@ -104,6 +105,11 @@ export function Listening() {
 
     const handleChapterChange = (childIndex: number) => {
       setCurrentChapter(childIndex);
+    }
+
+    const handleExitListening = () => {
+      
+      navigateTo("/listening");
     }
 
     const { bookId = "-"} = useParams();
@@ -156,7 +162,8 @@ export function Listening() {
                   size="large"
                   aria-label="return to listening list"
                   aria-contorls="menu-return"
-                  color="inherit">
+                  color="inherit"
+                  onClick={handleExitListening}>
                   <ExitToAppIcon/>
                 </IconButton>
               </div>
