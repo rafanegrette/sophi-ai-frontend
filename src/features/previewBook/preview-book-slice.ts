@@ -79,7 +79,7 @@ const previewBookSlice = createSlice({
         },
         deleteParagraph(state, action: PayloadAction<PreviewBookState>) {
             const bookState = action.payload;
-            state.chapters[bookState.currentChapterNo].pages[bookState.currentPageNo - 1].paragraphs.splice(bookState.currentParagraphNo - 1, 1);
+            state.chapters[bookState.currentChapterNo].pages[bookState.currentPageNo - 1].paragraphs.splice(bookState.currentParagraphNo, 1);
             state.chapters[bookState.currentChapterNo].pages[bookState.currentPageNo - 1].paragraphs
                 .filter(para => para.id >= bookState.currentParagraphNo)
                 .forEach(para => para.id = para.id - 1);
