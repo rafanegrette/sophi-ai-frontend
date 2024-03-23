@@ -32,7 +32,7 @@ export const voiceToTextApiSlice = createApi({
                     formRequest.append('file', transcriptRequest.audioFile);
                     formRequest.append('sentence', transcriptRequest.originalText);
                     return {
-                        url: '/transcript',
+                        url: '/pronunciation',
                         method: 'POST',
                         body: formRequest
                     };
