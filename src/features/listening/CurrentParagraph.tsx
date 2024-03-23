@@ -1,11 +1,11 @@
-import { BookWriteState } from "../../models/BookWriteState";
+import { BookUserState } from "../../models/BookUserState";
 import { Paragraph } from "../../models/Paragraph";
 import { CurrentSentence } from "./CurrentSentence";
 
 interface ParagraphProps {
     paragraph: Paragraph;
     pageNo: number;
-    bookWriteState: BookWriteState;
+    bookWriteState: BookUserState;
 }
 
 export function CurrentParagraph({paragraph, pageNo, bookWriteState}: ParagraphProps) {

@@ -22,7 +22,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { CurrentChapter } from './CurrentChapter';
-import { BookWriteState } from '../../models/BookWriteState';
+import { BookUserState } from '../../models/BookUserState';
 import { useFetchBookStateQuery } from './listening-api-slice';
 
 import "./Listening.scss";
@@ -80,7 +80,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 const initialBook: Book =  bookDummyData;
 
-const initialBookState: BookWriteState = {
+const initialBookState: BookUserState = {
   "bookId": '',
   "chapterId": 0,
   "pageNo": 0,

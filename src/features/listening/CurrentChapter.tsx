@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { Pagination } from "@mui/material";
 import { Chapter } from "../../models/Chapter";
 import { CurrentPage } from "./CurrentPage";
-import { BookWriteState } from "../../models/BookWriteState";
+import { BookUserState } from "../../models/BookUserState";
 import "./CurrentChapter.scss";
 
 interface ChapterProps {
     chapter: Chapter;
-    bookWriteState: BookWriteState;
+    bookWriteState: BookUserState;
 }
 export function CurrentChapter({chapter, bookWriteState}: ChapterProps) {
     const [ currentPageNo, setCurrentPageNo ] = useState(1);

@@ -1,6 +1,6 @@
 
 
-import { BookWriteState } from "../../models/BookWriteState";
+import { BookUserState } from "../../models/BookUserState";
 import { Sentence } from "../../models/Sentence";
 
 import "./CurrentSentence.scss";
@@ -9,7 +9,7 @@ interface SentenceProps {
     sentence : Sentence;
     paragraphId: number;
     pageNo: number;
-    bookWriteState: BookWriteState;
+    bookWriteState: BookUserState;
 }
 export function CurrentSentence( {sentence, paragraphId, pageNo, bookWriteState} : SentenceProps) {
     

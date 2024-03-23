@@ -12,12 +12,12 @@ import { useFetchBookStateQuery, useIncreaseStateMutation } from './listening-ap
 
 import { Page } from "../../models/Page";
 import { CurrentParagraph } from "./CurrentParagraph";
-import { BookWriteState } from '../../models/BookWriteState';
+import { BookUserState } from '../../models/BookUserState';
 import "./CurrentPage.scss";
 
 interface PageProps {
     page: Page;
-    bookWriteState: BookWriteState;
+    bookWriteState: BookUserState;
 }
 export function CurrentPage({page, bookWriteState} : PageProps) {
 

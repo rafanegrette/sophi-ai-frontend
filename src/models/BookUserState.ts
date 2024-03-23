@@ -1,4 +1,4 @@
-export interface BookWriteState {
+export interface BookUserState {
     bookId: string;
     chapterId: number;
     pageNo: number;

@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { BookWriteState } from "../../models/BookWriteState";
+import { BookUserState } from "../../models/BookUserState";
 
 interface ListeningSentenceRequest {
     bookId: string,
@@ -32,7 +32,7 @@ export const listeningApiSlice = createApi({
     tagTypes: ['GetBookState'],
     endpoints(builder) {
         return {
-            fetchBookState: builder.query<BookWriteState, string>({
+            fetchBookState: builder.query<BookUserState, string>({
                 query(bookId) {
                     return `/${bookId}`;
                 },
