@@ -7,12 +7,16 @@ interface ParagraphProps {
     paragraph: Paragraph;
     pageNo: number;
     bookReadState: BookUserState;
+    isParagraphSelected: boolean;
+    onParagraphSelect: ()=> void;
 }
 
-export function CurrentParagraphReading({paragraph, pageNo, bookReadState}: ParagraphProps) {
-    const [ selectedSentence, setSelectedSentence ] = useState<number>();
-    const handleSelectSentence = (id: number) => {
-        setSelectedSentence(id);
+export function CurrentParagraphReading({paragraph, pageNo, bookReadState, isParagraphSelected, onParagraphSelect}: ParagraphProps) {
+    const [ selectedSentenceId, setSelectedSentenceId ] = useState<number>();
+    
+    const handleSelectSentence = (sentenceId: number) => {
+        setSelectedSentenceId(sentenceId);
+        onParagraphSelect();
     }
     return (
         <div key={paragraph.id} className="paragraph">
@@ -24,7 +28,7 @@ export function CurrentParagraphReading({paragraph, pageNo, bookReadState}: Para
                         pageNo={pageNo}
                         paragraphId={paragraph.id}
                         bookReadState={bookReadState}
-                        isSelected={selectedSentence === sentence.id}
+                        isSelected={selectedSentenceId === sentence.id && isParagraphSelected}
                         onSelect={() => handleSelectSentence(sentence.id)}/>
                 ))
                 :

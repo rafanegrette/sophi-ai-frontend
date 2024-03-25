@@ -12,8 +12,10 @@ interface PageProps {
 }
 
 export function CurrentPageReading({page,  bookReadState} : PageProps) {
-
-
+    const [ selectedParagraphId, setSelectedParagraphId ] = useState<number>();
+    const handleSelectParagraph = ( pararaphId: number) => {
+        setSelectedParagraphId(pararaphId);
+    }
     return (
         <div>
             {
@@ -23,13 +25,20 @@ export function CurrentPageReading({page,  bookReadState} : PageProps) {
                         paragraph={paragraph}
                         pageNo={page.number}
                         bookReadState={bookReadState}
+                        isParagraphSelected={selectedParagraphId === paragraph.id}
+                        onParagraphSelect={() => handleSelectParagraph(paragraph.id)}
                         />
                 ))
                 :
                 <div></div>
             }
 
-            
+            {
+                page.number < bookReadState.pageNo || bookReadState.finished?
+                <div className="book-finished-ok"></div>
+                :
+                <div>buuu</div>
+            }
         </div>
         
     
