@@ -35,7 +35,7 @@ export const readingApiSlice = createApi({
                 query(bookId) {
                     return `/${bookId}`;
                 }
-            })            
+            })  
         }
     }
 });
