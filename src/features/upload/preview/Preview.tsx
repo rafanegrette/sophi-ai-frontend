@@ -1,4 +1,4 @@
-import { ToggleButton, IconButton, List, ListItemButton, ListItemText, Pagination, Typography, Stack, Chip } from "@mui/material";
+import { ToggleButton, IconButton, List, ListItemButton, ListItemText, Pagination, Typography, Stack, Chip, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import EditIcon from '@mui/icons-material/Edit';
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
@@ -6,7 +6,7 @@ import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 import { useAppSelector, useAppDispatch } from '../../../app/hooks';
 import { setChapterNo, setPageNo } from '../../previewBook/state-preview-book-slice';
-import { deleteChapter, deletePage, deleteParagraph } from '../../previewBook/preview-book-slice';
+import { deleteChapter, deletePage, deleteParagraph, updateSentence } from '../../previewBook/preview-book-slice';
 
 
 import "./Preview.scss";
@@ -51,7 +51,9 @@ export function Preview () {
         const statePreviewCopy : PreviewBookState = {
             currentChapterNo: statePreviewBook.currentChapterNo,
             currentPageNo: statePreviewBook.currentPageNo,
-            currentParagraphNo: 0
+            currentParagraphNo: 0,
+            currentSentenceId: 0,
+            currentText: ""
         };
         
         if (statePreviewBook.currentPageNo === currentBook.chapters[statePreviewBook.currentChapterNo].pages.length) {
@@ -65,10 +67,23 @@ export function Preview () {
         const statePreviewCopy : PreviewBookState = {
             currentChapterNo: statePreviewBook.currentChapterNo,
             currentPageNo: statePreviewBook.currentPageNo,
-            currentParagraphNo: index
+            currentParagraphNo: index,
+            currentSentenceId: 0,
+            currentText: ""
         };
         console.log("Paragraph Index: " + index);
         dispatch(deleteParagraph(statePreviewCopy));
+    }
+
+    const handleUpdateSentence = (paragraphNo: number, sentenceNo: number, text: string) => {
+        const statePreviewCopy : PreviewBookState = {
+            currentChapterNo: statePreviewBook.currentChapterNo,
+            currentPageNo: statePreviewBook.currentPageNo,
+            currentParagraphNo: paragraphNo,
+            currentSentenceId: sentenceNo,
+            currentText: text
+        };
+        dispatch(updateSentence(statePreviewCopy));
     }
 /*
     useEffect(() =>{
@@ -152,9 +167,27 @@ export function Preview () {
                                                     {
                                                         paragraph.sentences.map((sentence) => (
                                                             <div className="previewBorderSentence" key={sentence.id+"1"}>
-                                                                <span className="previewSentence" key={sentence.id}>
-                                                                    {sentence.text}&nbsp;
-                                                                </span>
+                                                                
+                                                                {
+                                                                 editSelected ?    
+                                                                    <TextField
+                                                                        className="previewSentence"
+                                                                        value={sentence.text}
+                                                                        size="small"
+                                                                        fullWidth
+                                                                        style={{
+                                                                            width: `${sentence.text.length * 4.4}px`,
+                                                                            fontSize: '8px', // Font size of 8
+                                                                            height: '12px', // Custom height
+                                                                        }}
+                                                                        inputProps={{ style: {fontSize: 9, padding: '0px 0px 0px 0px'}}}
+                                                                        onChange={(e) => handleUpdateSentence(paragraph.id, sentence.id, e.target.value)}
+                                                                        />
+                                                                    :
+                                                                    <span className="previewSentence" key={sentence.id}>
+                                                                        {sentence.text}&nbsp;
+                                                                    </span>
+                                                                }
                                                             </div>
                                                         ))
                                                     }
