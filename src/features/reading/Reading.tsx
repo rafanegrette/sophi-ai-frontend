@@ -44,8 +44,10 @@ export function Reading() {
     const {data: currentBookState = initialBookState} = useFetchBookStateQuery(bookId, {skip});
     
     
-    const { data: book = initialState, isFetching: isFetchingBook, 
-                isUninitialized: isUninitializedBook } = useFetchBookQuery(bookId, {skip});
+    const { data: book = initialState, 
+                isFetching: isFetchingBook, 
+                isUninitialized: isUninitializedBook, 
+                isSuccess: isSuccessFetchingBook } = useFetchBookQuery(bookId, {skip});
     
 
     const handleSelectChapterClick = (
@@ -62,6 +64,10 @@ export function Reading() {
     }, [bookId]);
 
 
+    useEffect(() => {
+        var currentChapterId = book.chapters.findIndex(c => c.id === currentBookState.chapterId);
+        setCurrentChapter(currentChapterId);
+    }, [isSuccessFetchingBook]);
 
     return (
         <div className="ebook">
