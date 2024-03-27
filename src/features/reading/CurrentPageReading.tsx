@@ -37,7 +37,7 @@ export function CurrentPageReading({page,  bookReadState} : PageProps) {
                 page.number < bookReadState.pageNo || bookReadState.finished?
                 <div className="book-finished-ok"></div>
                 :
-                <div>buuu</div>
+                <div></div>
             }
         </div>
         
