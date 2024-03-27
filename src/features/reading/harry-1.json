@@ -5,11 +5,17 @@
     "contentTable": [
       {
         "index": 0,
-        "title": "CHAPTER ONE"
+        "title": "CHAPTER ONE",
+        "pageStart": 0,
+        "pageEnd": 2,
+        "chapterId": 1
       },
       {
         "index": 1,
-        "title": "CHAPTER TWO"
+        "title": "CHAPTER TWO",
+        "pageStart": 2,
+        "pageEnd": 4,
+        "chapterId": 2
       }
     ],
     "chapters": [

@@ -1,4 +1,7 @@
 export interface ContentIndex {
     index: number,
-    title: String
+    title: String,
+    pageStart: number,
+    pageEnd: number,
+    chapterId: number
 }

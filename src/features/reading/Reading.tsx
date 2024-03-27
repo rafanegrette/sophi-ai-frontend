@@ -14,6 +14,7 @@ import bookDummyData from './harry-1.json';
 import './Reading.scss';
 import { BookUserState } from '../../models/BookUserState';
 import { CurrentChapterReading } from './CurrentChapterReading';
+import { ContentIndex } from '../../models/ContentIndex';
 
 const style = {
     width: '100%',
@@ -46,18 +47,12 @@ export function Reading() {
     const { data: book = initialState, isFetching: isFetchingBook, 
                 isUninitialized: isUninitializedBook } = useFetchBookQuery(bookId, {skip});
     
-    const handleChapterChange = (childIndex: number) => {
-        setCurrentChapter(childIndex);
-    }
 
     const handleSelectChapterClick = (
         event: React.MouseEvent<HTMLDivElement, MouseEvent>,
-        index: number
+        contentIndex: ContentIndex
     )=> {
-        if (index < book.chapters.length) {
-            dispatch(setChapterNo(index));
-            dispatch(setPageNo(1));
-        }
+        setCurrentChapter(contentIndex.index);
     };
 
     useEffect(() => {
@@ -85,10 +80,10 @@ export function Reading() {
                                         { 
                                             book.contentTable.map((indexContent) => (
                                                 <ListItemButton 
-                                                    selected = {currentBookState.chapterId === indexContent.index}
+                                                    selected = {currentChapter === indexContent.index}
                                                     key={indexContent.index} 
                                                     sx={{padding:0.4}} 
-                                                    onClick = {(event) => handleSelectChapterClick(event, indexContent.index)}
+                                                    onClick = {(event) => handleSelectChapterClick(event, indexContent)}
                                                     divider>
                                                     
                                                     <ListItemText primaryTypographyProps={{fontSize: 8}} primary={indexContent.title}/>
