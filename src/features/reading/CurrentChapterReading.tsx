@@ -12,11 +12,16 @@ interface ChapterProps {
 }
 
 export function CurrentChapterReading({chapter, bookReadState}: ChapterProps) {
-    const [ currentPageNo, setCurrentPageNo ] = useState(1);
+    const [ currentPageNo, setCurrentPageNo ] = useState(bookReadState.pageNo);
 
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number)  => {
         //dispatch(setCurrentPageNo(value));
+        setCurrentPageNo(value);
     };
+
+    useEffect(() => {
+        setCurrentPageNo(bookReadState.pageNo);
+    }, [bookReadState]);
 
     return(
         <Grid xs={12}>

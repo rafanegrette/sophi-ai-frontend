@@ -19,7 +19,7 @@ export function CurrentPageReading({page,  bookReadState} : PageProps) {
     return (
         <div>
             {
-                page.number <= bookReadState.pageNo ?
+                page !== undefined && page.number <= bookReadState.pageNo ?
                 page.paragraphs.map((paragraph) => (
                     <CurrentParagraphReading
                         paragraph={paragraph}
@@ -34,7 +34,7 @@ export function CurrentPageReading({page,  bookReadState} : PageProps) {
             }
 
             {
-                page.number < bookReadState.pageNo || bookReadState.finished?
+                page !== undefined && page.number < bookReadState.pageNo || bookReadState.finished?
                 <div className="book-finished-ok"></div>
                 :
                 <div></div>
