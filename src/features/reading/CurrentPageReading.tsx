@@ -9,9 +9,10 @@ import { CurrentParagraphReading } from "./CurrentParagraphReading";
 interface PageProps {
     page: Page;
     bookReadState: BookUserState;
+    chapterId: number
 }
 
-export function CurrentPageReading({page,  bookReadState} : PageProps) {
+export function CurrentPageReading({page,  bookReadState, chapterId} : PageProps) {
     const [ selectedParagraphId, setSelectedParagraphId ] = useState<number>();
     const handleSelectParagraph = ( pararaphId: number) => {
         setSelectedParagraphId(pararaphId);
@@ -19,12 +20,13 @@ export function CurrentPageReading({page,  bookReadState} : PageProps) {
     return (
         <div>
             {
-                page !== undefined && page.number <= bookReadState.pageNo ?
+                page !== undefined && (page.number <= bookReadState.pageNo || chapterId < bookReadState.chapterId) ?
                 page.paragraphs.map((paragraph) => (
                     <CurrentParagraphReading
                         paragraph={paragraph}
                         pageNo={page.number}
                         bookReadState={bookReadState}
+                        chapterId={chapterId}
                         isParagraphSelected={selectedParagraphId === paragraph.id}
                         onParagraphSelect={() => handleSelectParagraph(paragraph.id)}
                         />

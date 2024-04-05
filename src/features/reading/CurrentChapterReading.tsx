@@ -9,9 +9,10 @@ import { CurrentPageReading } from "./CurrentPageReading";
 interface ChapterProps {
     chapter: Chapter;
     bookReadState: BookUserState;
+    onChapterChange: () => void;
 }
 
-export function CurrentChapterReading({chapter, bookReadState}: ChapterProps) {
+export function CurrentChapterReading({chapter, bookReadState, onChapterChange}: ChapterProps) {
     const [ currentPageNo, setCurrentPageNo ] = useState(bookReadState.pageNo);
 
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number)  => {
@@ -23,6 +24,14 @@ export function CurrentChapterReading({chapter, bookReadState}: ChapterProps) {
         setCurrentPageNo(bookReadState.pageNo);
     }, [bookReadState]);
 
+    
+
+    // first load
+    useEffect(() => {
+        setCurrentPageNo(1);
+    }, [onChapterChange]);
+
+
     return(
         <Grid xs={12}>
             { 
@@ -32,6 +41,7 @@ export function CurrentChapterReading({chapter, bookReadState}: ChapterProps) {
                                         chapter.pages[chapter.pages.length - 1]
                                         : 
                                         chapter.pages[currentPageNo - 1]}
+                    chapterId={chapter.id}
                     bookReadState={bookReadState}
                     />
                 :

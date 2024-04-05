@@ -36,7 +36,7 @@ export function Reading() {
 
     const dispatch = useAppDispatch();
     const [currentChapter, setCurrentChapter] = useState(0);
-
+    const [currentPageNo, setCurrentPageNo] = useState(1);
     const { bookId = "-"} = useParams();
     const [ skip, setSkip] = useState(true);
     
@@ -55,7 +55,10 @@ export function Reading() {
         contentIndex: ContentIndex
     )=> {
         setCurrentChapter(contentIndex.index);
+        onChapterChange();
     };
+
+    const onChapterChange = () => {};
 
     useEffect(() => {
         if (bookId !== "-") {
@@ -99,7 +102,9 @@ export function Reading() {
                                     </List>
                                 </Grid>
                                 <Grid xs={10}>
-                                    <CurrentChapterReading chapter={book.chapters[currentChapter]} bookReadState={currentBookState}/>
+                                    <CurrentChapterReading  chapter={book.chapters[currentChapter]} 
+                                                            bookReadState={currentBookState}
+                                                            onChapterChange={onChapterChange}/>
                                     
                                 </Grid>
                                 <Grid xs={2}>

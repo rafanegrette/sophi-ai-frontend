@@ -25,12 +25,13 @@ interface SentenceProps {
     sentence : Sentence;
     paragraphId: number;
     pageNo: number;
+    chapterId: number;
     bookReadState: BookUserState;
     isSelected: boolean;
     onSelect: ()=> void;
 }
 
-export function CurrentSentenceReading({sentence, paragraphId, pageNo, bookReadState, isSelected, onSelect} : SentenceProps) {
+export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId, bookReadState, isSelected, onSelect} : SentenceProps) {
 
     const [ popOverIsOpen, setPopOverIsOpen] = useState(false);
     const [ clickY, setClickY] = useState(0);
@@ -175,7 +176,8 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, bookReadS
             {
                 sentence.id <= bookReadState.sentenceId ||
                 paragraphId < bookReadState.paragraphId ||
-                pageNo < bookReadState.pageNo ?
+                pageNo < bookReadState.pageNo ||
+                chapterId < bookReadState.chapterId ?
                     <span key={sentence.id} 
                                 className={ isSelected ? "selected-sentence" : "sentence"}
                                 onClick={(event: React.MouseEvent<HTMLSpanElement>) => handleClickSentence(event, '/' + paragraphId + '/' + sentence.id)}>
