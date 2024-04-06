@@ -28,7 +28,9 @@ export function CurrentChapterReading({chapter, bookReadState, onChapterChange}:
 
     // first load
     useEffect(() => {
-        setCurrentPageNo(1);
+        if (bookReadState === undefined || bookReadState.pageNo === undefined) {
+            setCurrentPageNo(1);
+         }
     }, [onChapterChange]);
 
 
