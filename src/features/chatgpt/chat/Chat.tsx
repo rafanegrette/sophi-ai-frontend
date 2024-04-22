@@ -78,7 +78,7 @@ export function Chat(props: Props) {
             <div className="chat-header">proxy to chat gpt</div>
             <div className="chat-content">
                  <div className="chat-messages">
-                {
+                {/*
                     messages.map((message, index) => (
                         
                             <div id={index + ''} className={message.role == "user"? "user-question" : "gpt-response"}>
@@ -111,7 +111,7 @@ export function Chat(props: Props) {
                             </div>
                         ))
                     
-                    }
+                    */}
                 </div>
                 <div className="chat-input">
                     <TextField

@@ -10,7 +10,10 @@ const initialState: Book = {
     contentTable: [
         {
             index: 0,
-            title: 'Chapter placeholder'
+            title: 'Chapter placeholder',
+            pageStart: 0,
+            pageEnd: 0,
+            chapterId: 0
         }
     ],
     chapters: [
@@ -66,7 +69,10 @@ const previewBookSlice = createSlice({
                 .map(item => {
                     const contentIndex:ContentIndex = {
                         index: item.index -1,
-                        title: item.title
+                        title: item.title,
+                        pageStart: item.pageStart,
+                        pageEnd: item.pageEnd,
+                        chapterId: item.chapterId
                     }
                     return contentIndex;
                 }) : [];

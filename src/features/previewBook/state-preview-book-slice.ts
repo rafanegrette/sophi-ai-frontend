@@ -4,7 +4,9 @@ import { PreviewBookState } from '../../models/PreviewBookState';
 const initialState: PreviewBookState = {
     currentChapterNo: 0,
     currentPageNo: 1,
-    currentParagraphNo: 1
+    currentParagraphNo: 1,
+    currentSentenceId: 0,
+    currentText: ''
 }
 
 const statePreviewBookSlice = createSlice({
