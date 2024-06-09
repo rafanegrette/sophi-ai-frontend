@@ -129,7 +129,7 @@ export function Listening() {
       if (currentChapterId >= 0) {
         setCurrentChapter(currentChapterId);
       }      
-    }, [isSuccessFetchingBook])
+    }, [isSuccessFetchingBook, currentBookState])
 
     return (
         <div className="ebook">
