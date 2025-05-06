@@ -1,27 +1,35 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
-interface Message {
-    role: string,
-    content: string
-}
+import { UserMessage } from "../messages/user-message";
+import { BotMessage } from "../messages/bot-message";
 
 export const chatApiSlice = createApi({
     reducerPath: 'apiChatGpt',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:8080/api/v1/sophi',
+        baseUrl: `${import.meta.env.VITE_BACKEND_HOST}/api`,
         prepareHeaders(headers) {
-            headers.set('Accept', '*/*')
-            headers.set('Content-Type', 'application/json')
+            headers.set('Accept', 'application/json')
+        },
+        redirect: 'follow',
+        credentials: 'include',
+        fetchFn: async(url, args) => {
+            const response = await fetch(url, {...args, redirect: "manual"});
+            if(response.type === "opaqueredirect") {
+                document.location = response.url;
+            }
+            return response;
         }
     }),
     endpoints(builder) {
         return {
-            chatSend: builder.query<void, Message[]>({
-                query: (messages: Message[]) => {
+            chatSend: builder.mutation<BotMessage, UserMessage>({
+                query: (userMessage: UserMessage) => {
+                    const formRequest = new FormData();
+                    formRequest.append('file', userMessage.content);
+                    formRequest.append('conversationId', userMessage.conversationId);
                     return {
-                        url: '/talk',
+                        url: '/conversation',
                         method: 'POST',
-                        body: messages
+                        body: formRequest
                     }
                 }
             })
@@ -29,4 +37,4 @@ export const chatApiSlice = createApi({
     }
 });
 
-export const { useChatSendQuery } = chatApiSlice;
+export const { useChatSendMutation } = chatApiSlice;
