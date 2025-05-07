@@ -1,11 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Message } from '../messages/message';
-import { TextField } from "@mui/material";
-import Button from "@mui/material/Button";
 import KeyboardVoiceTwoToneIcon from '@mui/icons-material/KeyboardVoiceTwoTone';
 import StopCircleIcon from '@mui/icons-material/StopCircle';
 import VolumeUpTwoToneIcon from '@mui/icons-material/VolumeUpTwoTone';
-import SendIcon from '@mui/icons-material/Send';
 import { useChatSendMutation } from './chat-api-slice';
 import './Chat.scss';
 
@@ -22,10 +19,8 @@ export function Chat(props: Props) {
     const [ recording, setRecording ] = useState<Boolean>(false);
     const [ stream, setStream ] = useState<MediaStream | null>(null);
     const [ recordedChunks, setRecordedChunks ] = useState<any[]>([]);
+    const [ isAudioPlaying, setIsAudioPlaying ] = useState(false);
 
-    const messagesDefault : Message[] = [
-       
-    ];
     const [ userMessage, setUserMessage ] = useState("");
     const [ chatMessage, setChatMessage ] = useState("");
 
@@ -66,7 +61,7 @@ export function Chat(props: Props) {
         const blob = new Blob(recordedChunks, { type: "audio/webm; codecs=opus" });
         const userAudioUrlBlob = URL.createObjectURL(blob);
         setUserAudioUrl(userAudioUrlBlob);
-        chatSend({'content': blob, 'conversationId': "122"})
+        chatSend({'content': blob, 'conversationId': ""})
             .unwrap()
             .then(result => {
                 setChatMessage(result.botText);
@@ -111,16 +106,34 @@ export function Chat(props: Props) {
     }
 
     const playBotAudio = () => {
-        if(botAudioUrl) {
+        if(botAudioUrl && !isAudioPlaying) {
+            setIsAudioPlaying(true);
+
             const audio = new Audio(botAudioUrl);
             audio.play();
+            audio.onended = () => {
+                setIsAudioPlaying(false);
+            }
+
+            audio.onerror = () => {
+                setIsAudioPlaying(false);
+            }
         }
     }
 
     const playUserAudio = () => {
-        if(userAudioUrl) {
+        if(userAudioUrl && !isAudioPlaying) {
+            setIsAudioPlaying(true);
+
             const audio = new Audio(userAudioUrl);
             audio.play();
+            audio.onended = () => {
+                setIsAudioPlaying(false);
+            }
+
+            audio.onerror = () => {
+                setIsAudioPlaying(false);
+            }
         }
     }
 
@@ -133,23 +146,30 @@ export function Chat(props: Props) {
                         <div className="message user-message">
                             <div className="message-content user-question">{userMessage}</div>
                             {userAudioUrl && (
-                                <a className="" onClick={() => playUserAudio()}>
+                                <a className="audio-play-button user-play" onClick={() => playUserAudio()}>
                                     <VolumeUpTwoToneIcon/>
                                 </a>
                             )}
                         </div>
                     )}
-                    {chatMessage && (
+                    {isLoadingBotResponse && (
+                        <div className="message bot-message">
+                        <div className="message-content gpt-response loading-response">
+                            <div className="loading-indicator">
+                            <div className="loading-dot"></div>
+                            <div className="loading-dot"></div>
+                            <div className="loading-dot"></div>
+                            </div>
+                        </div>
+                        </div>
+                    )}
+                    {chatMessage && !isLoadingBotResponse && (
                         <div className="message bot-message">
                             <div className="message-content gpt-response">{chatMessage}</div>
                             {botAudioUrl && (
-                                <Button
-                                    variant="contained"
-                                    size="small"
-                                    onClick={playBotAudio}
-                                    startIcon={<VolumeUpTwoToneIcon/>}
-                                >Play
-                                </Button>
+                              <a className="audio-play-button bot-play" onClick={() => playBotAudio()}>
+                              <VolumeUpTwoToneIcon/>
+                          </a>
                             )}
                         </div>
                     )}

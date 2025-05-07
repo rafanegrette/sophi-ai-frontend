@@ -118,3 +118,94 @@ Button {
 Button:hover {
     background-color: #2E5792;
 }
+
+.loading-response {
+    background-color: #f5f5f5;
+    min-width: 120px;
+}
+
+.loading-indicator {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 6px;
+padding: 8px 0;
+}
+
+.loading-dot {
+width: 10px;
+height: 10px;
+background-color: #3670B2;
+border-radius: 50%;
+animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-dot:nth-child(1) {
+animation-delay: -0.32s;
+}
+
+.loading-dot:nth-child(2) {
+animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% { 
+        transform: scale(0);
+    } 40% { 
+        transform: scale(1.0);
+    }
+}
+
+.user-play {
+    color: #0d47a1;
+    background-color: #e3f2fd;
+    &:hover {
+        background-color: #bbdefb;
+    }
+}
+
+.bot-play {
+    color: #5e5e5e;
+    background-color: #f5f5f5;
+    &:hover {
+        background-color: #d4d4d4;
+    }
+}
+
+.audio-play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+  
+.audio-play-button-mui {
+    margin-left: 8px !important;
+    min-width: auto !important;
+    border-radius: 20px !important;
+    transition: all 0.2s ease-in-out !important;
+
+    &:hover {
+        transform: scale(1.05) !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    &:active {
+        transform: scale(0.95) !important;
+    }
+}
+  
