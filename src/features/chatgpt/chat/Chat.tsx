@@ -4,6 +4,13 @@ import KeyboardVoiceTwoToneIcon from '@mui/icons-material/KeyboardVoiceTwoTone';
 import StopCircleIcon from '@mui/icons-material/StopCircle';
 import VolumeUpTwoToneIcon from '@mui/icons-material/VolumeUpTwoTone';
 import { useChatSendMutation } from './chat-api-slice';
+
+import Markdown from 'react-markdown';
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import remarkGfm from 'remark-gfm';
+
+
 import './Chat.scss';
 
 
@@ -165,7 +172,34 @@ export function Chat(props: Props) {
                     )}
                     {chatMessage && !isLoadingBotResponse && (
                         <div className="message bot-message">
-                            <div className="message-content gpt-response">{chatMessage}</div>
+                            <div className="message-content gpt-response">
+                                <Markdown 
+                                    remarkPlugins={[remarkGfm]}
+                                    children={chatMessage.replace(/\\n/g, "\n")}
+                                    components={{
+                                        code(props) {
+                                            const {children, className, node, ...rest} = props
+                                            const match = /language-(\w+)/.exec(className || '')
+                                            return match ? (
+                                            <SyntaxHighlighter  
+                                                //{...rest}                                            
+                                                PreTag="div"
+                                                children={String(children).replace(/\n$/, '')}
+                                                language={match[1]}
+                                                style={dark}
+                                                //
+                                            />
+                                            ) : (
+                                            <code {...rest} className={className}>
+                                                {children}
+                                            </code>
+                                            )
+                                        }
+                                    }}>
+
+                                </Markdown>           
+                            
+                            </div>
                             {botAudioUrl && (
                               <a className="audio-play-button bot-play" onClick={() => playBotAudio()}>
                               <VolumeUpTwoToneIcon/>
