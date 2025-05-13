@@ -31,6 +31,7 @@ export function Chat(props: Props) {
     const [ userMessage, setUserMessage ] = useState("");
     const [ chatMessage, setChatMessage ] = useState("");
 
+    const [conversationId, setConversationId] = useState("");
 
     const startStopMicrophone = () => {
         setRecording(!recording);
@@ -68,12 +69,12 @@ export function Chat(props: Props) {
         const blob = new Blob(recordedChunks, { type: "audio/webm; codecs=opus" });
         const userAudioUrlBlob = URL.createObjectURL(blob);
         setUserAudioUrl(userAudioUrlBlob);
-        chatSend({'content': blob, 'conversationId': ""})
+        chatSend({'content': blob, 'conversationId': conversationId})
             .unwrap()
             .then(result => {
                 setChatMessage(result.botText);
                 setUserMessage(result.userText);   
-
+                setConversationId(result.conversationId);
                 
                 if (result.botSpeech) {
                     const audioUrl = `data:audio/webm;codecs=opus;base64,${result.botSpeech}`;
