@@ -209,6 +209,7 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
                         <a className="reading-control-panel-speaker-link" onClick={() => playSelectedSentence("hello")}>
                             <VolumeUpTwoToneIcon/>
                         </a>
+                        <div className="phonetic-text">{sentence.phonetic}</div>
                         { transcriptedTextSophi }
                     </div>
                     {isLoadingTranscript ? 

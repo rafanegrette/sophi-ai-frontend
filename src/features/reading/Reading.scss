@@ -105,29 +105,3 @@ mark {
     background-color: #9999;
 }
 
-.reading-control-panel {
-    display: grid;
-    width: 550px;
-    grid-template-rows: auto auto;
-
-    .reading-control-panel-mic {
-        //max-width: 25em;
-        display: flex;
-        flex-direction: row;
-
-        .reading-control-panel-mic-link {
-            cursor: pointer;
-            &:hover {
-                color: blue;
-            }
-        }
-    }
-
-    .reading-control-panel-speaker-link {
-        cursor: pointer;
-        &:hover {
-            color: blue;
-        }
-    }
-
-}

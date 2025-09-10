@@ -1,4 +1,39 @@
-.reading-control-panel-user {
-    display: flex;
-    justify-content: space-between;
+.reading-control-panel {
+    display: grid;
+    width: 550px;
+    grid-template-rows: auto auto;
+
+    .reading-control-panel-user {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .reading-control-panel-mic {
+        //max-width: 25em;
+        display: flex;
+        flex-direction: row;
+
+        .reading-control-panel-mic-link {
+            cursor: pointer;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+    
+    .reading-control-panel-speaker {
+        display: flex;
+        gap: 8px;
+        color: rgb(97, 97, 97);
+
+        .reading-control-panel-speaker-link {
+            cursor: pointer;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+
+    
+
 }
