@@ -29,11 +29,13 @@ const initialState: Book = {
                             sentences:[
                                 {
                                     id: 0,
-                                    text: "Text placeholder, sentence number one."
+                                    text: "Text placeholder, sentence number one.",
+                                    phonetic: "tɛkst ˈpleɪsˌhəʊldə, ˈsɛntəns ˈnʌmbə wʌn."
                                 },
                                 {
                                     id: 1,
-                                    text: "Sentence number two."
+                                    text: "Sentence number two.",
+                                    phonetic: "ˈsɛntəns ˈnʌmbə tuː"
                                 }
                             ]
                         }
@@ -82,6 +84,9 @@ const previewBookSlice = createSlice({
         deletePage(state, action: PayloadAction<PreviewBookState>) {
             const bookState = action.payload;
             state.chapters[bookState.currentChapterNo].pages.splice(bookState.currentPageNo - 1, 1);
+            state.chapters[bookState.currentChapterNo].pages
+                    .filter(page => page.number >= bookState.currentPageNo)
+                    .forEach(page => page.number--);
         },
         deleteParagraph(state, action: PayloadAction<PreviewBookState>) {
             const bookState = action.payload;
@@ -96,7 +101,7 @@ const previewBookSlice = createSlice({
             state.chapters[bookState.currentChapterNo]
             .pages[bookState.currentPageNo - 1]
             .paragraphs[bookState.currentParagraphNo]
-            .sentences[bookState.currentSentenceId] = {"id": bookState.currentSentenceId, "text": bookState.currentText};
+            .sentences[bookState.currentSentenceId] = {"id": bookState.currentSentenceId, "text": bookState.currentText, "phonetic": bookState.currentText};
             console.log(state.chapters[bookState.currentChapterNo]
                 .pages[bookState.currentPageNo - 1]
                 .paragraphs[bookState.currentParagraphNo]

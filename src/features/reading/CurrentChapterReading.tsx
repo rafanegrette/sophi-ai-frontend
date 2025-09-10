@@ -39,10 +39,7 @@ export function CurrentChapterReading({chapter, bookReadState, onChapterChange}:
             { 
                 chapter.id.valueOf() <= bookReadState.chapterId ?
                 <CurrentPageReading 
-                    page={currentPageNo >= chapter.pages.length ?
-                                        chapter.pages[chapter.pages.length - 1]
-                                        : 
-                                        chapter.pages[currentPageNo - 1]}
+                    page={chapter.pages.find(page => page.number === currentPageNo) || {number : 0, paragraphs: []}}
                     chapterId={chapter.id}
                     bookReadState={bookReadState}
                     />

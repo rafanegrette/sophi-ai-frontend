@@ -60,7 +60,6 @@ export function Preview () {
             dispatch(setPageNo(statePreviewBook.currentPageNo - 1))
         }
         dispatch(deletePage(statePreviewCopy));
-        
     }
 
     const handleDeleteParagraph = (index: number) => {
