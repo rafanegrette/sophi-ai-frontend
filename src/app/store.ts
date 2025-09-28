@@ -15,6 +15,7 @@ import { assistantApiSlice } from "../features/chatgpt/assistants/assistant-api-
 import { userApiSlice } from "../features/user/user-api-slice";
 import { listeningApiSlice } from "../features/listening/listening-api-slice";
 import { pronunciationApiSlice } from "../features/reading/pronunciation-api-slice";
+import { regenerateAudioApiSlice } from "../features/reading/regenerate-audio-slice";
 
 export const store = configureStore({
     reducer: { 
@@ -33,7 +34,8 @@ export const store = configureStore({
         [assistantApiSlice.reducerPath] : assistantApiSlice.reducer,
         [userApiSlice.reducerPath] : userApiSlice.reducer,
         [listeningApiSlice.reducerPath] : listeningApiSlice.reducer,
-        [pronunciationApiSlice.reducerPath] : pronunciationApiSlice.reducer
+        [pronunciationApiSlice.reducerPath] : pronunciationApiSlice.reducer,
+        [regenerateAudioApiSlice.reducerPath] : regenerateAudioApiSlice.reducer
     },
     middleware:  (getDefaultMiddleware) => {
         return getDefaultMiddleware({
@@ -48,7 +50,8 @@ export const store = configureStore({
         .concat(userApiSlice.middleware)
         .concat(assistantApiSlice.middleware)
         .concat(listeningApiSlice.middleware)
-        .concat(pronunciationApiSlice.middleware);
+        .concat(pronunciationApiSlice.middleware)
+        .concat(regenerateAudioApiSlice.middleware);
     }
 });
 

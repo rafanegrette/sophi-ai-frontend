@@ -14,13 +14,16 @@ export const signedUrlsApiSlice = createApi({
         },
         credentials: 'include',
         fetchFn: async(url, args) => {
-            const response = await fetch(url, {...args, redirect: "manual"});
+            const response = await fetch(url, args ? {...args, redirect: "manual"} : {redirect: "manual"});
             if(response.type === "opaqueredirect") {
-                document.location = response.url;
+                const redirectUrl = response.headers.get('location') || response.url;
+                document.location = redirectUrl;
             }
             return response;
         }
     }),
+    tagTypes: ['GetBookState'],
+    
     endpoints(builder) {
         return {
             fetchSentenceAudioMap: builder.query<Map<string, SentenceAudioUrl>, string>({
@@ -29,11 +32,16 @@ export const signedUrlsApiSlice = createApi({
                 },
                 transformResponse: (response: SentenceAudioUrl[]) => {
                     return new Map(response.map(i => [i.idSentence, i]));
-                }
+                },
+                providesTags: ['GetBookState']
+            }),
+            invalidateSentenceAudio: builder.mutation<void, string>({
+                queryFn: () => ({data: undefined}),
+                invalidatesTags: ['GetBookState']
             })
         }
     }
 });
 
 
-export const { useFetchSentenceAudioMapQuery } = signedUrlsApiSlice;
+export const { useFetchSentenceAudioMapQuery, useInvalidateSentenceAudioMutation } = signedUrlsApiSlice;

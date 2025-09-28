@@ -9,14 +9,15 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import LinearProgress from "@mui/material/LinearProgress";
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
+import CachedIcon from '@mui/icons-material/Cached';
 
 import { BookUserState } from "../../models/BookUserState";
 import { Sentence } from "../../models/Sentence";
 //import { useTranscriptedMutation } from './wavtovec/voice-to-text-api-slice';
 import { useEvalTranscriptMutation, useIncreaseStateMutation } from './pronunciation-api-slice';
-import { useFetchSentenceAudioMapQuery, SentenceAudioUrl } from './signedUrls/signed-urls-api-slice';
-import Button from "@mui/material/Button";
+import { useFetchSentenceAudioMapQuery } from './signedUrls/signed-urls-api-slice';
+import { useRegenerateAudioMutation } from "./regenerate-audio-slice";
+import { Alert, Button, Snackbar} from "@mui/material";
 import { IconButton, Tooltip } from "@mui/material";
 import { PronunciationResponse } from "./model/PronunciationResponse";
 import "./CurrentSentenceReading.scss";
@@ -42,7 +43,7 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
     const [ textSelected, setTextSelected] = useState<HTMLSpanElement | null>(null);
     const [ evalTranscript, {isLoading: isLoadingTranscript} ] = useEvalTranscriptMutation();
     const [ increaseState, {isLoading: isIncreasingState}] = useIncreaseStateMutation();
-
+    const [ regenerateAudio, {isLoading: isSucessRegenerateAudio}] = useRegenerateAudioMutation();
 
     const [ currentAudioUrl, setCurrentAudioUrl ] = useState("");
     const [ userMicAudioUrl, setUserMicAudioUrl ] = useState("");
@@ -53,7 +54,7 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
     
 
     const { data: audioUrls = new Map(), isFetching: isFetchingAudioUrls } = 
-    useFetchSentenceAudioMapQuery(bookReadState.bookId + "/" + bookReadState.chapterId + "/" + bookReadState.pageNo + "/");    
+    useFetchSentenceAudioMapQuery(bookReadState.bookId + "/" + bookReadState.chapterId + "/" + pageNo + "/");    
 
     const handleClickSentence = (event: React.MouseEvent<HTMLSpanElement>, idSentence: string) => {
 
@@ -81,6 +82,7 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
         audio.src = currentAudioUrl;
         audio.load();
         audio.play();
+        console.log(currentAudioUrl);
 /*
         fetch(currentAudioUrl)
             .then(response => response.blob())
@@ -91,6 +93,12 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
                 })
             .catch(err => console.error("error trying to play sophi audio. {}", err));
         */
+    }
+
+    const regenerateAudioFunction = (audioId: string, audioText: String) => {
+        regenerateAudio({idFull: audioId, text: audioText.toString() })
+        .unwrap();
+        console.log("Audio Id: " + audioId + ", Audio text: " + audioText);
     }
 
     const playSelf = () => {
@@ -167,9 +175,11 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
         console.log("Big Audio Error");
     }
 
-    useEffect(() => {
-
-    })
+    const handleCloseReloadAudio = (event?: React.SyntheticEvent | Event, reason?: string) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+    }
 
     return (
         <div key={sentence.id} className="borderSentence">
@@ -209,6 +219,9 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
                         <a className="reading-control-panel-speaker-link" onClick={() => playSelectedSentence("hello")}>
                             <VolumeUpTwoToneIcon/>
                         </a>
+                        <a className="reading-control-panel-speaker-link" onClick={() => regenerateAudioFunction(bookReadState.bookId + "/" + chapterId + "/" + pageNo + "/" + paragraphId + "/" + sentence.id, sentence.text )}>
+                            <CachedIcon/>
+                        </a> 
                         <div className="phonetic-text">{sentence.phonetic}</div>
                         { transcriptedTextSophi }
                     </div>
@@ -259,6 +272,11 @@ export function CurrentSentenceReading({sentence, paragraphId, pageNo, chapterId
                     
                 </div>
             </Popover>
+            <Snackbar open={isSucessRegenerateAudio} autoHideDuration={6000} onClose={handleCloseReloadAudio}>
+                <Alert onClose={handleCloseReloadAudio} severity="success" sx={{ width: '100%' }}>
+                    Audio reloaded
+                </Alert>
+            </Snackbar>
         </div>
     );
 }

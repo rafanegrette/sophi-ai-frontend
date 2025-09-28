@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Pagination from "@mui/material/Pagination";
-import Popover from "@mui/material/Popover";
+
+import { useInvalidateSentenceAudioMutation } from './signedUrls/signed-urls-api-slice';
+
 import { BookUserState } from "../../models/BookUserState";
 import { Chapter } from "../../models/Chapter";
 import { CurrentPageReading } from "./CurrentPageReading";
@@ -14,10 +16,13 @@ interface ChapterProps {
 
 export function CurrentChapterReading({chapter, bookReadState, onChapterChange}: ChapterProps) {
     const [ currentPageNo, setCurrentPageNo ] = useState(bookReadState.pageNo);
+    const [invalidateSentenceAudio] = useInvalidateSentenceAudioMutation();
 
     const handlePageChange = (event: React.ChangeEvent<unknown>, value: number)  => {
         //dispatch(setCurrentPageNo(value));
         setCurrentPageNo(value);
+        invalidateSentenceAudio(bookReadState.bookId + "/" + bookReadState.chapterId + "/" + value + "/");
+          
     };
 
     useEffect(() => {
@@ -53,7 +58,7 @@ export function CurrentChapterReading({chapter, bookReadState, onChapterChange}:
                 <div >
                     <Pagination count={chapter.pages.length} 
                                 siblingCount={chapter.pages.length}
-                                page={bookReadState.pageNo} 
+                                page={currentPageNo} 
                                 onChange={handlePageChange}/>
                 </div>
             </Grid>

@@ -17,6 +17,9 @@ import { ListeningList } from "./features/listening/ListeningList";
 import { Contents } from "./features/contentAdmin/Contents";
 import ChatFrame from "./features/chatgpt/ChatFrame";
 import { Listening } from "./features/listening/Listening";
+import { enableMapSet } from 'immer';
+
+  enableMapSet();
 
 const privateMenus = [
   {
