@@ -1,7 +1,6 @@
-import { ToggleButton, IconButton, List, ListItemButton, ListItemText, Pagination, Typography, Stack, Chip, TextField } from "@mui/material";
+import { Grid, ToggleButton, IconButton, List, ListItemButton, ListItemText, Pagination, Typography, Stack, Chip, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import EditIcon from '@mui/icons-material/Edit';
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 import { useAppSelector, useAppDispatch } from '../../../app/hooks';
@@ -91,8 +90,8 @@ export function Preview () {
     }, [currentBook])*/
 
     return (
-        <Grid2 container spacing={1}>
-                <Grid2 xs={12} md={12}>
+        <Grid container spacing={1}>
+                <Grid xs={12} md={12}>
                     <Stack direction="row">
                         <ToggleButton
                             color="error"
@@ -112,19 +111,19 @@ export function Preview () {
                         </Typography>
                     </Stack>
 
-                </Grid2>
+                </Grid>
 
-                <Grid2 xs={12} md={12}>
+                <Grid xs={12} md={12}>
                     <div className="previewBackground">
                         <div className="previewBook">
-                            <Grid2 container spacing={2}>
-                                <Grid2 xs={12}>
+                            <Grid container spacing={2}>
+                                <Grid xs={12}>
                                     <div className="previewBookTitle">
                                         {currentBook.title}
                                     </div>
                                     
-                                </Grid2>
-                                <Grid2 xs={2} className="previewContentTable">
+                                </Grid>
+                                <Grid xs={2} className="previewContentTable">
                                     <List sx={style} component="nav" aria-label="book indexes">
                                         { 
                                             currentBook.contentTable.map((indexContent) => (
@@ -153,10 +152,10 @@ export function Preview () {
                                             ))
                                         }
                                     </List>
-                                </Grid2>
-                                <Grid2 xs={10} className="previewCurrentPage">
+                                </Grid>
+                                <Grid xs={10} className="previewCurrentPage">
                                     
-                                    <Grid2 xs={12}>
+                                    <Grid xs={12}>
                                         
                                         {
                                             currentBook.chapters[statePreviewBook.currentChapterNo].pages.length > 0 &&
@@ -204,12 +203,12 @@ export function Preview () {
                                             ))
                                         }
                                         
-                                    </Grid2>
+                                    </Grid>
 
-                                </Grid2>
-                                <Grid2 xs={2}>
-                                </Grid2>
-                                <Grid2 xs={10} className="previewBookPaginator">
+                                </Grid>
+                                <Grid xs={2}>
+                                </Grid>
+                                <Grid xs={10} className="previewBookPaginator">
 
                                        
                                     <IconButton
@@ -225,12 +224,12 @@ export function Preview () {
                                     <div >
                                         <Pagination count={currentBook.chapters[statePreviewBook.currentChapterNo].pages.length} page={statePreviewBook.currentPageNo} onChange={handlePageChange}/>
                                     </div>
-                                </Grid2>
-                            </Grid2>
+                                </Grid>
+                            </Grid>
                         </div>
                     </div>
-                </Grid2>
+                </Grid>
             
-        </Grid2>
+        </Grid>
     );
 }

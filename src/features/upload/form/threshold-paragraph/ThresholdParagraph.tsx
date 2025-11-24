@@ -1,5 +1,4 @@
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import { Slider } from "@mui/material";
+import { Slider, Grid } from "@mui/material";
 import { useState } from "react";
 import { useAppDispatch } from "../../../../app/hooks";
 import { setParagraphThreshold } from "../form-slice";
@@ -38,11 +37,11 @@ export function ThresholdParagraph() {
 
 
     return (
-        <Grid2 container xs={12}>
-            <Grid2 xs={12} sm={2} md={4} className="control-description">
+        <Grid container xs={12}>
+            <Grid xs={12} sm={2} md={4} className="control-description">
                 <p>Threshold space between paragraph</p>
-            </Grid2>
-            <Grid2 xs={8} sm={4} md={6}>
+            </Grid>
+            <Grid xs={8} sm={4} md={6}>
                 <Slider
                     aria-label="Always visible"
                     defaultValue={defaultValue}
@@ -55,7 +54,7 @@ export function ThresholdParagraph() {
                     min={200}
                     max={360}
                 />
-            </Grid2>
-        </Grid2>
+            </Grid>
+        </Grid>
     );
 }

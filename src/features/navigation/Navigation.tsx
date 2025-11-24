@@ -71,9 +71,7 @@ export function Navigation() {
                         <MenuItem>Admin Content</MenuItem>
                     </Link>
                 </Menu>
-                <Tabs value="false">
                     <div className="right hide-on-med-and-down">
-                        {/*<Tab  hidden = {false} onClick={handleSignUp} label="Sign-up"/>*/}
                         <Link hidden = {!!user} to={`${import.meta.env.VITE_BACKEND_HOST}/api/login`}>
                             <Tab label="Log-in"/>
                         </Link>
@@ -82,7 +80,6 @@ export function Navigation() {
                             <Tab label="Log-out"/>
                         </Link> 
                     </div>
-                </Tabs>
             </div>
             <div id="content">
                 <Outlet/>

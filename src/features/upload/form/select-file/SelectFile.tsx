@@ -1,5 +1,4 @@
-import { Button } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import { Button, Grid } from "@mui/material";
 import { ChangeEvent, useState } from "react";
 import { attach } from "../form-slice";
 import { useAppDispatch } from "../../../../app/hooks";
@@ -25,15 +24,15 @@ export function SelectFile() {
     }
 
     return (
-        <Grid2 container xs={12}>
-        <Grid2 xs={12} md={12}>
+        <Grid container xs={12}>
+        <Grid xs={12} md={12}>
             <p className="form-subheader">Upload Your PDF Content</p>
-        </Grid2>
-        <Grid2 xs={12} sm={2} md={4} className="control-description">
+        </Grid>
+        <Grid xs={12} sm={2} md={4} className="control-description">
             <p>Select your PDF</p>
-        </Grid2>
-        <Grid2 container>
-            <Grid2>
+        </Grid>
+        <Grid container>
+            <Grid>
                 <Button
                     variant="outlined" 
                     component="label">
@@ -45,15 +44,15 @@ export function SelectFile() {
                         hidden
                     />
                 </Button>
-            </Grid2>
-            <Grid2>
+            </Grid>
+            <Grid>
                 <div>
                     {
                         file && `${file.name} - ${file.type}`
                     }
                 </div>
-            </Grid2>
-        </Grid2>
-    </Grid2>
+            </Grid>
+        </Grid>
+    </Grid>
     );
 }

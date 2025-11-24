@@ -1,5 +1,4 @@
-import { List, ListItem, ListItemButton, ListItemText, Slider } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import { List, ListItem, Grid, ListItemButton, ListItemText, Slider } from "@mui/material";
 import { SyntheticEvent, useState } from "react";
 import { useAppDispatch } from "../../../../app/hooks";
 import { setParagraphSeparator } from "../form-slice";
@@ -14,14 +13,14 @@ export function SelectParagraph () {
     }
 
     return (
-        <Grid2 container xs={12}>
-            <Grid2 xs={12} md={10}>
+        <Grid container xs={12}>
+            <Grid xs={12} md={10}>
                 <p className="form-subheader">Paragraph Configuration</p>
-            </Grid2>
-            <Grid2 xs={12} sm={2} md={4} className="control-description">
+            </Grid>
+            <Grid xs={12} sm={2} md={4} className="control-description">
                 <p>Select Paragraph Separator</p>
-            </Grid2>
-            <Grid2 xs={8} sm={8}>
+            </Grid>
+            <Grid xs={8} sm={8}>
                 <div className="list-paragraph-separator">
                     <List>
                         <ListItem disablePadding>
@@ -47,7 +46,7 @@ export function SelectParagraph () {
                         </ListItem>
                     </List>
                 </div>
-            </Grid2>
-        </Grid2>
+            </Grid>
+        </Grid>
     );
 }

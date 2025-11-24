@@ -1,16 +1,15 @@
-import { FormControlLabel, FormGroup, Switch } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import { Grid, FormControlLabel, FormGroup, Switch } from "@mui/material";
 
 export function SentenceSeparator() {
     return (
-        <Grid2 container xs={12}>
-            <Grid2 xs={12} md={10}>
+        <Grid container xs={12}>
+            <Grid xs={12} md={10}>
                 <p className="form-subheader">Sentence separation</p>
-            </Grid2>
-            <Grid2 xs={12} sm={4} className="control-description">
+            </Grid>
+            <Grid xs={12} sm={4} className="control-description">
                 <p>Select characters that breaks sentences</p>
-            </Grid2>
-            <Grid2 xs={12} sm={8}>
+            </Grid>
+            <Grid xs={12} sm={8}>
                 <div className="form-switches">
                     <FormGroup>
                         <FormControlLabel control={<Switch defaultChecked />} label=". (Period)"/>
@@ -20,8 +19,8 @@ export function SentenceSeparator() {
                         <FormControlLabel control={<Switch />} label="? (Question mark)"/>
                     </FormGroup>
                 </div>
-            </Grid2>
-        </Grid2>
+            </Grid>
+        </Grid>
 
     );
 }

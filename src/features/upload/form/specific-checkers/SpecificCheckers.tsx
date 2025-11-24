@@ -1,5 +1,4 @@
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import { FormControlLabel, FormGroup, Switch, Checkbox } from "@mui/material";
+import { FormControlLabel, FormGroup, Switch, Checkbox, Grid } from "@mui/material";
 import { setFixTitleHP1, setAddExtraFormat } from "../form-slice";
 import { useAppDispatch } from "../../../../app/hooks";
 import { useState } from 'react';
@@ -21,11 +20,11 @@ export function SpecificCheckers () {
     };
 
     return (
-        <Grid2 container xs={12}>
-            <Grid2 xs={12} md={10}>
+        <Grid container xs={12}>
+            <Grid xs={12} md={10}>
                 <p className="form-subheader">Specific Checkers</p>
-            </Grid2>
-            <Grid2 xs={12} sm={8}>
+            </Grid>
+            <Grid xs={12} sm={8}>
                 <div className="form-specific-checkers">
                     <FormGroup>
                         <FormControlLabel 
@@ -40,7 +39,7 @@ export function SpecificCheckers () {
                             label="Add extra characters(jumplines, tabs ..etc.,)"/>
                     </FormGroup>
                 </div>
-            </Grid2>
-        </Grid2>
+            </Grid>
+        </Grid>
     )
 }

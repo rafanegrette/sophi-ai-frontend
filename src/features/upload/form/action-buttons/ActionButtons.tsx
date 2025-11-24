@@ -1,5 +1,4 @@
-import { Alert, AlertTitle, Backdrop, Button, CircularProgress, Snackbar } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import { Alert, AlertTitle, Grid, Backdrop, Button, CircularProgress, Snackbar } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../../../../app/hooks";
 import { useUploadPreviewMutation, useSaveBookMutation } from '../form-api-slice';
 import { resetForm } from '../form-slice';
@@ -51,7 +50,7 @@ export function ActionButtons() {
     }, [form.file, isSuccess]);
 
     return (
-        <Grid2 container xs={12}>
+        <Grid container xs={12}>
             <Snackbar open={isLoading} autoHideDuration={6000} onClose={(handleCloseProcessing)}>
                 <Alert onClose={handleCloseProcessing} severity="info" sx={{ width: '100%' }}>
                     The book was send to process, review the Reading list
@@ -68,10 +67,10 @@ export function ActionButtons() {
                 >
                 <CircularProgress color="inherit" />
             </Backdrop>
-            <Grid2 xs={12} md={12}>
+            <Grid xs={12} md={12}>
                 <p className="form-subheader"> - </p>
-            </Grid2>
-            <Grid2 xs={12} md={12} >
+            </Grid>
+            <Grid xs={12} md={12} >
                 <Button
                     disabled = {currentBook.title === '' && !isLoading}
                     size="large"
@@ -88,7 +87,7 @@ export function ActionButtons() {
                     onClick={handlePreview}>
                     Preview
                 </Button>
-            </Grid2>
-        </Grid2>
+            </Grid>
+        </Grid>
     );
 }
